@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEGO Verhuur — Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600;700;800&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg0:#0A1120;--bg1:#16223C;--panel:#101B30;--ink:#F5F7FA;--mute:#93A0B6;
+    --line:#243450;--amber:#FFC72C;--green:#37E27A;--steel:#6FA8FF}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:linear-gradient(160deg,var(--bg0),var(--bg1));min-height:100vh;color:var(--ink);
+    font-family:"Archivo",system-ui,sans-serif;display:flex;align-items:center;justify-content:center;padding:28px 18px}
+  .wrap{width:100%;max-width:520px}
+  .eyebrow{font-family:"JetBrains Mono",monospace;font-weight:800;letter-spacing:.26em;font-size:12px;color:var(--amber);text-transform:uppercase;display:flex;align-items:center;gap:10px}
+  .rec{width:12px;height:12px;border-radius:50%;background:#FF5A5F}
+  h1{font-family:"Archivo Black",sans-serif;font-size:clamp(30px,8vw,46px);letter-spacing:-.02em;margin:8px 0 6px;line-height:.98}
+  .lede{color:var(--mute);font-size:14px;margin-bottom:26px}
+  .cards{display:flex;flex-direction:column;gap:14px}
+  a.card{display:block;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--line);
+    border-radius:16px;padding:20px 20px;border-left-width:4px;transition:.15s}
+  a.card:hover{transform:translateY(-2px);border-color:var(--amber)}
+  a.card.radar{border-left-color:var(--green)}
+  a.card.beheer{border-left-color:var(--steel)}
+  .ttl{font-family:"Archivo Black",sans-serif;font-size:22px;display:flex;align-items:center;gap:10px}
+  .desc{color:var(--mute);font-size:13.5px;margin-top:6px}
+  .go{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--amber);margin-top:12px;font-weight:800}
+  .foot{color:#6C7A93;font-size:11.5px;font-family:"JetBrains Mono",monospace;margin-top:22px;text-align:center}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow"><span class="rec"></span>LEGO Verhuur</div>
+    <h1>Marktradar</h1>
+    <div class="lede">Prijzen, vraag-signaal en beheer van je verhuur-sets.</div>
+    <div class="cards">
+      <a class="card radar" href="verhuur-marktradar.html">
+        <div class="ttl">📊 Marktradar</div>
+        <div class="desc">Bekijk per set de top-5 prijzen, beschikbaarheid en de vraag-score.</div>
+        <div class="go">Openen →</div>
+      </a>
+      <a class="card beheer" href="verhuur-beheer.html">
+        <div class="ttl">⚙️ Beheer</div>
+        <div class="desc">Sets, tags en URL-overrides bewerken en naar GitHub opslaan.</div>
+        <div class="go">Openen →</div>
+      </a>
+    </div>
+    <div class="foot">draait op je eigen Home Assistant · data via GitHub</div>
+  </div>
+</body>
+</html>
