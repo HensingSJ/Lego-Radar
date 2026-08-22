@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEGO Verhuur — Beheer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700;800&family=JetBrains+Mono:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg0:#0A1120;--bg1:#16223C;--panel:#101B30;--panel2:#0C1526;--ink:#F5F7FA;--mute:#93A0B6;
+    --line:#243450;--amber:#FFC72C;--green:#37E27A;--red:#FF5A5F;--steel:#6FA8FF;--grey:#6C7A93}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:linear-gradient(160deg,var(--bg0),var(--bg1));min-height:100vh;color:var(--ink);
+    font-family:"Archivo",system-ui,sans-serif;padding:24px 16px 80px;display:flex;justify-content:center}
+  .app{width:100%;max-width:940px}
+  .head{display:flex;align-items:center;gap:12px}
+  .rec{width:14px;height:14px;border-radius:50%;background:var(--red)}
+  .eyebrow{font-family:"JetBrains Mono",monospace;font-weight:800;letter-spacing:.24em;font-size:12px;color:var(--amber);text-transform:uppercase}
+  h1{font-family:"Archivo Black",sans-serif;font-size:clamp(24px,5vw,36px);letter-spacing:-.02em;margin:2px 0 2px}
+  .lede{color:var(--mute);font-size:14px;max-width:680px;margin-bottom:18px}
+
+  .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;align-items:center}
+  .btn{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12.5px;color:var(--ink);
+    background:rgba(255,255,255,.05);border:1px solid var(--line);padding:10px 14px;border-radius:10px;cursor:pointer}
+  .btn:hover{background:rgba(255,199,44,.12);border-color:var(--amber)}
+  .btn.pri{background:var(--green);color:#08210f;border-color:var(--green)}
+  .btn.pri:hover{filter:brightness(1.05)}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px}
+  .card h2{font-size:12px;font-family:"JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:12px;font-weight:800}
+
+  .chips{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+  .chip{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12px;color:var(--ink);
+    background:var(--panel2);border:1px solid var(--line);padding:6px 10px;border-radius:99px;display:flex;gap:7px;align-items:center}
+  .chip .x{color:var(--red);cursor:pointer;font-weight:800}
+  .chip.tag{background:rgba(111,168,255,.12);border-color:#2c5aa8;color:#cfe0ff}
+  .add{background:transparent;border:1px dashed var(--line);color:var(--mute);cursor:pointer}
+  .in{background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:var(--ink);
+    font-family:"JetBrains Mono",monospace;font-weight:600;font-size:13px;padding:8px 10px;outline:none}
+  .in:focus{border-color:var(--amber)}
+  .in.sm{width:120px} .in.name{flex:1;min-width:180px}
+
+  .setcard{border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px;background:var(--panel2)}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+  .lbl{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--grey);letter-spacing:.1em;text-transform:uppercase;width:100%;margin-bottom:-2px}
+  .quick{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+  .q{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--mute);border:1px solid var(--line);border-radius:99px;padding:4px 9px;cursor:pointer;background:transparent}
+  .q:hover{border-color:var(--steel);color:#cfe0ff}
+  details{margin-top:8px} summary{cursor:pointer;font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--amber)}
+  .urlrow{display:flex;gap:10px;align-items:center;margin:8px 0}
+  .urlrow .sname{font-family:"JetBrains Mono",monospace;font-size:12px;width:140px;color:var(--mute);flex:0 0 auto}
+  .urlrow .in{flex:1;min-width:180px}
+  .del{color:var(--red);cursor:pointer;font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:700;border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:transparent}
+  .hint{font-size:12px;color:var(--grey);line-height:1.5;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="head"><span class="rec"></span><span class="eyebrow">Beheer</span></div>
+  <h1>Sets, tags &amp; URL-overrides</h1>
+  <div class="lede">Bewerk hier je data en klik <b>Download config.json</b>. Zet dat bestand naast <b>prijsrace.py</b>. Een leeg URL-veld = de scraper zoekt zelf. Vul je een URL in (als het zoeken mislukt), dan wint die.</div>
+
+  <div class="toolbar">
+    <button class="btn" onclick="document.getElementById('imp').click()">📂 Importeer config.json</button>
+    <input id="imp" type="file" accept=".json,application/json" style="display:none">
+    <button class="btn pri" onclick="download()">💾 Download config.json</button>
+    <button class="btn" onclick="addSet()">＋ Set toevoegen</button>
+  </div>
+
+  <div class="card">
+    <h2>☁ GitHub-sync (telefoon)</h2>
+    <div class="row">
+      <input class="in sm" id="gh_owner" placeholder="owner">
+      <input class="in sm" id="gh_repo" placeholder="repo">
+      <input class="in sm" id="gh_branch" placeholder="branch">
+      <input class="in sm" id="gh_path" placeholder="config.json">
+    </div>
+    <div class="row">
+      <input class="in name" id="gh_token" type="password" placeholder="fine-grained token · Contents: read/write">
+      <label style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--mute);display:flex;gap:6px;align-items:center"><input type="checkbox" id="gh_remember"> onthoud op dit apparaat</label>
+    </div>
+    <div class="row">
+      <button class="btn" onclick="ghLoad()">⤓ Laad uit GitHub</button>
+      <button class="btn pri" onclick="ghSave()">⤒ Opslaan naar GitHub</button>
+      <span class="hint" id="gh_status" style="margin:0"></span>
+    </div>
+    <div class="hint">Repo mag publiek (er staat niets gevoeligs in). Token: fine-grained, alleen déze repo, permissie <b>Contents: Read and write</b>. Je token komt nooit in de repo — met het vinkje bewaar je 'm lokaal op je telefoon.</div>
+  </div>
+
+  <div class="card">
+    <h2>Verhuurders (kolommen voor URL-overrides)</h2>
+    <div class="chips" id="sites"></div>
+    <div class="hint">Kosten (lidmaatschap/verzending) en het zoekpatroon van een verhuurder staan in prijsrace.py. Hier bepaal je alleen wélke verhuurders meedoen en hun eventuele handmatige URL per set.</div>
+  </div>
+
+  <div id="setlist"></div>
+</div>
+
+<script>
+const COMMON_TAGS = ["F1","Technic","Icons","Architecture","Botanicals","Star Wars","Harry Potter","Marvel","City","Creator","Ideas","Speed Champions"];
+let cfg = {
+  sites: ["Bouwsteenwinkel","Blokjes Te Huur","HuurjeBricks","Bricks Verhuur","Onsspeelgoed","Blokkenhuren"],
+  sets: [
+    {number:"42206",name:"Oracle Red Bull Racing RB20",themes:["F1","Technic"],pieces:1639,rrp:229.99,urls:{}},
+    {number:"42207",name:"Ferrari SF-24 F1",themes:["F1","Technic"],pieces:1361,rrp:229.99,urls:{}},
+  ]
+};
+const $ = id => document.getElementById(id);
+
+function renderSites(){
+  const el = $("sites"); el.innerHTML = "";
+  cfg.sites.forEach((s,i)=>{
+    const c = document.createElement("span"); c.className="chip";
+    c.innerHTML = s + ' <span class="x" title="verwijder">✕</span>';
+    c.querySelector(".x").onclick = ()=>{ cfg.sites.splice(i,1); render(); };
+    el.appendChild(c);
+  });
+  const add = document.createElement("span"); add.className="chip add"; add.textContent="＋ verhuurder";
+  add.onclick = ()=>{ const n=prompt("Naam verhuurder:"); if(n){ cfg.sites.push(n.trim()); render(); } };
+  el.appendChild(add);
+}
+
+function renderSets(){
+  const el = $("setlist"); el.innerHTML = "";
+  cfg.sets.forEach((s,si)=>{
+    const card = document.createElement("div"); card.className="setcard";
+
+    // basisregel
+    const row = document.createElement("div"); row.className="row";
+    row.innerHTML =
+      '<input class="in sm" placeholder="setnr" value="'+(s.number||"")+'" data-k="number">'+
+      '<input class="in name" placeholder="naam" value="'+(s.name||"").replace(/"/g,"&quot;")+'" data-k="name">'+
+      '<input class="in sm" placeholder="onderdelen" value="'+(s.pieces||"")+'" data-k="pieces">'+
+      '<input class="in sm" placeholder="adviesprijs" value="'+(s.rrp||"")+'" data-k="rrp">'+
+      '<span class="del" title="verwijder set">✕ set</span>';
+    row.querySelectorAll("input").forEach(inp=>{
+      inp.oninput = ()=>{ const k=inp.dataset.k; s[k] = (k==="pieces"||k==="rrp") ? (parseFloat(inp.value)||"") : inp.value; };
+    });
+    row.querySelector(".del").onclick = ()=>{ cfg.sets.splice(si,1); render(); };
+    card.appendChild(row);
+
+    // tags
+    const tl = document.createElement("div"); tl.className="row";
+    tl.innerHTML = '<span class="lbl">Tags (multi)</span>';
+    const tagbox = document.createElement("div"); tagbox.className="chips";
+    (s.themes||[]).forEach((t,ti)=>{
+      const c=document.createElement("span"); c.className="chip tag";
+      c.innerHTML = t + ' <span class="x">✕</span>';
+      c.querySelector(".x").onclick=()=>{ s.themes.splice(ti,1); render(); };
+      tagbox.appendChild(c);
+    });
+    const ti = document.createElement("input"); ti.className="in sm"; ti.placeholder="+ tag, Enter";
+    ti.onkeydown = e=>{ if(e.key==="Enter"&&ti.value.trim()){ s.themes=s.themes||[]; s.themes.push(ti.value.trim()); render(); } };
+    tagbox.appendChild(ti);
+    tl.appendChild(tagbox);
+    card.appendChild(tl);
+
+    const quick = document.createElement("div"); quick.className="quick";
+    COMMON_TAGS.forEach(t=>{ const b=document.createElement("span"); b.className="q"; b.textContent="+ "+t;
+      b.onclick=()=>{ s.themes=s.themes||[]; if(!s.themes.includes(t)){ s.themes.push(t); render(); } }; quick.appendChild(b); });
+    card.appendChild(quick);
+
+    // url-overrides
+    const det = document.createElement("details");
+    const filled = Object.values(s.urls||{}).filter(Boolean).length;
+    det.innerHTML = "<summary>URL-overrides per verhuurder ("+filled+" ingevuld · leeg = auto-zoeken)</summary>";
+    cfg.sites.forEach(site=>{
+      const ur=document.createElement("div"); ur.className="urlrow";
+      ur.innerHTML = '<span class="sname">'+site+'</span><input class="in" placeholder="auto-zoeken" value="'+((s.urls&&s.urls[site])||"").replace(/"/g,"&quot;")+'">';
+      ur.querySelector("input").oninput = e=>{ s.urls=s.urls||{}; s.urls[site]=e.target.value.trim(); };
+      det.appendChild(ur);
+    });
+    card.appendChild(det);
+    el.appendChild(card);
+  });
+}
+
+function render(){ renderSites(); renderSets(); }
+
+function addSet(){ cfg.sets.push({number:"",name:"",themes:[],pieces:"",rrp:"",urls:{}}); render();
+  window.scrollTo(0,document.body.scrollHeight); }
+
+function buildClean(){
+  return {sites:cfg.sites, sets:cfg.sets.map(s=>({
+    number:String(s.number||"").trim(), name:s.name||"", themes:s.themes||[],
+    pieces:s.pieces||null, rrp:s.rrp||null,
+    urls:Object.fromEntries(Object.entries(s.urls||{}).filter(([k,v])=>v))
+  })).filter(s=>s.number)};
+}
+function download(){
+  const blob = new Blob([JSON.stringify(buildClean(),null,2)],{type:"application/json"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="config.json"; a.click();
+}
+
+/* ---- GitHub-sync ---- */
+const GHK="lego_gh_settings";
+function ghS(){ return {owner:$("gh_owner").value.trim(), repo:$("gh_repo").value.trim(),
+  branch:($("gh_branch").value.trim()||"main"), path:($("gh_path").value.trim()||"config.json"),
+  token:$("gh_token").value.trim(), remember:$("gh_remember").checked}; }
+function ghSaveSettings(){ const s=ghS(); const st={owner:s.owner,repo:s.repo,branch:s.branch,path:s.path};
+  if(s.remember) st.token=s.token; try{ localStorage.setItem(GHK,JSON.stringify(st)); }catch(e){} }
+function ghLoadSettings(){ try{ const s=JSON.parse(localStorage.getItem(GHK)||"{}");
+  if(s.owner)$("gh_owner").value=s.owner; if(s.repo)$("gh_repo").value=s.repo;
+  $("gh_branch").value=s.branch||"main"; $("gh_path").value=s.path||"config.json";
+  if(s.token){$("gh_token").value=s.token; $("gh_remember").checked=true;} }catch(e){} }
+const u8b64 = s => btoa(unescape(encodeURIComponent(s)));
+const b64u8 = s => decodeURIComponent(escape(atob(s)));
+function ghBase(s){ return "https://api.github.com/repos/"+s.owner+"/"+s.repo+"/contents/"+s.path.split("/").map(encodeURIComponent).join("/"); }
+async function ghGet(s){
+  const r=await fetch(ghBase(s)+"?ref="+encodeURIComponent(s.branch),
+    {headers:{Authorization:"Bearer "+s.token,Accept:"application/vnd.github+json"}});
+  if(r.status===404) return {sha:null,json:null};
+  if(!r.ok) throw new Error("GET "+r.status);
+  const d=await r.json(); return {sha:d.sha, json:JSON.parse(b64u8(d.content))};
+}
+async function ghLoad(){
+  const s=ghS(); if(!s.owner||!s.repo||!s.token){ alert("Vul owner, repo en token in."); return; }
+  $("gh_status").textContent="laden…";
+  try{ const {json}=await ghGet(s);
+    if(!json){ $("gh_status").textContent="nog geen config.json in repo"; return; }
+    cfg.sites=json.sites||cfg.sites; cfg.sets=json.sets||[]; ghSaveSettings(); render();
+    $("gh_status").textContent="geladen ✓";
+  }catch(e){ $("gh_status").textContent="fout: "+e.message; }
+}
+async function ghSave(){
+  const s=ghS(); if(!s.owner||!s.repo||!s.token){ alert("Vul owner, repo en token in."); return; }
+  $("gh_status").textContent="opslaan…";
+  try{
+    const cur=await ghGet(s);
+    const body={message:"config bijgewerkt via beheer-UI", content:u8b64(JSON.stringify(buildClean(),null,2)), branch:s.branch};
+    if(cur.sha) body.sha=cur.sha;
+    const r=await fetch(ghBase(s),{method:"PUT",headers:{Authorization:"Bearer "+s.token,
+      Accept:"application/vnd.github+json","Content-Type":"application/json"}, body:JSON.stringify(body)});
+    if(!r.ok){ throw new Error(r.status+" "+(await r.text()).slice(0,120)); }
+    ghSaveSettings(); $("gh_status").textContent="opgeslagen naar GitHub ✓";
+  }catch(e){ $("gh_status").textContent="fout: "+e.message; }
+}
+$("imp").addEventListener("change", ev=>{
+  const f=ev.target.files[0]; if(!f) return; const r=new FileReader();
+  r.onload=()=>{ try{ const c=JSON.parse(r.result); cfg.sites=c.sites||cfg.sites; cfg.sets=c.sets||[]; render(); }
+    catch(e){ alert("Ongeldige JSON: "+e.message); } };
+  r.readAsText(f);
+});
+ghLoadSettings();
+render();
+</script>
+</body>
+</html>

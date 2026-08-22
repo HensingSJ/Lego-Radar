@@ -1,0 +1,34 @@
+{
+  "sites": [
+    "Bouwsteenwinkel",
+    "Blokjes Te Huur",
+    "HuurjeBricks",
+    "Bricks Verhuur",
+    "Onsspeelgoed",
+    "Blokkenhuren"
+  ],
+  "sets": [
+    {
+      "number": "42206",
+      "name": "Oracle Red Bull Racing RB20",
+      "themes": [
+        "F1",
+        "Technic"
+      ],
+      "pieces": 1639,
+      "rrp": 229.99,
+      "urls": {}
+    },
+    {
+      "number": "42207",
+      "name": "Ferrari SF-24 F1",
+      "themes": [
+        "F1",
+        "Technic"
+      ],
+      "pieces": 1361,
+      "rrp": 229.99,
+      "urls": {}
+    }
+  ]
+}

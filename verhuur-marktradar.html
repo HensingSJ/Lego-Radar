@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEGO Verhuur — Marktradar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700;800&family=JetBrains+Mono:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg0:#0A1120; --bg1:#16223C; --panel:#101B30; --panel2:#0C1526;
+    --ink:#F5F7FA; --mute:#93A0B6; --line:#243450;
+    --amber:#FFC72C; --green:#37E27A; --red:#FF5A5F; --steel:#6FA8FF; --grey:#6C7A93;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:linear-gradient(160deg,var(--bg0),var(--bg1));min-height:100vh;color:var(--ink);
+    font-family:"Archivo",system-ui,sans-serif;padding:24px 16px 70px;display:flex;justify-content:center}
+  .app{width:100%;max-width:940px}
+  .head{display:flex;align-items:center;gap:12px}
+  .rec{width:14px;height:14px;border-radius:50%;background:var(--red)}
+  .eyebrow{font-family:"JetBrains Mono",monospace;font-weight:800;letter-spacing:.24em;font-size:12px;color:var(--amber);text-transform:uppercase}
+  h1{font-family:"Archivo Black",sans-serif;font-size:clamp(24px,5vw,38px);letter-spacing:-.02em;margin:2px 0 2px}
+  .meta{color:var(--mute);font-size:13px;font-family:"JetBrains Mono",monospace;margin-bottom:16px}
+
+  .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
+  .btn{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12.5px;color:var(--ink);
+    background:rgba(255,255,255,.05);border:1px solid var(--line);padding:9px 13px;border-radius:9px;cursor:pointer}
+  .btn:hover{background:rgba(255,199,44,.12);border-color:var(--amber)}
+  .banner{font-family:"JetBrains Mono",monospace;font-size:12px;color:#0A1120;background:var(--amber);
+    padding:5px 10px;border-radius:7px;font-weight:800}
+  #paste{display:none;width:100%;height:120px;margin-bottom:12px;background:var(--panel2);color:var(--ink);
+    border:1px solid var(--line);border-radius:10px;padding:10px;font-family:"JetBrains Mono",monospace;font-size:12px}
+
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+  .tab{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:13px;color:var(--mute);
+    background:var(--panel2);border:1px solid var(--line);padding:10px 14px;border-radius:10px;cursor:pointer}
+  .tab.on{color:var(--ink);border-color:var(--amber);background:rgba(255,199,44,.10)}
+  .tab b{color:var(--amber)}
+  .themebar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+  .thchip{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12px;color:var(--mute);
+    background:transparent;border:1px solid var(--line);padding:6px 12px;border-radius:99px;cursor:pointer}
+  .thchip.on{color:#0A1120;background:var(--steel);border-color:var(--steel)}
+  .thlabel{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin-right:2px}
+
+  .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:16px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+  .card h2{font-size:12px;font-family:"JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:12px;font-weight:800}
+
+  .setname{font-family:"Archivo Black",sans-serif;font-size:26px;letter-spacing:-.01em;line-height:1.05}
+  .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .fact{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mute);background:var(--panel2);border:1px solid var(--line);padding:6px 10px;border-radius:8px}
+  .fact b{color:var(--ink)}
+
+  .demandbig{font-family:"Archivo Black",sans-serif;font-size:44px;line-height:1}
+  .demandbig.Hoog{color:var(--green)} .demandbig.Gemiddeld{color:var(--amber)} .demandbig.Laag{color:var(--grey)}
+  .score{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--mute);margin-top:6px}
+  .hint{font-size:13.5px;line-height:1.5;margin-top:12px;border-left:2px solid var(--line);padding-left:12px;color:#C9D2E0}
+
+  .race{display:flex;flex-direction:column;gap:14px;margin-top:2px}
+  .lane .top{display:flex;align-items:baseline;gap:8px;margin-bottom:7px}
+  .lane .site{font-weight:700;font-size:15px}
+  .lane .tag{font-family:"JetBrains Mono",monospace;font-weight:800;font-size:10.5px;letter-spacing:.08em;
+    padding:3px 7px;border-radius:99px;background:#123322;color:var(--green)}
+  .lane .price{margin-left:auto;font-family:"JetBrains Mono",monospace;font-weight:800;font-size:20px;font-variant-numeric:tabular-nums}
+  .track{height:14px;border-radius:8px;background:#16213A;overflow:hidden}
+  .fill{height:100%;border-radius:8px}
+  .lane .note{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--grey);margin-top:6px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .chip{font-weight:800;padding:2px 7px;border-radius:6px;font-size:10.5px}
+  .chip.ok{background:rgba(55,226,122,.15);color:var(--green)}
+  .chip.wait{background:rgba(255,199,44,.15);color:var(--amber)}
+  .chip.out{background:rgba(255,90,95,.15);color:var(--red)}
+  .chip.unk{background:rgba(140,148,166,.15);color:var(--grey)}
+
+  .foot{font-size:12px;color:var(--grey);line-height:1.55;margin-top:16px;border-left:2px solid var(--line);padding-left:12px}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="head"><span class="rec"></span><span class="eyebrow">Marktradar</span></div>
+  <h1>LEGO Verhuur — vraag &amp; prijs per set</h1>
+  <div class="meta" id="meta"></div>
+
+  <div class="bar">
+    <button class="btn" onclick="refreshData()">🔄 Ververs</button>
+    <input id="dataurl" placeholder="prijsrace-data.json" value="prijsrace-data.json"
+      style="flex:1;min-width:150px;background:var(--panel2);border:1px solid var(--line);border-radius:9px;color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:12px;padding:9px 11px;outline:none">
+    <button class="btn" onclick="document.getElementById('file').click()">📂 Laad scraper-JSON</button>
+    <input id="file" type="file" accept=".json,application/json" style="display:none">
+    <button class="btn" onclick="togglePaste()">📋 Plak JSON</button>
+    <span class="banner" id="banner" style="display:none">VOORBEELDDATA — vervang met scraper-output</span>
+  </div>
+  <textarea id="paste" placeholder='Plak hier de inhoud van prijsrace-data.json en klik nogmaals "Plak JSON"'></textarea>
+
+  <div class="themebar" id="themebar"></div>
+  <div class="tabs" id="tabs"></div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Set</h2>
+      <div class="setname" id="setname"></div>
+      <div class="facts" id="facts"></div>
+      <h2 style="margin-top:20px">Prijsvergelijking · top 5</h2>
+      <div class="race" id="race"></div>
+    </div>
+    <div class="card">
+      <h2>Vraagsignaal</h2>
+      <div class="demandbig" id="demand"></div>
+      <div class="score" id="scoreline"></div>
+      <div class="hint" id="hint"></div>
+      <h2 style="margin-top:22px">Investeren?</h2>
+      <div class="hint" id="invest" style="border:none;padding:0"></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    Vraag-score komt uit aanbodbreedte + hoeveel verhuurders de set uitverhuurd/op wachtrij hebben — een échte huurvraag-indicator, geen gok. Prijzen &amp; status wijzigen: ververs met <b>python3 prijsrace.py &lt;setnr&gt;</b> en laad de nieuwe <b>prijsrace-data.json</b>. Bron-vergelijkingssite (bouwsethurenvergelijken.nl) alleen handmatig gebruiken — die blokkeert bots.
+  </div>
+</div>
+
+<script>
+/* ---- embedded voorbeelddata (identiek aan python3 prijsrace.py --mock) ---- */
+let DATA = {"generated":"2026-08-22","source":"mock","sets":[
+ {"number":"42206","name":"Oracle Red Bull Racing RB20","themes":["F1","Technic"],"pieces":1639,"rrp":229.99,
+  "demand":{"carrying":6,"unavailable":3,"score":82,"label":"Hoog"},
+  "offers":[
+   {"site":"Blokkenhuren","price":12.0,"status":"wachtrij","availableFrom":"2026-09-08","note":"afhalen"},
+   {"site":"Bouwsteenwinkel","price":13.5,"status":"beschikbaar","availableFrom":null,"note":"+ €10,00/jr lidmaatschap · afhalen"},
+   {"site":"Blokjes Te Huur","price":15.0,"status":"beschikbaar","availableFrom":null,"note":"afhalen"},
+   {"site":"HuurjeBricks","price":15.0,"status":"wachtrij","availableFrom":"2026-09-05","note":"afhalen"},
+   {"site":"Bricks Verhuur","price":15.0,"status":"wachtrij","availableFrom":"2026-09-12","note":"+ €29,50/jr lidmaatschap · + €14,50 verzending"}
+  ]},
+ {"number":"42207","name":"Ferrari SF-24 F1","themes":["F1","Technic"],"pieces":1361,"rrp":229.99,
+  "demand":{"carrying":5,"unavailable":1,"score":56,"label":"Gemiddeld"},
+  "offers":[
+   {"site":"Blokkenhuren","price":12.0,"status":"beschikbaar","availableFrom":null,"note":"afhalen"},
+   {"site":"Bouwsteenwinkel","price":13.5,"status":"beschikbaar","availableFrom":null,"note":"+ €10,00/jr lidmaatschap · afhalen"},
+   {"site":"Blokjes Te Huur","price":15.0,"status":"beschikbaar","availableFrom":null,"note":"afhalen"},
+   {"site":"HuurjeBricks","price":15.0,"status":"wachtrij","availableFrom":"2026-09-03","note":"afhalen"},
+   {"site":"Bricks Verhuur","price":15.0,"status":"beschikbaar","availableFrom":null,"note":"+ €29,50/jr lidmaatschap · + €14,50 verzending"}
+  ]},
+ {"number":"21061","name":"Notre-Dame","themes":["Icons","Architecture"],"pieces":4383,"rrp":229.99,
+  "demand":{"carrying":5,"unavailable":1,"score":56,"label":"Gemiddeld"},
+  "offers":[
+   {"site":"Bouwsteenwinkel","price":11.75,"status":"beschikbaar","availableFrom":null,"note":"+ €10,00/jr lidmaatschap · afhalen"},
+   {"site":"Blokjes Te Huur","price":12.5,"status":"beschikbaar","availableFrom":null,"note":"afhalen"},
+   {"site":"HuurjeBricks","price":15.0,"status":"beschikbaar","availableFrom":null,"note":"afhalen"},
+   {"site":"Bricks Verhuur","price":15.0,"status":"beschikbaar","availableFrom":null,"note":"+ €29,50/jr lidmaatschap · + €14,50 verzending"},
+   {"site":"Onsspeelgoed","price":21.9,"status":"wachtrij","availableFrom":"2026-08-30","note":"+ verzending (?)"}
+  ]}
+]};
+
+let current = 0;
+let curTheme = "Alle";
+const $ = id => document.getElementById(id);
+const eur = v => "€" + v.toFixed(2).replace(".", ",");
+const tagsOf = s => s.themes || (s.theme ? [s.theme] : []);
+const STATUS = {
+  beschikbaar:{c:"ok",t:"✓ beschikbaar"}, wachtrij:{c:"wait",t:"⏳ wachtrij"},
+  uitverhuurd:{c:"out",t:"✗ uitverhuurd"}, onbekend:{c:"unk",t:"? onbekend"}
+};
+const BARCOL = i => i===0 ? "linear-gradient(90deg,#1c6b40,#37E27A)" : "linear-gradient(90deg,#3a4straende,#6FA8FF)".replace("3a4straende","2c5aa8");
+
+function togglePaste(){
+  const p = $("paste");
+  if(p.style.display==="none" || !p.style.display){ p.style.display="block"; p.focus(); }
+  else { try{ DATA = JSON.parse(p.value); current=0; p.style.display="none"; p.value=""; render(); }
+         catch(e){ alert("Ongeldige JSON: "+e.message); } }
+}
+$("file").addEventListener("change", ev=>{
+  const f = ev.target.files[0]; if(!f) return;
+  const r = new FileReader();
+  r.onload = () => { try{ DATA = JSON.parse(r.result); current=0; render(); } catch(e){ alert("Ongeldige JSON: "+e.message); } };
+  r.readAsText(f);
+});
+
+function investText(label){
+  if(label==="Hoog") return "Sterk instapsignaal: de vraag overtreft het aanbod (sets staan op wachtrij). Deze set verdient een plek in je startvoorraad — reken 'm nog even door in de terugverdiencalculator.";
+  if(label==="Gemiddeld") return "Redelijke vraag. Kan een goede aankoop zijn, maar de marge is bepalend — check bezetting en verlies in de calculator vóór je koopt.";
+  return "Zwakke vraag: ruim aanbod, weinig uitverhuurd. Voorlopig overslaan of afwachten.";
+}
+
+function render(){
+  $("meta").textContent = "Bijgewerkt: " + (DATA.generated||"?") + " · " + (DATA.sets?.length||0) + " sets";
+  $("banner").style.display = DATA.source==="mock" ? "inline-block" : "none";
+
+  // themabalk
+  const themes = ["Alle", ...Array.from(new Set((DATA.sets||[]).flatMap(s=>tagsOf(s))))];
+  const tbar = $("themebar"); tbar.innerHTML = '<span class="thlabel">Thema</span>';
+  themes.forEach(th=>{
+    const c = document.createElement("div");
+    c.className = "thchip" + (th===curTheme?" on":"");
+    c.textContent = th;
+    c.onclick = ()=>{
+      curTheme = th;
+      const cs = (DATA.sets||[])[current];
+      if(th!=="Alle" && (!cs || !tagsOf(cs).includes(th))){
+        const idx = (DATA.sets||[]).findIndex(s=>tagsOf(s).includes(th));
+        if(idx>=0) current = idx;
+      }
+      render();
+    };
+    tbar.appendChild(c);
+  });
+
+  const tabs = $("tabs"); tabs.innerHTML = "";
+  (DATA.sets||[]).forEach((s,i)=>{
+    if(curTheme!=="Alle" && !tagsOf(s).includes(curTheme)) return;
+    const t = document.createElement("div");
+    t.className = "tab" + (i===current?" on":"");
+    t.innerHTML = s.number + " · <b>"+s.name+"</b>";
+    t.onclick = ()=>{ current=i; render(); };
+    tabs.appendChild(t);
+  });
+
+  const s = (DATA.sets||[])[current]; if(!s) return;
+  $("setname").textContent = s.name;
+  $("facts").innerHTML =
+    '<span class="fact">#<b>'+s.number+'</b></span>'+
+    '<span class="fact">tags <b>'+(tagsOf(s).join(" · ")||"—")+'</b></span>'+
+    '<span class="fact"><b>'+s.pieces+'</b> onderdelen</span>'+
+    '<span class="fact">adviesprijs <b>'+eur(s.rrp)+'</b></span>';
+
+  const maxp = Math.max(...s.offers.map(o=>o.price),1);
+  $("race").innerHTML = s.offers.map((o,i)=>{
+    const st = STATUS[o.status]||STATUS.onbekend;
+    const chip = '<span class="chip '+st.c+'">'+st.t+(o.availableFrom?(" "+o.availableFrom):"")+'</span>';
+    const fill = i===0 ? "linear-gradient(90deg,#1c6b40,#37E27A)" : "linear-gradient(90deg,#2c5aa8,#6FA8FF)";
+    const pcol = i===0 ? "#37E27A" : "#F5F7FA";
+    return '<div class="lane"><div class="top"><span class="site">'+o.site+'</span>'+
+      (i===0?'<span class="tag">LAAGSTE</span>':'')+
+      '<span class="price" style="color:'+pcol+'">'+eur(o.price)+'</span></div>'+
+      '<div class="track"><div class="fill" style="width:'+(o.price/maxp*100).toFixed(0)+'%;background:'+fill+'"></div></div>'+
+      '<div class="note">'+chip+'<span>'+o.note+'</span></div></div>';
+  }).join("");
+
+  const d = s.demand;
+  $("demand").className = "demandbig " + d.label;
+  $("demand").textContent = d.label;
+  $("scoreline").textContent = "score "+d.score+"/100 · "+d.carrying+" verhuurders · "+d.unavailable+" uitverhuurd/wachtrij";
+  $("hint").textContent = "Hoe meer verhuurders de set voeren én hoe meer daarvan is uitverhuurd of op wachtrij staat, hoe hoger de vraag.";
+  $("invest").textContent = investText(d.label);
+}
+async function loadFromUrl(u){
+  try{ const r = await fetch(u,{cache:"no-store"}); if(!r.ok) throw 0;
+    DATA = await r.json(); current=0; render(); return true; }
+  catch(e){ return false; }
+}
+function refreshData(){
+  const u = ($("dataurl").value||"prijsrace-data.json").trim();
+  loadFromUrl(u).then(ok=>{ if(!ok) alert("Kon data niet laden van: "+u); });
+}
+render();
+loadFromUrl(($("dataurl").value||"prijsrace-data.json").trim());
+</script>
+</body>
+</html>
