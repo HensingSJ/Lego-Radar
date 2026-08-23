@@ -164,11 +164,18 @@ function renderSets(){
     // url-overrides
     const det = document.createElement("details");
     const filled = Object.values(s.urls||{}).filter(Boolean).length;
-    det.innerHTML = "<summary>URL-overrides per verhuurder ("+filled+" ingevuld · leeg = auto-zoeken)</summary>";
+    det.innerHTML = "<summary>URL &amp; prijs per verhuurder ("+filled+" URL's ingevuld · leeg = automatisch)</summary>";
     cfg.sites.forEach(site=>{
       const ur=document.createElement("div"); ur.className="urlrow";
-      ur.innerHTML = '<span class="sname">'+site+'</span><input class="in" placeholder="auto-zoeken" value="'+((s.urls&&s.urls[site])||"").replace(/"/g,"&quot;")+'">';
-      ur.querySelector("input").oninput = e=>{ s.urls=s.urls||{}; s.urls[site]=e.target.value.trim(); };
+      const urlv=((s.urls&&s.urls[site])||"").replace(/"/g,"&quot;");
+      const prijsv=((s.prices&&s.prices[site])!=null?s.prices[site]:"");
+      ur.innerHTML='<span class="sname">'+site+'</span>'
+        +'<input class="in" placeholder="auto-zoeken (URL)" value="'+urlv+'">'
+        +'<input class="in" style="max-width:118px;flex:0 0 auto" placeholder="prijs €/wk" value="'+prijsv+'">';
+      const ins=ur.querySelectorAll("input");
+      ins[0].oninput=e=>{ s.urls=s.urls||{}; s.urls[site]=e.target.value.trim(); };
+      ins[1].oninput=e=>{ s.prices=s.prices||{}; const v=e.target.value.trim();
+        if(v) s.prices[site]=parseFloat(v.replace(",",".")); else delete s.prices[site]; };
       det.appendChild(ur);
     });
     card.appendChild(det);
@@ -185,7 +192,8 @@ function buildClean(){
   return {sites:cfg.sites, sets:cfg.sets.map(s=>({
     number:String(s.number||"").trim(), name:s.name||"", themes:s.themes||[],
     pieces:s.pieces||null, rrp:s.rrp||null,
-    urls:Object.fromEntries(Object.entries(s.urls||{}).filter(([k,v])=>v))
+    urls:Object.fromEntries(Object.entries(s.urls||{}).filter(([k,v])=>v)),
+    prices:Object.fromEntries(Object.entries(s.prices||{}).filter(([k,v])=>v!=null&&v!==""))
   })).filter(s=>s.number)};
 }
 function download(){
