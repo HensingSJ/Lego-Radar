@@ -77,24 +77,56 @@
       "number": "10316",
       "name": "LEGO THE LORD OF THE RINGS: RIVENDELL",
       "themes": [
-        "Icons"
+        "Icons",
+        "Lord of the Rinsg"
       ],
       "pieces": 6167,
       "rrp": 414,
       "offers": [
-        {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
         {
           "site": "Bricks Verhuur",
           "price": 7.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 10.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        }
+      ],
+      "demand": {
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
+      }
+    },
+    {
+      "number": "42171",
+      "name": "Mercedes-AMG F1 W14 E Performance",
+      "themes": [
+        "F1"
+      ],
+      "pieces": 1642,
+      "rrp": 161,
+      "offers": [
+        {
+          "site": "Bricks Verhuur",
+          "price": 7.5,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 10.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
