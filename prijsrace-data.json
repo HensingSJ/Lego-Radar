@@ -83,18 +83,18 @@
       "rrp": 414,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 6.5,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        },
-        {
-          "site": "Bouwsteenwinkel",
-          "price": 10.75,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
