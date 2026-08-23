@@ -13,6 +13,13 @@
       "rrp": 229.99,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
           "status": "beschikbaar",
@@ -25,13 +32,6 @@
           "status": "onbekend",
           "availableFrom": null,
           "note": "+ verzending (?)"
-        },
-        {
-          "site": "Bouwsteenwinkel",
-          "price": 10.75,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
@@ -52,18 +52,18 @@
       "rrp": 229.99,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        },
-        {
-          "site": "Bouwsteenwinkel",
-          "price": 10.75,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
@@ -77,25 +77,24 @@
       "number": "10316",
       "name": "LEGO THE LORD OF THE RINGS: RIVENDELL",
       "themes": [
-        "Icons",
-        "Lord of the Rinsg"
+        "Icons"
       ],
       "pieces": 6167,
       "rrp": 414,
       "offers": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
         {
           "site": "Bricks Verhuur",
           "price": 7.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        },
-        {
-          "site": "Bouwsteenwinkel",
-          "price": 10.75,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
@@ -115,6 +114,75 @@
       "rrp": 161,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 7.5,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ],
+      "demand": {
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
+      }
+    },
+    {
+      "number": "75252",
+      "name": "Imperial Star Destroyer",
+      "themes": [
+        "Star Wars"
+      ],
+      "pieces": 4784,
+      "rrp": 700,
+      "offers": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 7.5,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ],
+      "demand": {
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
+      }
+    },
+    {
+      "number": "42083",
+      "name": "Bugatti Chiron",
+      "themes": [
+        "Technic"
+      ],
+      "pieces": 3599,
+      "rrp": 499,
+      "offers": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
           "status": "beschikbaar",
@@ -122,17 +190,17 @@
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
         {
-          "site": "Bouwsteenwinkel",
-          "price": 10.75,
-          "status": "beschikbaar",
+          "site": "Blokjes Te Huur",
+          "price": 17.5,
+          "status": "onbekend",
           "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
+          "note": "afhalen"
         }
       ],
       "demand": {
-        "carrying": 2,
+        "carrying": 3,
         "unavailable": 0,
-        "score": 18,
+        "score": 27,
         "label": "Laag"
       }
     }
