@@ -5,7 +5,10 @@
     "HuurjeBricks",
     "Bricks Verhuur",
     "Onsspeelgoed",
-    "Blokkenhuren"
+    "Blokkenhuren",
+    "https://berghbricks.nl/",
+    "https://www.easybricks.nl/",
+    "https://www.allemaalsteentjes.nl/"
   ],
   "sets": [
     {
@@ -29,6 +32,28 @@
       ],
       "pieces": 1361,
       "rrp": 229.99,
+      "urls": {},
+      "prices": {}
+    },
+    {
+      "number": "10316",
+      "name": "LEGO THE LORD OF THE RINGS: RIVENDELL",
+      "themes": [
+        "Icons"
+      ],
+      "pieces": 6167,
+      "rrp": 414,
+      "urls": {},
+      "prices": {}
+    },
+    {
+      "number": "42171",
+      "name": "Mercedes-AMG F1 W14 E Performance",
+      "themes": [
+        "F1"
+      ],
+      "pieces": 1642,
+      "rrp": 161,
       "urls": {},
       "prices": {}
     },
