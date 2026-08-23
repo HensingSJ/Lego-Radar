@@ -20,18 +20,18 @@
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
         {
+          "site": "Onsspeelgoed",
+          "price": 7.99,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "+ verzending (?)"
+        },
+        {
           "site": "Bouwsteenwinkel",
           "price": 10.75,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "Onsspeelgoed",
-          "price": 10.95,
-          "status": "onbekend",
-          "availableFrom": null,
-          "note": "+ verzending (?)"
         }
       ],
       "demand": {
