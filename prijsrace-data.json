@@ -13,13 +13,6 @@
       "rrp": 229.99,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 2.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
           "site": "Bricks Verhuur",
           "price": 7.5,
           "status": "beschikbaar",
@@ -32,20 +25,13 @@
           "status": "onbekend",
           "availableFrom": null,
           "note": "+ verzending (?)"
-        },
-        {
-          "site": "Blokjes Te Huur",
-          "price": 12.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "afhalen"
         }
       ],
       "demand": {
-        "carrying": 4,
-        "unavailable": 1,
-        "score": 50,
-        "label": "Gemiddeld"
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
       }
     },
     {
@@ -59,32 +45,18 @@
       "rrp": 229.99,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 2.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
           "site": "Bricks Verhuur",
           "price": 7.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        },
-        {
-          "site": "Blokjes Te Huur",
-          "price": 12.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "afhalen"
         }
       ],
       "demand": {
-        "carrying": 3,
-        "unavailable": 1,
-        "score": 45,
-        "label": "Gemiddeld"
+        "carrying": 1,
+        "unavailable": 0,
+        "score": 9,
+        "label": "Laag"
       }
     },
     {
@@ -97,32 +69,18 @@
       "rrp": 414,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 2.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
           "site": "Bricks Verhuur",
           "price": 7.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        },
-        {
-          "site": "Blokjes Te Huur",
-          "price": 17.5,
-          "status": "onbekend",
-          "availableFrom": null,
-          "note": "afhalen"
         }
       ],
       "demand": {
-        "carrying": 3,
-        "unavailable": 1,
-        "score": 45,
-        "label": "Gemiddeld"
+        "carrying": 1,
+        "unavailable": 0,
+        "score": 9,
+        "label": "Laag"
       }
     }
   ]
