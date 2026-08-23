@@ -20,6 +20,13 @@
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
         {
+          "site": "Bouwsteenwinkel",
+          "price": 10.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Onsspeelgoed",
           "price": 10.95,
           "status": "onbekend",
@@ -28,9 +35,9 @@
         }
       ],
       "demand": {
-        "carrying": 2,
+        "carrying": 3,
         "unavailable": 0,
-        "score": 18,
+        "score": 27,
         "label": "Laag"
       }
     },
@@ -50,12 +57,19 @@
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 10.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
-        "carrying": 1,
+        "carrying": 2,
         "unavailable": 0,
-        "score": 9,
+        "score": 18,
         "label": "Laag"
       }
     },
@@ -74,12 +88,19 @@
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 10.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
-        "carrying": 1,
+        "carrying": 2,
         "unavailable": 0,
-        "score": 9,
+        "score": 18,
         "label": "Laag"
       }
     }
