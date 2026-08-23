@@ -5,7 +5,9 @@
     "HuurjeBricks",
     "Bricks Verhuur",
     "Onsspeelgoed",
-    "Blokkenhuren"
+    "Blokkenhuren",
+    "https://berghbricks.nl/",
+    "https://www.easybricks.nl/"
   ],
   "sets": [
     {
@@ -17,7 +19,8 @@
       ],
       "pieces": 1639,
       "rrp": 229.99,
-      "urls": {}
+      "urls": {},
+      "prices": {}
     },
     {
       "number": "42207",
@@ -28,17 +31,20 @@
       ],
       "pieces": 1361,
       "rrp": 229.99,
-      "urls": {}
+      "urls": {},
+      "prices": {}
     },
     {
       "number": "10316",
       "name": "LEGO THE LORD OF THE RINGS: RIVENDELL",
       "themes": [
-        "Icons"
+        "Icons",
+        "Lord of the Rinsg"
       ],
       "pieces": 6167,
       "rrp": 414,
-      "urls": {}
+      "urls": {},
+      "prices": {}
     }
   ]
 }
