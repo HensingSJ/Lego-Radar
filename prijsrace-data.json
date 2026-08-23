@@ -1,0 +1,91 @@
+{
+  "generated": "2026-08-23",
+  "source": "live",
+  "sets": [
+    {
+      "number": "42206",
+      "name": "Oracle Red Bull Racing RB20",
+      "themes": [
+        "F1",
+        "Technic"
+      ],
+      "pieces": 1639,
+      "rrp": 229.99,
+      "offers": [
+        {
+          "site": "Bricks Verhuur",
+          "price": 7.5,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 10.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Onsspeelgoed",
+          "price": 10.95,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "+ verzending (?)"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 12.5,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "afhalen"
+        }
+      ],
+      "demand": {
+        "carrying": 4,
+        "unavailable": 0,
+        "score": 36,
+        "label": "Gemiddeld"
+      }
+    },
+    {
+      "number": "42207",
+      "name": "Ferrari SF-24 F1",
+      "themes": [
+        "F1",
+        "Technic"
+      ],
+      "pieces": 1361,
+      "rrp": 229.99,
+      "offers": [
+        {
+          "site": "Bricks Verhuur",
+          "price": 7.5,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 10.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 12.5,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "afhalen"
+        }
+      ],
+      "demand": {
+        "carrying": 3,
+        "unavailable": 0,
+        "score": 27,
+        "label": "Laag"
+      }
+    }
+  ]
+}
