@@ -67,6 +67,17 @@
       "rrp": 700,
       "urls": {},
       "prices": {}
+    },
+    {
+      "number": "42083",
+      "name": "Bugatti Chiron",
+      "themes": [
+        "Technic"
+      ],
+      "pieces": 3599,
+      "rrp": 499,
+      "urls": {},
+      "prices": {}
     }
   ]
 }
