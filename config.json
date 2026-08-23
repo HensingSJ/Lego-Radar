@@ -5,10 +5,7 @@
     "HuurjeBricks",
     "Bricks Verhuur",
     "Onsspeelgoed",
-    "Blokkenhuren",
-    "https://berghbricks.nl/",
-    "https://www.easybricks.nl/",
-    "https://www.allemaalsteentjes.nl/"
+    "Blokkenhuren"
   ],
   "sets": [
     {
@@ -36,25 +33,13 @@
       "prices": {}
     },
     {
-      "number": "10316",
-      "name": "LEGO THE LORD OF THE RINGS: RIVENDELL",
+      "number": "75252",
+      "name": "Imperial Star Destroyer",
       "themes": [
-        "Icons",
-        "Lord of the Rinsg"
+        "Star Wars"
       ],
-      "pieces": 6167,
-      "rrp": 414,
-      "urls": {},
-      "prices": {}
-    },
-    {
-      "number": "42171",
-      "name": "Mercedes-AMG F1 W14 E Performance",
-      "themes": [
-        "F1"
-      ],
-      "pieces": 1642,
-      "rrp": 161,
+      "pieces": 4784,
+      "rrp": 700,
       "urls": {},
       "prices": {}
     }
