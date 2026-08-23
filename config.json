@@ -7,7 +7,8 @@
     "Onsspeelgoed",
     "Blokkenhuren",
     "https://berghbricks.nl/",
-    "https://www.easybricks.nl/"
+    "https://www.easybricks.nl/",
+    "https://www.allemaalsteentjes.nl/"
   ],
   "sets": [
     {
@@ -43,6 +44,17 @@
       ],
       "pieces": 6167,
       "rrp": 414,
+      "urls": {},
+      "prices": {}
+    },
+    {
+      "number": "42171",
+      "name": "Mercedes-AMG F1 W14 E Performance",
+      "themes": [
+        "F1"
+      ],
+      "pieces": 1642,
+      "rrp": 161,
       "urls": {},
       "prices": {}
     }
