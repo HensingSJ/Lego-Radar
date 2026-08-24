@@ -36,13 +36,9 @@
       "found": 2,
       "issues": [
         "Bouwsteenwinkel: prijs niet gelezen",
-        "Blokjes Te Huur: prijs niet gelezen",
-        "HuurjeBricks: niet gevonden",
-        "Blokkenhuren: robots",
-        "https://berghbricks.nl/: niet gevonden",
-        "https://www.easybricks.nl/: niet gevonden",
-        "https://www.allemaalsteentjes.nl/: niet gevonden"
+        "Blokjes Te Huur: prijs niet gelezen"
       ],
+      "missing": 5,
       "image": "https://cdn.rebrickable.com/media/sets/42206-1/148445.jpg"
     },
     {
@@ -72,14 +68,9 @@
       "found": 1,
       "issues": [
         "Bouwsteenwinkel: prijs niet gelezen",
-        "Blokjes Te Huur: prijs niet gelezen",
-        "HuurjeBricks: niet gevonden",
-        "Onsspeelgoed: niet gevonden",
-        "Blokkenhuren: robots",
-        "https://berghbricks.nl/: niet gevonden",
-        "https://www.easybricks.nl/: niet gevonden",
-        "https://www.allemaalsteentjes.nl/: niet gevonden"
+        "Blokjes Te Huur: prijs niet gelezen"
       ],
+      "missing": 6,
       "image": "https://cdn.rebrickable.com/media/sets/42207-1/148295.jpg"
     },
     {
@@ -109,13 +100,9 @@
       "issues": [
         "Bouwsteenwinkel: prijs niet gelezen",
         "Blokjes Te Huur: prijs niet gelezen",
-        "HuurjeBricks: prijs niet gelezen",
-        "Onsspeelgoed: niet gevonden",
-        "Blokkenhuren: niet gevonden",
-        "https://berghbricks.nl/: niet gevonden",
-        "https://www.easybricks.nl/: niet gevonden",
-        "https://www.allemaalsteentjes.nl/: niet gevonden"
+        "HuurjeBricks: prijs niet gelezen"
       ],
+      "missing": 5,
       "image": "https://cdn.rebrickable.com/media/sets/10316-1/132394.jpg"
     },
     {
@@ -145,14 +132,9 @@
       "found": 1,
       "issues": [
         "Bouwsteenwinkel: prijs niet gelezen",
-        "Blokjes Te Huur: prijs niet gelezen",
-        "HuurjeBricks: niet gevonden",
-        "Onsspeelgoed: niet gevonden",
-        "Blokkenhuren: robots",
-        "https://berghbricks.nl/: niet gevonden",
-        "https://www.easybricks.nl/: niet gevonden",
-        "https://www.allemaalsteentjes.nl/: niet gevonden"
+        "Blokjes Te Huur: prijs niet gelezen"
       ],
+      "missing": 6,
       "image": "https://cdn.rebrickable.com/media/sets/42171-1/137095.jpg"
     },
     {
@@ -181,14 +163,9 @@
       "found": 1,
       "issues": [
         "Bouwsteenwinkel: prijs niet gelezen",
-        "Blokjes Te Huur: prijs niet gelezen",
-        "HuurjeBricks: niet gevonden",
-        "Onsspeelgoed: niet gevonden",
-        "Blokkenhuren: niet gevonden",
-        "https://berghbricks.nl/: niet gevonden",
-        "https://www.easybricks.nl/: niet gevonden",
-        "https://www.allemaalsteentjes.nl/: niet gevonden"
+        "Blokjes Te Huur: prijs niet gelezen"
       ],
+      "missing": 6,
       "image": "https://cdn.rebrickable.com/media/sets/75252-1/22674.jpg"
     },
     {
@@ -218,13 +195,9 @@
       "issues": [
         "Bouwsteenwinkel: prijs niet gelezen",
         "Blokjes Te Huur: prijs niet gelezen",
-        "HuurjeBricks: prijs niet gelezen",
-        "Onsspeelgoed: niet gevonden",
-        "Blokkenhuren: niet gevonden",
-        "https://berghbricks.nl/: niet gevonden",
-        "https://www.easybricks.nl/: niet gevonden",
-        "https://www.allemaalsteentjes.nl/: niet gevonden"
+        "HuurjeBricks: prijs niet gelezen"
       ],
+      "missing": 5,
       "image": "https://cdn.rebrickable.com/media/sets/42083-1/8941.jpg"
     },
     {
@@ -253,15 +226,9 @@
       },
       "found": 1,
       "issues": [
-        "Bouwsteenwinkel: prijs niet gelezen",
-        "Blokjes Te Huur: niet gevonden",
-        "HuurjeBricks: niet gevonden",
-        "Onsspeelgoed: niet gevonden",
-        "Blokkenhuren: niet gevonden",
-        "https://berghbricks.nl/: niet gevonden",
-        "https://www.easybricks.nl/: niet gevonden",
-        "https://www.allemaalsteentjes.nl/: niet gevonden"
+        "Bouwsteenwinkel: prijs niet gelezen"
       ],
+      "missing": 7,
       "image": "https://cdn.rebrickable.com/media/sets/42228-1/168806.jpg"
     },
     {
@@ -290,14 +257,9 @@
       "found": 1,
       "issues": [
         "Bouwsteenwinkel: prijs niet gelezen",
-        "Blokjes Te Huur: niet gevonden",
-        "HuurjeBricks: prijs niet gelezen",
-        "Onsspeelgoed: niet gevonden",
-        "Blokkenhuren: niet gevonden",
-        "https://berghbricks.nl/: niet gevonden",
-        "https://www.easybricks.nl/: niet gevonden",
-        "https://www.allemaalsteentjes.nl/: niet gevonden"
+        "HuurjeBricks: prijs niet gelezen"
       ],
+      "missing": 6,
       "image": "https://cdn.rebrickable.com/media/sets/72153-1/168693.jpg"
     }
   ],
@@ -305,69 +267,24 @@
     "failures": [
       "42206 Bouwsteenwinkel: prijs niet gelezen",
       "42206 Blokjes Te Huur: prijs niet gelezen",
-      "42206 HuurjeBricks: niet gevonden",
-      "42206 Blokkenhuren: robots",
-      "42206 https://berghbricks.nl/: niet gevonden",
-      "42206 https://www.easybricks.nl/: niet gevonden",
-      "42206 https://www.allemaalsteentjes.nl/: niet gevonden",
       "42207 Bouwsteenwinkel: prijs niet gelezen",
       "42207 Blokjes Te Huur: prijs niet gelezen",
-      "42207 HuurjeBricks: niet gevonden",
-      "42207 Onsspeelgoed: niet gevonden",
-      "42207 Blokkenhuren: robots",
-      "42207 https://berghbricks.nl/: niet gevonden",
-      "42207 https://www.easybricks.nl/: niet gevonden",
-      "42207 https://www.allemaalsteentjes.nl/: niet gevonden",
       "10316 Bouwsteenwinkel: prijs niet gelezen",
       "10316 Blokjes Te Huur: prijs niet gelezen",
       "10316 HuurjeBricks: prijs niet gelezen",
-      "10316 Onsspeelgoed: niet gevonden",
-      "10316 Blokkenhuren: niet gevonden",
-      "10316 https://berghbricks.nl/: niet gevonden",
-      "10316 https://www.easybricks.nl/: niet gevonden",
-      "10316 https://www.allemaalsteentjes.nl/: niet gevonden",
       "42171 Bouwsteenwinkel: prijs niet gelezen",
       "42171 Blokjes Te Huur: prijs niet gelezen",
-      "42171 HuurjeBricks: niet gevonden",
-      "42171 Onsspeelgoed: niet gevonden",
-      "42171 Blokkenhuren: robots",
-      "42171 https://berghbricks.nl/: niet gevonden",
-      "42171 https://www.easybricks.nl/: niet gevonden",
-      "42171 https://www.allemaalsteentjes.nl/: niet gevonden",
       "75252 Bouwsteenwinkel: prijs niet gelezen",
       "75252 Blokjes Te Huur: prijs niet gelezen",
-      "75252 HuurjeBricks: niet gevonden",
-      "75252 Onsspeelgoed: niet gevonden",
-      "75252 Blokkenhuren: niet gevonden",
-      "75252 https://berghbricks.nl/: niet gevonden",
-      "75252 https://www.easybricks.nl/: niet gevonden",
-      "75252 https://www.allemaalsteentjes.nl/: niet gevonden",
       "42083 Bouwsteenwinkel: prijs niet gelezen",
       "42083 Blokjes Te Huur: prijs niet gelezen",
       "42083 HuurjeBricks: prijs niet gelezen",
-      "42083 Onsspeelgoed: niet gevonden",
-      "42083 Blokkenhuren: niet gevonden",
-      "42083 https://berghbricks.nl/: niet gevonden",
-      "42083 https://www.easybricks.nl/: niet gevonden",
-      "42083 https://www.allemaalsteentjes.nl/: niet gevonden",
       "42228 Bouwsteenwinkel: prijs niet gelezen",
-      "42228 Blokjes Te Huur: niet gevonden",
-      "42228 HuurjeBricks: niet gevonden",
-      "42228 Onsspeelgoed: niet gevonden",
-      "42228 Blokkenhuren: niet gevonden",
-      "42228 https://berghbricks.nl/: niet gevonden",
-      "42228 https://www.easybricks.nl/: niet gevonden",
-      "42228 https://www.allemaalsteentjes.nl/: niet gevonden",
       "72153 Bouwsteenwinkel: prijs niet gelezen",
-      "72153 Blokjes Te Huur: niet gevonden",
-      "72153 HuurjeBricks: prijs niet gelezen",
-      "72153 Onsspeelgoed: niet gevonden",
-      "72153 Blokkenhuren: niet gevonden",
-      "72153 https://berghbricks.nl/: niet gevonden",
-      "72153 https://www.easybricks.nl/: niet gevonden",
-      "72153 https://www.allemaalsteentjes.nl/: niet gevonden"
+      "72153 HuurjeBricks: prijs niet gelezen"
     ],
     "sites": 9,
-    "offers_ok": 9
+    "offers_ok": 9,
+    "missing": 46
   }
 }
