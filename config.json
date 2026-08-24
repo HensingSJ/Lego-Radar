@@ -78,6 +78,18 @@
       "rrp": 499,
       "urls": {},
       "prices": {}
+    },
+    {
+      "number": "42228",
+      "name": "",
+      "themes": [
+        "F1",
+        "Technic"
+      ],
+      "pieces": null,
+      "rrp": null,
+      "urls": {},
+      "prices": {}
     }
   ]
 }
