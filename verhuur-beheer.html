@@ -53,6 +53,21 @@
   .urlrow .in{flex:1;min-width:180px}
   .del{color:var(--red);cursor:pointer;font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:700;border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:transparent}
   .hint{font-size:12px;color:var(--grey);line-height:1.5;margin-top:8px}
+  .listbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+  .setrow{border:1px solid var(--line);border-radius:12px;margin-bottom:8px;background:var(--panel2);overflow:hidden}
+  .setrow .hdr{display:flex;align-items:center;gap:10px;padding:11px 12px;cursor:pointer}
+  .setrow .hdr:hover{background:rgba(255,255,255,.03)}
+  .tw{color:var(--mute);width:14px;flex:0 0 auto;font-size:12px}
+  .hnr{font-family:"JetBrains Mono",monospace;font-weight:800;color:var(--amber);flex:0 0 auto}
+  .hnm{font-weight:700;flex:1;min-width:40px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .htags,.hbadges{display:flex;gap:4px;flex:0 0 auto}
+  .minitag{font-family:"JetBrains Mono",monospace;font-size:10px;color:#cfe0ff;background:rgba(111,168,255,.12);border:1px solid #2c5aa8;border-radius:99px;padding:2px 7px}
+  .badge{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:800;border-radius:99px;padding:2px 7px}
+  .badge.bad{background:rgba(255,90,95,.16);color:var(--red)}
+  .badge.warn{background:rgba(255,199,44,.16);color:var(--amber)}
+  .badge.info{background:rgba(140,148,166,.14);color:var(--mute)}
+  .setrow .hdr .del{color:var(--red);flex:0 0 auto;border:none;padding:0 2px}
+  .setrow .body{padding:6px 12px 14px;border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -94,6 +109,14 @@
     <div class="hint">Kosten (lidmaatschap/verzending) en het zoekpatroon van een verhuurder staan in prijsrace.py. Hier bepaal je alleen wélke verhuurders meedoen en hun eventuele handmatige URL per set.</div>
   </div>
 
+  <div class="listbar">
+    <input id="q" class="in" placeholder="🔍 zoek op nummer, naam of tag" style="flex:1;min-width:160px">
+    <span class="hint" id="setcount" style="margin:0"></span>
+  </div>
+  <div class="listbar">
+    <input id="quicknums" class="in" placeholder="Snel toevoegen: setnummers, bv. 42206, 42207, 21061" style="flex:1;min-width:220px">
+    <button class="btn" onclick="quickAdd()">＋ Toevoegen</button>
+  </div>
   <div id="setlist"></div>
 </div>
 
@@ -121,72 +144,102 @@ function renderSites(){
   el.appendChild(add);
 }
 
+let searchTerm = "";
+function setBadges(s, dup){
+  const b=[]; const n=String(s.number||"").trim();
+  if(dup.has(n)) b.push(["dubbel","bad"]);
+  if(!(s.name||"").trim()) b.push(["geen naam","warn"]);
+  if(!(s.themes||[]).length) b.push(["geen tags","warn"]);
+  if(Object.values(s.prices||{}).some(v=>v!=null&&v!=="")) b.push(["prijs handmatig","info"]);
+  const urlc=Object.values(s.urls||{}).filter(Boolean).length;
+  if(urlc) b.push([urlc+"× URL","info"]);
+  return b;
+}
+function editorBody(s){
+  const body=document.createElement("div"); body.className="body";
+  const row=document.createElement("div"); row.className="row";
+  row.innerHTML=
+    '<input class="in sm" placeholder="setnr" value="'+(s.number||"")+'" data-k="number">'+
+    '<input class="in name" placeholder="naam" value="'+(s.name||"").replace(/"/g,"&quot;")+'" data-k="name">'+
+    '<input class="in sm" placeholder="onderdelen" value="'+(s.pieces||"")+'" data-k="pieces">'+
+    '<input class="in sm" placeholder="adviesprijs" value="'+(s.rrp||"")+'" data-k="rrp">';
+  row.querySelectorAll("input").forEach(inp=>{
+    inp.oninput=()=>{ const k=inp.dataset.k; s[k]=(k==="pieces"||k==="rrp")?(parseFloat(inp.value)||""):inp.value;
+      if(k==="number"){ $("setcount") && (clearTimeout(window._rt), window._rt=setTimeout(render,600)); } };
+  });
+  body.appendChild(row);
+  const tl=document.createElement("div"); tl.className="row"; tl.innerHTML='<span class="lbl">Tags (multi)</span>';
+  const tagbox=document.createElement("div"); tagbox.className="chips";
+  (s.themes||[]).forEach((t,ti)=>{ const c=document.createElement("span"); c.className="chip tag";
+    c.innerHTML=t+' <span class="x">✕</span>'; c.querySelector(".x").onclick=()=>{ s.themes.splice(ti,1); render(); }; tagbox.appendChild(c); });
+  const ti=document.createElement("input"); ti.className="in sm"; ti.placeholder="+ tag, Enter";
+  ti.onkeydown=e=>{ if(e.key==="Enter"&&ti.value.trim()){ s.themes=s.themes||[]; s.themes.push(ti.value.trim()); render(); } };
+  tagbox.appendChild(ti); tl.appendChild(tagbox); body.appendChild(tl);
+  const quick=document.createElement("div"); quick.className="quick";
+  COMMON_TAGS.forEach(t=>{ const b=document.createElement("span"); b.className="q"; b.textContent="+ "+t;
+    b.onclick=()=>{ s.themes=s.themes||[]; if(!s.themes.includes(t)){ s.themes.push(t); render(); } }; quick.appendChild(b); });
+  body.appendChild(quick);
+  const det=document.createElement("details");
+  const filled=Object.values(s.urls||{}).filter(Boolean).length;
+  det.innerHTML="<summary>URL &amp; prijs per verhuurder ("+filled+" URL's ingevuld · leeg = automatisch)</summary>";
+  cfg.sites.forEach(site=>{
+    const ur=document.createElement("div"); ur.className="urlrow";
+    const urlv=((s.urls&&s.urls[site])||"").replace(/"/g,"&quot;");
+    const prijsv=((s.prices&&s.prices[site])!=null?s.prices[site]:"");
+    ur.innerHTML='<span class="sname">'+site+'</span>'
+      +'<input class="in" placeholder="auto-zoeken (URL)" value="'+urlv+'">'
+      +'<input class="in" style="max-width:118px;flex:0 0 auto" placeholder="prijs €/wk" value="'+prijsv+'">';
+    const ins=ur.querySelectorAll("input");
+    ins[0].oninput=e=>{ s.urls=s.urls||{}; s.urls[site]=e.target.value.trim(); };
+    ins[1].oninput=e=>{ s.prices=s.prices||{}; const v=e.target.value.trim();
+      if(v) s.prices[site]=parseFloat(v.replace(",",".")); else delete s.prices[site]; };
+    det.appendChild(ur);
+  });
+  body.appendChild(det);
+  return body;
+}
 function renderSets(){
-  const el = $("setlist"); el.innerHTML = "";
+  const el=$("setlist"); el.innerHTML="";
+  const counts={}; cfg.sets.forEach(s=>{const n=String(s.number||"").trim(); if(n)counts[n]=(counts[n]||0)+1;});
+  const dup=new Set(Object.keys(counts).filter(n=>counts[n]>1));
+  const q=searchTerm.trim().toLowerCase();
+  const match=s=> !q || String(s.number).toLowerCase().includes(q) || (s.name||"").toLowerCase().includes(q) || (s.themes||[]).join(" ").toLowerCase().includes(q);
+  let shown=0;
   cfg.sets.forEach((s,si)=>{
-    const card = document.createElement("div"); card.className="setcard";
-
-    // basisregel
-    const row = document.createElement("div"); row.className="row";
-    row.innerHTML =
-      '<input class="in sm" placeholder="setnr" value="'+(s.number||"")+'" data-k="number">'+
-      '<input class="in name" placeholder="naam" value="'+(s.name||"").replace(/"/g,"&quot;")+'" data-k="name">'+
-      '<input class="in sm" placeholder="onderdelen" value="'+(s.pieces||"")+'" data-k="pieces">'+
-      '<input class="in sm" placeholder="adviesprijs" value="'+(s.rrp||"")+'" data-k="rrp">'+
-      '<span class="del" title="verwijder set">✕ set</span>';
-    row.querySelectorAll("input").forEach(inp=>{
-      inp.oninput = ()=>{ const k=inp.dataset.k; s[k] = (k==="pieces"||k==="rrp") ? (parseFloat(inp.value)||"") : inp.value; };
-    });
-    row.querySelector(".del").onclick = ()=>{ cfg.sets.splice(si,1); render(); };
-    card.appendChild(row);
-
-    // tags
-    const tl = document.createElement("div"); tl.className="row";
-    tl.innerHTML = '<span class="lbl">Tags (multi)</span>';
-    const tagbox = document.createElement("div"); tagbox.className="chips";
-    (s.themes||[]).forEach((t,ti)=>{
-      const c=document.createElement("span"); c.className="chip tag";
-      c.innerHTML = t + ' <span class="x">✕</span>';
-      c.querySelector(".x").onclick=()=>{ s.themes.splice(ti,1); render(); };
-      tagbox.appendChild(c);
-    });
-    const ti = document.createElement("input"); ti.className="in sm"; ti.placeholder="+ tag, Enter";
-    ti.onkeydown = e=>{ if(e.key==="Enter"&&ti.value.trim()){ s.themes=s.themes||[]; s.themes.push(ti.value.trim()); render(); } };
-    tagbox.appendChild(ti);
-    tl.appendChild(tagbox);
-    card.appendChild(tl);
-
-    const quick = document.createElement("div"); quick.className="quick";
-    COMMON_TAGS.forEach(t=>{ const b=document.createElement("span"); b.className="q"; b.textContent="+ "+t;
-      b.onclick=()=>{ s.themes=s.themes||[]; if(!s.themes.includes(t)){ s.themes.push(t); render(); } }; quick.appendChild(b); });
-    card.appendChild(quick);
-
-    // url-overrides
-    const det = document.createElement("details");
-    const filled = Object.values(s.urls||{}).filter(Boolean).length;
-    det.innerHTML = "<summary>URL &amp; prijs per verhuurder ("+filled+" URL's ingevuld · leeg = automatisch)</summary>";
-    cfg.sites.forEach(site=>{
-      const ur=document.createElement("div"); ur.className="urlrow";
-      const urlv=((s.urls&&s.urls[site])||"").replace(/"/g,"&quot;");
-      const prijsv=((s.prices&&s.prices[site])!=null?s.prices[site]:"");
-      ur.innerHTML='<span class="sname">'+site+'</span>'
-        +'<input class="in" placeholder="auto-zoeken (URL)" value="'+urlv+'">'
-        +'<input class="in" style="max-width:118px;flex:0 0 auto" placeholder="prijs €/wk" value="'+prijsv+'">';
-      const ins=ur.querySelectorAll("input");
-      ins[0].oninput=e=>{ s.urls=s.urls||{}; s.urls[site]=e.target.value.trim(); };
-      ins[1].oninput=e=>{ s.prices=s.prices||{}; const v=e.target.value.trim();
-        if(v) s.prices[site]=parseFloat(v.replace(",",".")); else delete s.prices[site]; };
-      det.appendChild(ur);
-    });
-    card.appendChild(det);
+    if(!match(s)) return; shown++;
+    const card=document.createElement("div"); card.className="setrow";
+    const hdr=document.createElement("div"); hdr.className="hdr";
+    const tagmini=(s.themes||[]).map(t=>'<span class="minitag">'+t+'</span>').join("");
+    const badges=setBadges(s,dup).map(x=>'<span class="badge '+x[1]+'">'+x[0]+'</span>').join("");
+    hdr.innerHTML='<span class="tw">'+(s._open?"▾":"▸")+'</span>'
+      +'<span class="hnr">'+(s.number||"—")+'</span>'
+      +'<span class="hnm">'+((s.name||"").replace(/</g,"&lt;")||"naamloos")+'</span>'
+      +'<span class="htags">'+tagmini+'</span><span class="hbadges">'+badges+'</span>'
+      +'<span class="del" title="verwijder">✕</span>';
+    hdr.querySelector(".del").onclick=(e)=>{ e.stopPropagation(); if(confirm("Set "+(s.number||"")+" verwijderen?")){ cfg.sets.splice(si,1); render(); } };
+    hdr.onclick=()=>{ s._open=!s._open; render(); };
+    card.appendChild(hdr);
+    if(s._open) card.appendChild(editorBody(s));
     el.appendChild(card);
   });
+  const c=$("setcount"); if(c) c.textContent=shown+" / "+cfg.sets.length+" sets";
 }
 
 function render(){ renderSites(); renderSets(); }
 
-function addSet(){ cfg.sets.push({number:"",name:"",themes:[],pieces:"",rrp:"",urls:{}}); render();
-  window.scrollTo(0,document.body.scrollHeight); }
+function addSet(){ cfg.sets.unshift({number:"",name:"",themes:[],pieces:"",rrp:"",urls:{},prices:{},_open:true});
+  searchTerm=""; if($("q")) $("q").value=""; render(); window.scrollTo(0,0); }
+
+function quickAdd(){
+  const raw=$("quicknums").value; if(!raw.trim()) return;
+  const nums=raw.split(/[\s,;]+/).map(x=>x.trim()).filter(Boolean);
+  const existing=new Set(cfg.sets.map(s=>String(s.number).trim()));
+  let added=0;
+  nums.forEach(n=>{ if(!existing.has(n)){ cfg.sets.push({number:n,name:"",themes:[],pieces:"",rrp:"",urls:{},prices:{},_open:false}); existing.add(n); added++; } });
+  $("quicknums").value="";
+  render();
+  if(added===0) alert("Niets toegevoegd — die nummers staan er al.");
+}
 
 function buildClean(){
   return {sites:cfg.sites, sets:cfg.sets.map(s=>({
@@ -251,6 +304,7 @@ $("imp").addEventListener("change", ev=>{
   r.readAsText(f);
 });
 ghLoadSettings();
+if($("q")) $("q").oninput = e=>{ searchTerm=e.target.value; renderSets(); };
 render();
 </script>
 </body>
