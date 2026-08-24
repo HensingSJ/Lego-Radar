@@ -14,7 +14,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 7.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -62,7 +62,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 7.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -103,7 +103,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 7.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -137,24 +137,25 @@
       "number": "42171",
       "name": "Mercedes-AMG F1 W14 E Performance",
       "themes": [
-        "F1"
+        "F1",
+        "Technic"
       ],
       "pieces": 1642,
       "rrp": 161,
       "offers": [
-        {
-          "site": "Bouwsteenwinkel",
-          "price": 4.25,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
         {
           "site": "Bricks Verhuur",
           "price": 7.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 10.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
@@ -185,7 +186,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 7.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -226,7 +227,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 7.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -264,17 +265,17 @@
     },
     {
       "number": "42228",
-      "name": "42228",
+      "name": "McLaren MCL39",
       "themes": [
         "F1",
         "Technic"
       ],
-      "pieces": null,
-      "rrp": null,
+      "pieces": 1675,
+      "rrp": 161,
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 7.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
