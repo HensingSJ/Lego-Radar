@@ -14,7 +14,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.0,
+          "price": 4.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -62,7 +62,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.0,
+          "price": 4.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -103,7 +103,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.0,
+          "price": 4.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -144,7 +144,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.0,
+          "price": 4.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -185,7 +185,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 6.25,
+          "price": 4.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -226,7 +226,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 6.25,
+          "price": 4.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -255,6 +255,48 @@
       "found": 3,
       "issues": [
         "HuurjeBricks: prijs niet gelezen",
+        "Onsspeelgoed: niet gevonden",
+        "Blokkenhuren: niet gevonden",
+        "https://berghbricks.nl/: niet gevonden",
+        "https://www.easybricks.nl/: niet gevonden",
+        "https://www.allemaalsteentjes.nl/: niet gevonden"
+      ]
+    },
+    {
+      "number": "42228",
+      "name": "42228",
+      "themes": [
+        "F1",
+        "Technic"
+      ],
+      "pieces": null,
+      "rrp": null,
+      "offers": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 7.5,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ],
+      "demand": {
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
+      },
+      "found": 2,
+      "issues": [
+        "Blokjes Te Huur: niet gevonden",
+        "HuurjeBricks: niet gevonden",
         "Onsspeelgoed: niet gevonden",
         "Blokkenhuren: niet gevonden",
         "https://berghbricks.nl/: niet gevonden",
@@ -304,9 +346,16 @@
       "42083 Blokkenhuren: niet gevonden",
       "42083 https://berghbricks.nl/: niet gevonden",
       "42083 https://www.easybricks.nl/: niet gevonden",
-      "42083 https://www.allemaalsteentjes.nl/: niet gevonden"
+      "42083 https://www.allemaalsteentjes.nl/: niet gevonden",
+      "42228 Blokjes Te Huur: niet gevonden",
+      "42228 HuurjeBricks: niet gevonden",
+      "42228 Onsspeelgoed: niet gevonden",
+      "42228 Blokkenhuren: niet gevonden",
+      "42228 https://berghbricks.nl/: niet gevonden",
+      "42228 https://www.easybricks.nl/: niet gevonden",
+      "42228 https://www.allemaalsteentjes.nl/: niet gevonden"
     ],
     "sites": 9,
-    "offers_ok": 14
+    "offers_ok": 16
   }
 }
