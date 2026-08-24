@@ -84,7 +84,7 @@
     },
     {
       "number": "10316",
-      "name": "LEGO THE LORD OF THE RINGS: RIVENDELL",
+      "name": "The Lord of the Rings: Rivendell",
       "themes": [
         "Icons"
       ],
@@ -263,6 +263,42 @@
         "https://www.allemaalsteentjes.nl/: niet gevonden"
       ],
       "image": "https://cdn.rebrickable.com/media/sets/42228-1/168806.jpg"
+    },
+    {
+      "number": "72153",
+      "name": "Venusaur, Charizard and Blastoise",
+      "themes": [
+        "Pokémon"
+      ],
+      "pieces": 6838,
+      "rrp": null,
+      "offers": [
+        {
+          "site": "Bricks Verhuur",
+          "price": 7.5,
+          "status": "uitverhuurd",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ],
+      "demand": {
+        "carrying": 1,
+        "unavailable": 1,
+        "score": 64,
+        "label": "Hoog"
+      },
+      "found": 1,
+      "issues": [
+        "Bouwsteenwinkel: prijs niet gelezen",
+        "Blokjes Te Huur: niet gevonden",
+        "HuurjeBricks: prijs niet gelezen",
+        "Onsspeelgoed: niet gevonden",
+        "Blokkenhuren: niet gevonden",
+        "https://berghbricks.nl/: niet gevonden",
+        "https://www.easybricks.nl/: niet gevonden",
+        "https://www.allemaalsteentjes.nl/: niet gevonden"
+      ],
+      "image": "https://cdn.rebrickable.com/media/sets/72153-1/168693.jpg"
     }
   ],
   "run": {
@@ -321,9 +357,17 @@
       "42228 Blokkenhuren: niet gevonden",
       "42228 https://berghbricks.nl/: niet gevonden",
       "42228 https://www.easybricks.nl/: niet gevonden",
-      "42228 https://www.allemaalsteentjes.nl/: niet gevonden"
+      "42228 https://www.allemaalsteentjes.nl/: niet gevonden",
+      "72153 Bouwsteenwinkel: prijs niet gelezen",
+      "72153 Blokjes Te Huur: niet gevonden",
+      "72153 HuurjeBricks: prijs niet gelezen",
+      "72153 Onsspeelgoed: niet gevonden",
+      "72153 Blokkenhuren: niet gevonden",
+      "72153 https://berghbricks.nl/: niet gevonden",
+      "72153 https://www.easybricks.nl/: niet gevonden",
+      "72153 https://www.allemaalsteentjes.nl/: niet gevonden"
     ],
     "sites": 9,
-    "offers_ok": 8
+    "offers_ok": 9
   }
 }
