@@ -14,7 +14,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 4.0,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -39,7 +39,16 @@
         "unavailable": 0,
         "score": 27,
         "label": "Laag"
-      }
+      },
+      "found": 3,
+      "issues": [
+        "Blokjes Te Huur: prijs niet gelezen",
+        "HuurjeBricks: niet gevonden",
+        "Blokkenhuren: robots",
+        "https://berghbricks.nl/: niet gevonden",
+        "https://www.easybricks.nl/: niet gevonden",
+        "https://www.allemaalsteentjes.nl/: niet gevonden"
+      ]
     },
     {
       "number": "42207",
@@ -53,7 +62,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 4.0,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -71,7 +80,17 @@
         "unavailable": 0,
         "score": 18,
         "label": "Laag"
-      }
+      },
+      "found": 2,
+      "issues": [
+        "Blokjes Te Huur: prijs niet gelezen",
+        "HuurjeBricks: niet gevonden",
+        "Onsspeelgoed: niet gevonden",
+        "Blokkenhuren: robots",
+        "https://berghbricks.nl/: niet gevonden",
+        "https://www.easybricks.nl/: niet gevonden",
+        "https://www.allemaalsteentjes.nl/: niet gevonden"
+      ]
     },
     {
       "number": "10316",
@@ -84,7 +103,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 4.0,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -102,7 +121,17 @@
         "unavailable": 0,
         "score": 18,
         "label": "Laag"
-      }
+      },
+      "found": 2,
+      "issues": [
+        "Blokjes Te Huur: prijs niet gelezen",
+        "HuurjeBricks: prijs niet gelezen",
+        "Onsspeelgoed: niet gevonden",
+        "Blokkenhuren: niet gevonden",
+        "https://berghbricks.nl/: niet gevonden",
+        "https://www.easybricks.nl/: niet gevonden",
+        "https://www.allemaalsteentjes.nl/: niet gevonden"
+      ]
     },
     {
       "number": "42171",
@@ -115,7 +144,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 4.0,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -133,7 +162,17 @@
         "unavailable": 0,
         "score": 18,
         "label": "Laag"
-      }
+      },
+      "found": 2,
+      "issues": [
+        "Blokjes Te Huur: prijs niet gelezen",
+        "HuurjeBricks: niet gevonden",
+        "Onsspeelgoed: niet gevonden",
+        "Blokkenhuren: robots",
+        "https://berghbricks.nl/: niet gevonden",
+        "https://www.easybricks.nl/: niet gevonden",
+        "https://www.allemaalsteentjes.nl/: niet gevonden"
+      ]
     },
     {
       "number": "75252",
@@ -146,7 +185,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 6.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -164,7 +203,17 @@
         "unavailable": 0,
         "score": 18,
         "label": "Laag"
-      }
+      },
+      "found": 2,
+      "issues": [
+        "Blokjes Te Huur: prijs niet gelezen",
+        "HuurjeBricks: niet gevonden",
+        "Onsspeelgoed: niet gevonden",
+        "Blokkenhuren: niet gevonden",
+        "https://berghbricks.nl/: niet gevonden",
+        "https://www.easybricks.nl/: niet gevonden",
+        "https://www.allemaalsteentjes.nl/: niet gevonden"
+      ]
     },
     {
       "number": "42083",
@@ -177,7 +226,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 6.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -202,7 +251,62 @@
         "unavailable": 0,
         "score": 27,
         "label": "Laag"
-      }
+      },
+      "found": 3,
+      "issues": [
+        "HuurjeBricks: prijs niet gelezen",
+        "Onsspeelgoed: niet gevonden",
+        "Blokkenhuren: niet gevonden",
+        "https://berghbricks.nl/: niet gevonden",
+        "https://www.easybricks.nl/: niet gevonden",
+        "https://www.allemaalsteentjes.nl/: niet gevonden"
+      ]
     }
-  ]
+  ],
+  "run": {
+    "failures": [
+      "42206 Blokjes Te Huur: prijs niet gelezen",
+      "42206 HuurjeBricks: niet gevonden",
+      "42206 Blokkenhuren: robots",
+      "42206 https://berghbricks.nl/: niet gevonden",
+      "42206 https://www.easybricks.nl/: niet gevonden",
+      "42206 https://www.allemaalsteentjes.nl/: niet gevonden",
+      "42207 Blokjes Te Huur: prijs niet gelezen",
+      "42207 HuurjeBricks: niet gevonden",
+      "42207 Onsspeelgoed: niet gevonden",
+      "42207 Blokkenhuren: robots",
+      "42207 https://berghbricks.nl/: niet gevonden",
+      "42207 https://www.easybricks.nl/: niet gevonden",
+      "42207 https://www.allemaalsteentjes.nl/: niet gevonden",
+      "10316 Blokjes Te Huur: prijs niet gelezen",
+      "10316 HuurjeBricks: prijs niet gelezen",
+      "10316 Onsspeelgoed: niet gevonden",
+      "10316 Blokkenhuren: niet gevonden",
+      "10316 https://berghbricks.nl/: niet gevonden",
+      "10316 https://www.easybricks.nl/: niet gevonden",
+      "10316 https://www.allemaalsteentjes.nl/: niet gevonden",
+      "42171 Blokjes Te Huur: prijs niet gelezen",
+      "42171 HuurjeBricks: niet gevonden",
+      "42171 Onsspeelgoed: niet gevonden",
+      "42171 Blokkenhuren: robots",
+      "42171 https://berghbricks.nl/: niet gevonden",
+      "42171 https://www.easybricks.nl/: niet gevonden",
+      "42171 https://www.allemaalsteentjes.nl/: niet gevonden",
+      "75252 Blokjes Te Huur: prijs niet gelezen",
+      "75252 HuurjeBricks: niet gevonden",
+      "75252 Onsspeelgoed: niet gevonden",
+      "75252 Blokkenhuren: niet gevonden",
+      "75252 https://berghbricks.nl/: niet gevonden",
+      "75252 https://www.easybricks.nl/: niet gevonden",
+      "75252 https://www.allemaalsteentjes.nl/: niet gevonden",
+      "42083 HuurjeBricks: prijs niet gelezen",
+      "42083 Onsspeelgoed: niet gevonden",
+      "42083 Blokkenhuren: niet gevonden",
+      "42083 https://berghbricks.nl/: niet gevonden",
+      "42083 https://www.easybricks.nl/: niet gevonden",
+      "42083 https://www.allemaalsteentjes.nl/: niet gevonden"
+    ],
+    "sites": 9,
+    "offers_ok": 14
+  }
 }
