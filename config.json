@@ -50,11 +50,14 @@
       "number": "42171",
       "name": "Mercedes-AMG F1 W14 E Performance",
       "themes": [
-        "F1"
+        "F1",
+        "Technic"
       ],
       "pieces": 1642,
       "rrp": 161,
-      "urls": {},
+      "urls": {
+        "Bouwsteenwinkel": "https://bouwsteenwinkel.nl/set/lego-technic-mercedes-amg-f1-w14-e-performance-42171-verhuur"
+      },
       "prices": {}
     },
     {
@@ -81,13 +84,13 @@
     },
     {
       "number": "42228",
-      "name": "",
+      "name": "McLaren MCL39",
       "themes": [
         "F1",
         "Technic"
       ],
-      "pieces": null,
-      "rrp": null,
+      "pieces": 1675,
+      "rrp": 161,
       "urls": {},
       "prices": {}
     }
