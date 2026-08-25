@@ -5,7 +5,10 @@
     "HuurjeBricks",
     "Bricks Verhuur",
     "Onsspeelgoed",
-    "Blokkenhuren"
+    "Blokkenhuren",
+    "https://berghbricks.nl/",
+    "https://www.easybricks.nl/",
+    "https://www.allemaalsteentjes.nl/"
   ],
   "sets": [
     {
@@ -29,6 +32,80 @@
       ],
       "pieces": 1361,
       "rrp": 229.99,
+      "urls": {},
+      "prices": {}
+    },
+    {
+      "number": "10316",
+      "name": "The Lord of the Rings: Rivendell",
+      "themes": [
+        "Icons"
+      ],
+      "pieces": 6167,
+      "rrp": 414,
+      "urls": {},
+      "prices": {}
+    },
+    {
+      "number": "42171",
+      "name": "Mercedes-AMG F1 W14 E Performance",
+      "themes": [
+        "F1",
+        "Technic"
+      ],
+      "pieces": 1642,
+      "rrp": 161,
+      "urls": {
+        "Bouwsteenwinkel": "https://bouwsteenwinkel.nl/set/lego-technic-mercedes-amg-f1-w14-e-performance-42171-verhuur",
+        "Blokjes Te Huur": "https://www.blokjestehuur.nl/product/lego-technic-42171-mercedes-amg-f1-w14-huren/",
+        "Bricks Verhuur": "https://www.bricksverhuur.nl/lego-42171-mercedes-amg-f1-w14-e-performance-huren.html",
+        "Blokkenhuren": "https://www.blokkenhuren.nl/product/lego-technic-mercedes-amg-f1-w14-e-performance-42171/",
+        "https://www.allemaalsteentjes.nl/": "https://www.allemaalsteentjes.nl/LEGO-42171-6x6-Mercedes-AMG-F1-W14-E-Performance-verhuur"
+      },
+      "prices": {}
+    },
+    {
+      "number": "75252",
+      "name": "Imperial Star Destroyer",
+      "themes": [
+        "Star Wars"
+      ],
+      "pieces": 4784,
+      "rrp": 700,
+      "urls": {},
+      "prices": {}
+    },
+    {
+      "number": "42083",
+      "name": "Bugatti Chiron",
+      "themes": [
+        "Technic"
+      ],
+      "pieces": 3599,
+      "rrp": 499,
+      "urls": {},
+      "prices": {}
+    },
+    {
+      "number": "42228",
+      "name": "McLaren MCL39",
+      "themes": [
+        "F1",
+        "Technic"
+      ],
+      "pieces": 1675,
+      "rrp": 161,
+      "urls": {},
+      "prices": {}
+    },
+    {
+      "number": "72153",
+      "name": "Venusaur, Charizard and Blastoise",
+      "themes": [
+        "Pokémon"
+      ],
+      "pieces": 6838,
+      "rrp": null,
       "urls": {},
       "prices": {}
     }
