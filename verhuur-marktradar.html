@@ -74,6 +74,13 @@
   .chip.unk{background:rgba(140,148,166,.15);color:var(--grey)}
 
   .foot{font-size:12px;color:var(--grey);line-height:1.55;margin-top:16px;border-left:2px solid var(--line);padding-left:12px}
+  .hrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:2px}
+  .pill{font-family:"JetBrains Mono",monospace;font-weight:800;font-size:12px;padding:5px 10px;border-radius:99px}
+  .pill.ok{background:rgba(55,226,122,.15);color:var(--green)}
+  .pill.bad{background:rgba(255,90,95,.16);color:var(--red)}
+  .pill.mut{background:rgba(140,148,166,.14);color:var(--mute)}
+  .faillist{margin-top:10px;display:flex;flex-direction:column;gap:4px}
+  .failitem{font-family:"JetBrains Mono",monospace;font-size:12px;color:#E7B0B2}
 </style>
 </head>
 <body>
@@ -81,6 +88,7 @@
   <div class="head"><span class="rec"></span><span class="eyebrow">Marktradar</span></div>
   <h1>LEGO Verhuur — vraag &amp; prijs per set</h1>
   <div class="meta" id="meta"></div>
+  <div class="card" id="health" style="margin-bottom:16px;display:none"></div>
 
   <div class="bar">
     <button class="btn" onclick="refreshData()">🔄 Ververs</button>
@@ -184,6 +192,19 @@ function investText(label){
 function render(){
   $("meta").textContent = "Bijgewerkt: " + (DATA.generated||"?") + " · " + (DATA.sets?.length||0) + " sets";
   $("banner").style.display = DATA.source==="mock" ? "inline-block" : "none";
+
+  const run = DATA.run, hp = $("health");
+  if(run){
+    const fails = run.failures || [];
+    let html = '<h2>Status laatste run</h2><div class="hrow">'+
+      '<span class="pill ok">'+(run.offers_ok||0)+' aanbiedingen</span>'+
+      '<span class="pill '+(fails.length?"bad":"ok")+'">'+fails.length+' leesfouten</span>'+
+      '<span class="pill mut">'+(run.missing||0)+'× niet in shop</span></div>';
+    if(fails.length){
+      html += '<div class="faillist">'+fails.map(f=>'<div class="failitem">⚠ '+String(f).replace(/</g,"&lt;")+'</div>').join("")+'</div>';
+    }
+    hp.innerHTML = html; hp.style.display="block";
+  } else { hp.style.display="none"; }
 
   // themabalk
   const themes = ["Alle", ...Array.from(new Set((DATA.sets||[]).flatMap(s=>tagsOf(s))))];
