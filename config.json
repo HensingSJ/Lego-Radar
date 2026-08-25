@@ -5,10 +5,7 @@
     "HuurjeBricks",
     "Bricks Verhuur",
     "Onsspeelgoed",
-    "Blokkenhuren",
-    "https://berghbricks.nl/",
-    "https://www.easybricks.nl/",
-    "https://www.allemaalsteentjes.nl/"
+    "Blokkenhuren"
   ],
   "sets": [
     {
@@ -21,8 +18,7 @@
       "pieces": 1639,
       "rrp": 229.99,
       "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42206-1/148445.jpg"
+      "prices": {}
     },
     {
       "number": "42207",
@@ -34,84 +30,7 @@
       "pieces": 1361,
       "rrp": 229.99,
       "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42207-1/148295.jpg"
-    },
-    {
-      "number": "10316",
-      "name": "The Lord of the Rings: Rivendell",
-      "themes": [
-        "Icons"
-      ],
-      "pieces": 6167,
-      "rrp": 414,
-      "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/10316-1/132394.jpg"
-    },
-    {
-      "number": "42171",
-      "name": "Mercedes-AMG F1 W14 E Performance",
-      "themes": [
-        "F1",
-        "Technic"
-      ],
-      "pieces": 1642,
-      "rrp": 161,
-      "urls": {
-        "Bouwsteenwinkel": "https://bouwsteenwinkel.nl/set/lego-technic-mercedes-amg-f1-w14-e-performance-42171-verhuur"
-      },
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42171-1/137095.jpg"
-    },
-    {
-      "number": "75252",
-      "name": "Imperial Star Destroyer",
-      "themes": [
-        "Star Wars"
-      ],
-      "pieces": 4784,
-      "rrp": 700,
-      "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/75252-1/22674.jpg"
-    },
-    {
-      "number": "42083",
-      "name": "Bugatti Chiron",
-      "themes": [
-        "Technic"
-      ],
-      "pieces": 3599,
-      "rrp": 499,
-      "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42083-1/8941.jpg"
-    },
-    {
-      "number": "42228",
-      "name": "McLaren MCL39",
-      "themes": [
-        "F1",
-        "Technic"
-      ],
-      "pieces": 1675,
-      "rrp": 161,
-      "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42228-1/168806.jpg"
-    },
-    {
-      "number": "72153",
-      "name": "Venusaur, Charizard and Blastoise",
-      "themes": [
-        "Pokémon"
-      ],
-      "pieces": 6838,
-      "rrp": null,
-      "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/72153-1/168693.jpg"
+      "prices": {}
     }
   ]
 }
