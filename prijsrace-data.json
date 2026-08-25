@@ -13,18 +13,68 @@
       "rrp": 229.99,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 6.25,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
           "site": "Onsspeelgoed",
           "price": 7.99,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ verzending (?)"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 12.75,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 15.0,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 15.0,
+          "status": "uitverhuurd",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ],
+      "demand": {
+        "carrying": 4,
+        "unavailable": 1,
+        "score": 50,
+        "label": "Gemiddeld"
+      },
+      "found": 4,
+      "issues": [],
+      "missing": 5,
+      "image": "https://cdn.rebrickable.com/media/sets/42206-1/148445.jpg"
+    },
+    {
+      "number": "42207",
+      "name": "Ferrari SF-24 F1",
+      "themes": [
+        "F1",
+        "Technic"
+      ],
+      "pieces": 1361,
+      "rrp": 229.99,
+      "offers": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 12.75,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 15.0,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "afhalen"
         },
         {
           "site": "Bricks Verhuur",
@@ -41,47 +91,7 @@
         "label": "Gemiddeld"
       },
       "found": 3,
-      "issues": [
-        "Blokjes Te Huur: prijs niet gelezen"
-      ],
-      "missing": 5,
-      "image": "https://cdn.rebrickable.com/media/sets/42206-1/148445.jpg"
-    },
-    {
-      "number": "42207",
-      "name": "Ferrari SF-24 F1",
-      "themes": [
-        "F1",
-        "Technic"
-      ],
-      "pieces": 1361,
-      "rrp": 229.99,
-      "offers": [
-        {
-          "site": "Bouwsteenwinkel",
-          "price": 5.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        }
-      ],
-      "demand": {
-        "carrying": 2,
-        "unavailable": 1,
-        "score": 46,
-        "label": "Gemiddeld"
-      },
-      "found": 2,
-      "issues": [
-        "Blokjes Te Huur: prijs niet gelezen"
-      ],
+      "issues": [],
       "missing": 6,
       "image": "https://cdn.rebrickable.com/media/sets/42207-1/148295.jpg"
     },
@@ -96,8 +106,8 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 5.5,
-          "status": "beschikbaar",
+          "price": 12.75,
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -107,17 +117,23 @@
           "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 20.0,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "afhalen"
         }
       ],
       "demand": {
-        "carrying": 2,
+        "carrying": 3,
         "unavailable": 1,
-        "score": 46,
+        "score": 45,
         "label": "Gemiddeld"
       },
-      "found": 2,
+      "found": 3,
       "issues": [
-        "Blokjes Te Huur: prijs niet gelezen",
         "HuurjeBricks: prijs niet gelezen"
       ],
       "missing": 5,
@@ -160,18 +176,23 @@
           "status": "onbekend",
           "availableFrom": null,
           "note": "+ verzending (?)"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 15.0,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "afhalen"
         }
       ],
       "demand": {
-        "carrying": 4,
+        "carrying": 5,
         "unavailable": 0,
-        "score": 36,
+        "score": 45,
         "label": "Gemiddeld"
       },
-      "found": 4,
-      "issues": [
-        "Blokjes Te Huur: prijs niet gelezen"
-      ],
+      "found": 5,
+      "issues": [],
       "missing": 4,
       "image": "https://cdn.rebrickable.com/media/sets/42171-1/137095.jpg"
     },
@@ -186,7 +207,7 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 5.5,
+          "price": 13.75,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -197,18 +218,23 @@
           "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 25.0,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "afhalen"
         }
       ],
       "demand": {
-        "carrying": 2,
+        "carrying": 3,
         "unavailable": 1,
-        "score": 46,
+        "score": 45,
         "label": "Gemiddeld"
       },
-      "found": 2,
-      "issues": [
-        "Blokjes Te Huur: prijs niet gelezen"
-      ],
+      "found": 3,
+      "issues": [],
       "missing": 6,
       "image": "https://cdn.rebrickable.com/media/sets/75252-1/22674.jpg"
     },
@@ -223,8 +249,8 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 5.5,
-          "status": "beschikbaar",
+          "price": 12.75,
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -268,8 +294,8 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 5.5,
-          "status": "beschikbaar",
+          "price": 12.75,
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -303,8 +329,8 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 5.5,
-          "status": "beschikbaar",
+          "price": 12.75,
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -332,17 +358,12 @@
   ],
   "run": {
     "failures": [
-      "42206 Blokjes Te Huur: prijs niet gelezen",
-      "42207 Blokjes Te Huur: prijs niet gelezen",
-      "10316 Blokjes Te Huur: prijs niet gelezen",
       "10316 HuurjeBricks: prijs niet gelezen",
-      "42171 Blokjes Te Huur: prijs niet gelezen",
-      "75252 Blokjes Te Huur: prijs niet gelezen",
       "42083 HuurjeBricks: prijs niet gelezen",
       "72153 HuurjeBricks: prijs niet gelezen"
     ],
     "sites": 9,
-    "offers_ok": 20,
+    "offers_ok": 25,
     "missing": 44
   }
 }
