@@ -13,9 +13,16 @@
       "rrp": 229.99,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
@@ -28,14 +35,13 @@
         }
       ],
       "demand": {
-        "carrying": 2,
-        "unavailable": 1,
-        "score": 46,
-        "label": "Gemiddeld"
+        "carrying": 3,
+        "unavailable": 0,
+        "score": 27,
+        "label": "Laag"
       },
-      "found": 2,
+      "found": 3,
       "issues": [
-        "Bouwsteenwinkel: prijs niet gelezen",
         "Blokjes Te Huur: prijs niet gelezen"
       ],
       "missing": 5,
@@ -52,22 +58,28 @@
       "rrp": 229.99,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
-        "carrying": 1,
-        "unavailable": 1,
-        "score": 64,
-        "label": "Hoog"
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
       },
-      "found": 1,
+      "found": 2,
       "issues": [
-        "Bouwsteenwinkel: prijs niet gelezen",
         "Blokjes Te Huur: prijs niet gelezen"
       ],
       "missing": 6,
@@ -83,22 +95,28 @@
       "rrp": 414,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
-        "carrying": 1,
-        "unavailable": 1,
-        "score": 64,
-        "label": "Hoog"
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
       },
-      "found": 1,
+      "found": 2,
       "issues": [
-        "Bouwsteenwinkel: prijs niet gelezen",
         "Blokjes Te Huur: prijs niet gelezen",
         "HuurjeBricks: prijs niet gelezen"
       ],
@@ -118,29 +136,41 @@
         {
           "site": "Bricks Verhuur",
           "price": 7.5,
-          "status": "beschikbaar",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
         {
+          "site": "Bouwsteenwinkel",
+          "price": 10.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Blokkenhuren",
+          "price": 12.5,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "afhalen"
+        },
+        {
           "site": "https://www.allemaalsteentjes.nl/",
           "price": 12.75,
-          "status": "beschikbaar",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ verzending (?)"
         }
       ],
       "demand": {
-        "carrying": 2,
+        "carrying": 4,
         "unavailable": 0,
-        "score": 18,
-        "label": "Laag"
+        "score": 36,
+        "label": "Gemiddeld"
       },
-      "found": 2,
+      "found": 4,
       "issues": [
-        "Bouwsteenwinkel: prijs niet gelezen",
-        "Blokjes Te Huur: prijs niet gelezen",
-        "Blokkenhuren: prijs niet gelezen"
+        "Blokjes Te Huur: prijs niet gelezen"
       ],
       "missing": 4,
       "image": "https://cdn.rebrickable.com/media/sets/42171-1/137095.jpg"
@@ -155,22 +185,28 @@
       "rrp": 700,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
-        "carrying": 1,
-        "unavailable": 1,
-        "score": 64,
-        "label": "Hoog"
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
       },
-      "found": 1,
+      "found": 2,
       "issues": [
-        "Bouwsteenwinkel: prijs niet gelezen",
         "Blokjes Te Huur: prijs niet gelezen"
       ],
       "missing": 6,
@@ -186,23 +222,35 @@
       "rrp": 499,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 17.5,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "afhalen"
         }
       ],
       "demand": {
-        "carrying": 1,
-        "unavailable": 1,
-        "score": 64,
-        "label": "Hoog"
+        "carrying": 3,
+        "unavailable": 0,
+        "score": 27,
+        "label": "Laag"
       },
-      "found": 1,
+      "found": 3,
       "issues": [
-        "Bouwsteenwinkel: prijs niet gelezen",
-        "Blokjes Te Huur: prijs niet gelezen",
         "HuurjeBricks: prijs niet gelezen"
       ],
       "missing": 5,
@@ -219,23 +267,28 @@
       "rrp": 161,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
-        "carrying": 1,
-        "unavailable": 1,
-        "score": 64,
-        "label": "Hoog"
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
       },
-      "found": 1,
-      "issues": [
-        "Bouwsteenwinkel: prijs niet gelezen"
-      ],
+      "found": 2,
+      "issues": [],
       "missing": 7,
       "image": "https://cdn.rebrickable.com/media/sets/42228-1/168806.jpg"
     },
@@ -249,22 +302,28 @@
       "rrp": null,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 4.25,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 7.5,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
-        "carrying": 1,
-        "unavailable": 1,
-        "score": 64,
-        "label": "Hoog"
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
       },
-      "found": 1,
+      "found": 2,
       "issues": [
-        "Bouwsteenwinkel: prijs niet gelezen",
         "HuurjeBricks: prijs niet gelezen"
       ],
       "missing": 6,
@@ -273,27 +332,17 @@
   ],
   "run": {
     "failures": [
-      "42206 Bouwsteenwinkel: prijs niet gelezen",
       "42206 Blokjes Te Huur: prijs niet gelezen",
-      "42207 Bouwsteenwinkel: prijs niet gelezen",
       "42207 Blokjes Te Huur: prijs niet gelezen",
-      "10316 Bouwsteenwinkel: prijs niet gelezen",
       "10316 Blokjes Te Huur: prijs niet gelezen",
       "10316 HuurjeBricks: prijs niet gelezen",
-      "42171 Bouwsteenwinkel: prijs niet gelezen",
       "42171 Blokjes Te Huur: prijs niet gelezen",
-      "42171 Blokkenhuren: prijs niet gelezen",
-      "75252 Bouwsteenwinkel: prijs niet gelezen",
       "75252 Blokjes Te Huur: prijs niet gelezen",
-      "42083 Bouwsteenwinkel: prijs niet gelezen",
-      "42083 Blokjes Te Huur: prijs niet gelezen",
       "42083 HuurjeBricks: prijs niet gelezen",
-      "42228 Bouwsteenwinkel: prijs niet gelezen",
-      "72153 Bouwsteenwinkel: prijs niet gelezen",
       "72153 HuurjeBricks: prijs niet gelezen"
     ],
     "sites": 9,
-    "offers_ok": 10,
+    "offers_ok": 20,
     "missing": 44
   }
 }
