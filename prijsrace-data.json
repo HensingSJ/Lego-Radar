@@ -14,17 +14,10 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 6.25,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 7.5,
-          "status": "onbekend",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
         {
           "site": "Onsspeelgoed",
@@ -32,13 +25,20 @@
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ verzending (?)"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 15.0,
+          "status": "uitverhuurd",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
         "carrying": 3,
-        "unavailable": 0,
-        "score": 27,
-        "label": "Laag"
+        "unavailable": 1,
+        "score": 45,
+        "label": "Gemiddeld"
       },
       "found": 3,
       "issues": [
@@ -59,24 +59,24 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 5.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
         {
           "site": "Bricks Verhuur",
-          "price": 7.5,
-          "status": "onbekend",
+          "price": 15.0,
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
         "carrying": 2,
-        "unavailable": 0,
-        "score": 18,
-        "label": "Laag"
+        "unavailable": 1,
+        "score": 46,
+        "label": "Gemiddeld"
       },
       "found": 2,
       "issues": [
@@ -96,24 +96,24 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 5.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
         {
           "site": "Bricks Verhuur",
-          "price": 7.5,
-          "status": "onbekend",
+          "price": 15.0,
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
         "carrying": 2,
-        "unavailable": 0,
-        "score": 18,
-        "label": "Laag"
+        "unavailable": 1,
+        "score": 46,
+        "label": "Gemiddeld"
       },
       "found": 2,
       "issues": [
@@ -135,8 +135,8 @@
       "offers": [
         {
           "site": "Bricks Verhuur",
-          "price": 7.5,
-          "status": "onbekend",
+          "price": 10.0,
+          "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
@@ -186,24 +186,24 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 5.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
         {
           "site": "Bricks Verhuur",
-          "price": 7.5,
-          "status": "onbekend",
+          "price": 15.0,
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
         "carrying": 2,
-        "unavailable": 0,
-        "score": 18,
-        "label": "Laag"
+        "unavailable": 1,
+        "score": 46,
+        "label": "Gemiddeld"
       },
       "found": 2,
       "issues": [
@@ -223,15 +223,15 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 5.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
         {
           "site": "Bricks Verhuur",
-          "price": 7.5,
-          "status": "onbekend",
+          "price": 15.0,
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
@@ -245,9 +245,9 @@
       ],
       "demand": {
         "carrying": 3,
-        "unavailable": 0,
-        "score": 27,
-        "label": "Laag"
+        "unavailable": 1,
+        "score": 45,
+        "label": "Gemiddeld"
       },
       "found": 3,
       "issues": [
@@ -268,24 +268,24 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 5.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
         {
           "site": "Bricks Verhuur",
-          "price": 7.5,
-          "status": "onbekend",
+          "price": 15.0,
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
         "carrying": 2,
-        "unavailable": 0,
-        "score": 18,
-        "label": "Laag"
+        "unavailable": 1,
+        "score": 46,
+        "label": "Gemiddeld"
       },
       "found": 2,
       "issues": [],
@@ -303,24 +303,24 @@
       "offers": [
         {
           "site": "Bouwsteenwinkel",
-          "price": 4.25,
+          "price": 5.5,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
         {
           "site": "Bricks Verhuur",
-          "price": 7.5,
-          "status": "onbekend",
+          "price": 15.0,
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
         "carrying": 2,
-        "unavailable": 0,
-        "score": 18,
-        "label": "Laag"
+        "unavailable": 1,
+        "score": 46,
+        "label": "Gemiddeld"
       },
       "found": 2,
       "issues": [
