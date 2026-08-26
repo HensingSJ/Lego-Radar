@@ -35,7 +35,7 @@
         },
         {
           "site": "Bouwsteenwinkel",
-          "price": 20.0,
+          "price": 35.0,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -78,7 +78,7 @@
         },
         {
           "site": "Bouwsteenwinkel",
-          "price": 20.0,
+          "price": 35.0,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -112,18 +112,18 @@
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
         {
-          "site": "Bouwsteenwinkel",
-          "price": 20.0,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
           "site": "Blokjes Te Huur",
           "price": 20.0,
           "status": "onbekend",
           "availableFrom": null,
           "note": "afhalen"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 35.0,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
@@ -213,18 +213,18 @@
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
         {
-          "site": "Bouwsteenwinkel",
-          "price": 20.0,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
           "site": "Blokjes Te Huur",
           "price": 25.0,
           "status": "onbekend",
           "availableFrom": null,
           "note": "afhalen"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 35.0,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
@@ -263,7 +263,7 @@
         },
         {
           "site": "Bouwsteenwinkel",
-          "price": 20.0,
+          "price": 35.0,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -301,7 +301,7 @@
         },
         {
           "site": "Bouwsteenwinkel",
-          "price": 20.0,
+          "price": 35.0,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -336,7 +336,7 @@
         },
         {
           "site": "Bouwsteenwinkel",
-          "price": 20.0,
+          "price": 35.0,
           "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
