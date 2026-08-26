@@ -23,6 +23,8 @@
     border-radius:16px;padding:20px 20px;border-left-width:4px;transition:.15s}
   a.card:hover{transform:translateY(-2px);border-color:var(--amber)}
   a.card.radar{border-left-color:var(--green)}
+  a.card.trends{border-left-color:var(--amber)}
+  a.card.shorts{border-left-color:#FF5A5F}
   a.card.beheer{border-left-color:var(--steel)}
   .ttl{font-family:"Archivo Black",sans-serif;font-size:22px;display:flex;align-items:center;gap:10px}
   .desc{color:var(--mute);font-size:13.5px;margin-top:6px}
@@ -34,11 +36,21 @@
   <div class="wrap">
     <div class="eyebrow"><span class="rec"></span>LEGO Verhuur</div>
     <h1>Marktradar</h1>
-    <div class="lede">Prijzen, vraag-signaal en beheer van je verhuur-sets.</div>
+    <div class="lede">Prijzen, vraag-signaal, trends en video's voor je verhuur-sets.</div>
     <div class="cards">
       <a class="card radar" href="verhuur-marktradar.html">
         <div class="ttl">📊 Marktradar</div>
         <div class="desc">Bekijk per set de top-5 prijzen, beschikbaarheid en de vraag-score.</div>
+        <div class="go">Openen →</div>
+      </a>
+      <a class="card trends" href="verhuur-trends.html">
+        <div class="ttl">📈 Trends &amp; koopadvies</div>
+        <div class="desc">Vraag-trend per set over tijd, met advies waar je in moet investeren.</div>
+        <div class="go">Openen →</div>
+      </a>
+      <a class="card shorts" href="verhuur-shorts.html">
+        <div class="ttl">🎬 Shorts-generator</div>
+        <div class="desc">Geanimeerde prijsrace per set (eenmalig/regulier) om te screen-recorden.</div>
         <div class="go">Openen →</div>
       </a>
       <a class="card beheer" href="verhuur-beheer.html">
