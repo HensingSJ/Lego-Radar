@@ -116,6 +116,7 @@
       <h2>Vraagsignaal</h2>
       <div class="demandbig" id="demand"></div>
       <div class="score" id="scoreline"></div>
+      <div class="score" id="availline" style="color:#B9C4D6"></div>
       <div class="hint" id="hint"></div>
       <h2 style="margin-top:22px">Investeren?</h2>
       <div class="hint" id="invest" style="border:none;padding:0"></div>
@@ -260,6 +261,15 @@ function render(){
   $("demand").className = "demandbig " + d.label;
   $("demand").textContent = d.label;
   $("scoreline").textContent = "score "+d.score+"/100 · "+d.carrying+" verhuurders · "+d.unavailable+" uitverhuurd/wachtrij";
+  const st={beschikbaar:0,wachtrij:0,uitverhuurd:0,onbekend:0,kalender:0};
+  (s.offers||[]).forEach(o=>{ st[o.status]=(st[o.status]||0)+1; });
+  const ap=[];
+  if(st.beschikbaar) ap.push(st.beschikbaar+" beschikbaar");
+  if(st.wachtrij) ap.push(st.wachtrij+" wachtrij");
+  if(st.uitverhuurd) ap.push(st.uitverhuurd+" uitverhuurd");
+  if(st.kalender) ap.push(st.kalender+" via kalender");
+  if(st.onbekend) ap.push(st.onbekend+" onbekend");
+  $("availline").textContent = "Beschikbaarheid: " + (ap.join(" · ") || "—");
   $("hint").textContent = "Hoe meer verhuurders de set voeren én hoe meer daarvan is uitverhuurd of op wachtrij staat, hoe hoger de vraag.";
   $("invest").textContent = investText(d.label);
 }
