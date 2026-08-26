@@ -43,7 +43,9 @@
       ],
       "pieces": 6167,
       "rrp": 414,
-      "urls": {},
+      "urls": {
+        "HuurjeBricks": "https://www.huurjebricks.nl/Sets/Product/lego-the-lord-of-the-rings-rivendell-10316/"
+      },
       "prices": {}
     },
     {
@@ -108,7 +110,9 @@
       ],
       "pieces": 6838,
       "rrp": null,
-      "urls": {},
+      "urls": {
+        "HuurjeBricks": "https://www.huurjebricks.nl/Sets/Product/lego-pokemon-venusaur-charizard-en-blastoise-72153/"
+      },
       "prices": {}
     }
   ]
