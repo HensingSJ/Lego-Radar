@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26",
+  "generated": "2026-08-27",
   "beurten_per_jaar": 10,
   "sets": [
     {
@@ -96,6 +96,11 @@
       "image": "https://cdn.rebrickable.com/media/sets/10316-1/132394.jpg",
       "eenmalig": [
         {
+          "site": "HuurjeBricks",
+          "price": 15.0,
+          "note": "afhalen"
+        },
+        {
           "site": "Bouwsteenwinkel",
           "price": 16.25,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -116,6 +121,11 @@
           "site": "Bouwsteenwinkel",
           "price": 7.25,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "HuurjeBricks",
+          "price": 15.0,
+          "note": "afhalen"
         },
         {
           "site": "Blokjes Te Huur",
@@ -233,6 +243,11 @@
       "image": "https://cdn.rebrickable.com/media/sets/42083-1/8941.jpg",
       "eenmalig": [
         {
+          "site": "HuurjeBricks",
+          "price": 15.0,
+          "note": "afhalen"
+        },
+        {
           "site": "Bouwsteenwinkel",
           "price": 16.25,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
@@ -253,6 +268,11 @@
           "site": "Bouwsteenwinkel",
           "price": 7.25,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "HuurjeBricks",
+          "price": 15.0,
+          "note": "afhalen"
         },
         {
           "site": "Blokjes Te Huur",
@@ -306,6 +326,11 @@
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
         {
+          "site": "HuurjeBricks",
+          "price": 20.0,
+          "note": "afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 59.0,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
@@ -318,9 +343,131 @@
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
         {
+          "site": "HuurjeBricks",
+          "price": 20.0,
+          "note": "afhalen"
+        },
+        {
           "site": "Bricks Verhuur",
           "price": 32.45,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ]
+    },
+    {
+      "number": "10303",
+      "name": "Loop Coaster",
+      "image": "https://cdn.rebrickable.com/media/sets/10303-1/141978.jpg",
+      "eenmalig": [
+        {
+          "site": "Blokjes Te Huur",
+          "price": 20.0,
+          "note": "afhalen"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 50.0,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 59.0,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ],
+      "regulier": [
+        {
+          "site": "Blokjes Te Huur",
+          "price": 20.0,
+          "note": "afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 32.45,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 41.0,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        }
+      ]
+    },
+    {
+      "number": "75640",
+      "name": "The Baratie Floating Restaurant",
+      "image": "https://cdn.rebrickable.com/media/sets/75640-1/157571.jpg",
+      "eenmalig": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 50.0,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 59.0,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ],
+      "regulier": [
+        {
+          "site": "Bricks Verhuur",
+          "price": 32.45,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 41.0,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        }
+      ]
+    },
+    {
+      "number": "42143",
+      "name": "Ferrari Daytona SP3",
+      "image": "https://cdn.rebrickable.com/media/sets/42143-1/103001.jpg",
+      "eenmalig": [
+        {
+          "site": "Onsspeelgoed",
+          "price": 7.99,
+          "note": "+ verzending (?)"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 17.5,
+          "note": "afhalen"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 50.0,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 59.0,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ],
+      "regulier": [
+        {
+          "site": "Onsspeelgoed",
+          "price": 7.99,
+          "note": "+ verzending (?)"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 17.5,
+          "note": "afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 32.45,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 41.0,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ]
     }
