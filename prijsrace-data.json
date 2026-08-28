@@ -27,8 +27,16 @@
         "label": "Laag"
       },
       "found": 1,
-      "issues": [],
-      "missing": 8,
+      "issues": [
+        "Blokkenhuren: robots"
+      ],
+      "to_check": [
+        "Bouwsteenwinkel",
+        "HuurjeBricks",
+        "Bricks Verhuur",
+        "Onsspeelgoed"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/42206-1/148445.jpg"
     },
     {
@@ -56,8 +64,16 @@
         "label": "Laag"
       },
       "found": 1,
-      "issues": [],
-      "missing": 8,
+      "issues": [
+        "Blokkenhuren: robots"
+      ],
+      "to_check": [
+        "Bouwsteenwinkel",
+        "HuurjeBricks",
+        "Bricks Verhuur",
+        "Onsspeelgoed"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/42207-1/148295.jpg"
     },
     {
@@ -92,7 +108,13 @@
       },
       "found": 2,
       "issues": [],
-      "missing": 7,
+      "to_check": [
+        "Bouwsteenwinkel",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/10316-1/132394.jpg"
     },
     {
@@ -127,13 +149,6 @@
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
         {
-          "site": "https://www.allemaalsteentjes.nl/",
-          "price": 12.75,
-          "status": "onbekend",
-          "availableFrom": null,
-          "note": "+ verzending (?)"
-        },
-        {
           "site": "Blokjes Te Huur",
           "price": 15.0,
           "status": "onbekend",
@@ -142,14 +157,18 @@
         }
       ],
       "demand": {
-        "carrying": 5,
+        "carrying": 4,
         "unavailable": 1,
-        "score": 56,
+        "score": 50,
         "label": "Gemiddeld"
       },
-      "found": 5,
+      "found": 4,
       "issues": [],
-      "missing": 4,
+      "to_check": [
+        "HuurjeBricks",
+        "Onsspeelgoed"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/42171-1/137095.jpg"
     },
     {
@@ -177,7 +196,14 @@
       },
       "found": 1,
       "issues": [],
-      "missing": 8,
+      "to_check": [
+        "Bouwsteenwinkel",
+        "HuurjeBricks",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/75252-1/22674.jpg"
     },
     {
@@ -212,7 +238,13 @@
       },
       "found": 2,
       "issues": [],
-      "missing": 7,
+      "to_check": [
+        "Bouwsteenwinkel",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/42083-1/8941.jpg"
     },
     {
@@ -233,7 +265,15 @@
       },
       "found": 0,
       "issues": [],
-      "missing": 9,
+      "to_check": [
+        "Bouwsteenwinkel",
+        "Blokjes Te Huur",
+        "HuurjeBricks",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/42228-1/168806.jpg"
     },
     {
@@ -261,7 +301,14 @@
       },
       "found": 1,
       "issues": [],
-      "missing": 8,
+      "to_check": [
+        "Bouwsteenwinkel",
+        "Blokjes Te Huur",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/72153-1/168693.jpg"
     },
     {
@@ -288,8 +335,16 @@
         "label": "Laag"
       },
       "found": 1,
-      "issues": [],
-      "missing": 8,
+      "issues": [
+        "Blokkenhuren: robots"
+      ],
+      "to_check": [
+        "Bouwsteenwinkel",
+        "HuurjeBricks",
+        "Bricks Verhuur",
+        "Onsspeelgoed"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/10303-1/141978.jpg"
     },
     {
@@ -317,7 +372,14 @@
       },
       "found": 1,
       "issues": [],
-      "missing": 8,
+      "to_check": [
+        "Bouwsteenwinkel",
+        "Blokjes Te Huur",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/75640-1/157571.jpg"
     },
     {
@@ -352,7 +414,13 @@
       },
       "found": 2,
       "issues": [],
-      "missing": 7,
+      "to_check": [
+        "Bouwsteenwinkel",
+        "HuurjeBricks",
+        "Onsspeelgoed",
+        "Blokkenhuren"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/42143-1/103001.jpg"
     },
     {
@@ -380,14 +448,54 @@
       },
       "found": 1,
       "issues": [],
-      "missing": 8,
+      "to_check": [
+        "Bouwsteenwinkel",
+        "HuurjeBricks",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/10333-1/140959.jpg"
+    },
+    {
+      "number": "42181",
+      "name": "VTOL Heavy Cargo Spaceship LT81",
+      "themes": [
+        "Technic"
+      ],
+      "pieces": 1365,
+      "rrp": null,
+      "offers": [],
+      "demand": {
+        "carrying": 0,
+        "unavailable": 0,
+        "score": 0,
+        "label": "Laag"
+      },
+      "found": 0,
+      "issues": [],
+      "to_check": [
+        "Bouwsteenwinkel",
+        "Blokjes Te Huur",
+        "HuurjeBricks",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren"
+      ],
+      "absent": 0,
+      "image": "https://cdn.rebrickable.com/media/sets/42181-1/134833.jpg"
     }
   ],
   "run": {
-    "failures": [],
-    "sites": 9,
-    "offers_ok": 18,
-    "missing": 90
+    "failures": [
+      "42206 Blokkenhuren: robots",
+      "42207 Blokkenhuren: robots",
+      "10303 Blokkenhuren: robots"
+    ],
+    "sites": 6,
+    "offers_ok": 17,
+    "te_checken": 58,
+    "niet_aanwezig": 0
   }
 }
