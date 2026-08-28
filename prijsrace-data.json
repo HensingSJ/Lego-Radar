@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27",
+  "generated": "2026-08-28",
   "source": "live",
   "sets": [
     {
@@ -502,12 +502,54 @@
       "issues": [],
       "missing": 5,
       "image": "https://cdn.rebrickable.com/media/sets/42143-1/103001.jpg"
+    },
+    {
+      "number": "10333",
+      "name": "The Lord of the Rings: Barad-dûr",
+      "themes": [
+        "Icons"
+      ],
+      "pieces": 5478,
+      "rrp": null,
+      "offers": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 10.0,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 15.0,
+          "status": "uitverhuurd",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 20.0,
+          "status": "onbekend",
+          "availableFrom": null,
+          "note": "afhalen"
+        }
+      ],
+      "demand": {
+        "carrying": 3,
+        "unavailable": 1,
+        "score": 45,
+        "label": "Gemiddeld"
+      },
+      "found": 3,
+      "issues": [],
+      "missing": 6,
+      "image": "https://cdn.rebrickable.com/media/sets/10333-1/140959.jpg"
     }
   ],
   "run": {
     "failures": [],
     "sites": 9,
-    "offers_ok": 38,
-    "missing": 61
+    "offers_ok": 41,
+    "missing": 67
   }
 }
