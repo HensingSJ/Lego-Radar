@@ -160,9 +160,19 @@
       ],
       "pieces": 3398,
       "rrp": null,
-      "urls": {},
-      "prices": {},
-      "absent": []
+      "urls": {
+        "HuurjeBricks": "https://www.huurjebricks.nl/Sets/Product/het-drijvende-restaurant-baratie-lego-75640/"
+      },
+      "prices": {
+        "HuurjeBricks": 15
+      },
+      "absent": [
+        "Bouwsteenwinkel",
+        "Blokjes Te Huur",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren"
+      ]
     },
     {
       "number": "42143",
