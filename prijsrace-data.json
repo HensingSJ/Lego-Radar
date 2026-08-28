@@ -13,43 +13,22 @@
       "rrp": 229.99,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "Onsspeelgoed",
-          "price": 7.99,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ verzending (?)"
-        },
-        {
           "site": "Blokjes Te Huur",
           "price": 15.0,
           "status": "onbekend",
           "availableFrom": null,
           "note": "afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
-        "carrying": 4,
-        "unavailable": 1,
-        "score": 50,
-        "label": "Gemiddeld"
+        "carrying": 1,
+        "unavailable": 0,
+        "score": 9,
+        "label": "Laag"
       },
-      "found": 4,
+      "found": 1,
       "issues": [],
-      "missing": 5,
+      "missing": 8,
       "image": "https://cdn.rebrickable.com/media/sets/42206-1/148445.jpg"
     },
     {
@@ -63,36 +42,22 @@
       "rrp": 229.99,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
           "site": "Blokjes Te Huur",
           "price": 15.0,
           "status": "onbekend",
           "availableFrom": null,
           "note": "afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
-        "carrying": 3,
-        "unavailable": 1,
-        "score": 45,
-        "label": "Gemiddeld"
+        "carrying": 1,
+        "unavailable": 0,
+        "score": 9,
+        "label": "Laag"
       },
-      "found": 3,
+      "found": 1,
       "issues": [],
-      "missing": 6,
+      "missing": 8,
       "image": "https://cdn.rebrickable.com/media/sets/42207-1/148295.jpg"
     },
     {
@@ -105,25 +70,11 @@
       "rrp": 414,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
           "site": "HuurjeBricks",
           "price": 15.0,
           "status": "onbekend",
           "availableFrom": null,
           "note": "afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
         {
           "site": "Blokjes Te Huur",
@@ -134,14 +85,14 @@
         }
       ],
       "demand": {
-        "carrying": 4,
-        "unavailable": 1,
-        "score": 50,
-        "label": "Gemiddeld"
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
       },
-      "found": 4,
+      "found": 2,
       "issues": [],
-      "missing": 5,
+      "missing": 7,
       "image": "https://cdn.rebrickable.com/media/sets/10316-1/132394.jpg"
     },
     {
@@ -211,20 +162,6 @@
       "rrp": 700,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        },
-        {
           "site": "Blokjes Te Huur",
           "price": 25.0,
           "status": "onbekend",
@@ -233,14 +170,14 @@
         }
       ],
       "demand": {
-        "carrying": 3,
-        "unavailable": 1,
-        "score": 45,
-        "label": "Gemiddeld"
+        "carrying": 1,
+        "unavailable": 0,
+        "score": 9,
+        "label": "Laag"
       },
-      "found": 3,
+      "found": 1,
       "issues": [],
-      "missing": 6,
+      "missing": 8,
       "image": "https://cdn.rebrickable.com/media/sets/75252-1/22674.jpg"
     },
     {
@@ -253,25 +190,11 @@
       "rrp": 499,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
           "site": "HuurjeBricks",
           "price": 15.0,
           "status": "onbekend",
           "availableFrom": null,
           "note": "afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
         {
           "site": "Blokjes Te Huur",
@@ -282,14 +205,14 @@
         }
       ],
       "demand": {
-        "carrying": 4,
-        "unavailable": 1,
-        "score": 50,
-        "label": "Gemiddeld"
+        "carrying": 2,
+        "unavailable": 0,
+        "score": 18,
+        "label": "Laag"
       },
-      "found": 4,
+      "found": 2,
       "issues": [],
-      "missing": 5,
+      "missing": 7,
       "image": "https://cdn.rebrickable.com/media/sets/42083-1/8941.jpg"
     },
     {
@@ -301,31 +224,16 @@
       ],
       "pieces": 1675,
       "rrp": 161,
-      "offers": [
-        {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        }
-      ],
+      "offers": [],
       "demand": {
-        "carrying": 2,
-        "unavailable": 1,
-        "score": 46,
-        "label": "Gemiddeld"
+        "carrying": 0,
+        "unavailable": 0,
+        "score": 0,
+        "label": "Laag"
       },
-      "found": 2,
+      "found": 0,
       "issues": [],
-      "missing": 7,
+      "missing": 9,
       "image": "https://cdn.rebrickable.com/media/sets/42228-1/168806.jpg"
     },
     {
@@ -338,20 +246,6 @@
       "rrp": null,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        },
-        {
           "site": "HuurjeBricks",
           "price": 20.0,
           "status": "onbekend",
@@ -360,14 +254,14 @@
         }
       ],
       "demand": {
-        "carrying": 3,
-        "unavailable": 1,
-        "score": 45,
-        "label": "Gemiddeld"
+        "carrying": 1,
+        "unavailable": 0,
+        "score": 9,
+        "label": "Laag"
       },
-      "found": 3,
+      "found": 1,
       "issues": [],
-      "missing": 6,
+      "missing": 8,
       "image": "https://cdn.rebrickable.com/media/sets/72153-1/168693.jpg"
     },
     {
@@ -380,20 +274,6 @@
       "rrp": null,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        },
-        {
           "site": "Blokjes Te Huur",
           "price": 20.0,
           "status": "onbekend",
@@ -402,14 +282,14 @@
         }
       ],
       "demand": {
-        "carrying": 3,
-        "unavailable": 1,
-        "score": 45,
-        "label": "Gemiddeld"
+        "carrying": 1,
+        "unavailable": 0,
+        "score": 9,
+        "label": "Laag"
       },
-      "found": 3,
+      "found": 1,
       "issues": [],
-      "missing": 6,
+      "missing": 8,
       "image": "https://cdn.rebrickable.com/media/sets/10303-1/141978.jpg"
     },
     {
@@ -422,36 +302,22 @@
       "rrp": null,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
           "site": "HuurjeBricks",
           "price": 15.0,
           "status": "onbekend",
           "availableFrom": null,
           "note": "afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
-        "carrying": 3,
-        "unavailable": 1,
-        "score": 45,
-        "label": "Gemiddeld"
+        "carrying": 1,
+        "unavailable": 0,
+        "score": 9,
+        "label": "Laag"
       },
-      "found": 3,
+      "found": 1,
       "issues": [],
-      "missing": 6,
+      "missing": 8,
       "image": "https://cdn.rebrickable.com/media/sets/75640-1/157571.jpg"
     },
     {
@@ -463,20 +329,6 @@
       "pieces": 3778,
       "rrp": null,
       "offers": [
-        {
-          "site": "Bouwsteenwinkel",
-          "price": 6.5,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "Onsspeelgoed",
-          "price": 7.99,
-          "status": "beschikbaar",
-          "availableFrom": null,
-          "note": "+ verzending (?)"
-        },
         {
           "site": "Bricks Verhuur",
           "price": 15.0,
@@ -493,14 +345,14 @@
         }
       ],
       "demand": {
-        "carrying": 4,
+        "carrying": 2,
         "unavailable": 0,
-        "score": 36,
-        "label": "Gemiddeld"
+        "score": 18,
+        "label": "Laag"
       },
-      "found": 4,
+      "found": 2,
       "issues": [],
-      "missing": 5,
+      "missing": 7,
       "image": "https://cdn.rebrickable.com/media/sets/42143-1/103001.jpg"
     },
     {
@@ -513,20 +365,6 @@
       "rrp": null,
       "offers": [
         {
-          "site": "Bouwsteenwinkel",
-          "price": 10.0,
-          "status": "onbekend",
-          "availableFrom": null,
-          "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "Bricks Verhuur",
-          "price": 15.0,
-          "status": "uitverhuurd",
-          "availableFrom": null,
-          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
-        },
-        {
           "site": "Blokjes Te Huur",
           "price": 20.0,
           "status": "onbekend",
@@ -535,21 +373,21 @@
         }
       ],
       "demand": {
-        "carrying": 3,
-        "unavailable": 1,
-        "score": 45,
-        "label": "Gemiddeld"
+        "carrying": 1,
+        "unavailable": 0,
+        "score": 9,
+        "label": "Laag"
       },
-      "found": 3,
+      "found": 1,
       "issues": [],
-      "missing": 6,
+      "missing": 8,
       "image": "https://cdn.rebrickable.com/media/sets/10333-1/140959.jpg"
     }
   ],
   "run": {
     "failures": [],
     "sites": 9,
-    "offers_ok": 41,
-    "missing": 67
+    "offers_ok": 18,
+    "missing": 90
   }
 }
