@@ -79,6 +79,7 @@
   .pill.ok{background:rgba(55,226,122,.15);color:var(--green)}
   .pill.bad{background:rgba(255,90,95,.16);color:var(--red)}
   .pill.mut{background:rgba(140,148,166,.14);color:var(--mute)}
+  .pill.warn{background:rgba(255,199,44,.16);color:var(--amber)}
   .faillist{margin-top:10px;display:flex;flex-direction:column;gap:4px}
   .failitem{font-family:"JetBrains Mono",monospace;font-size:12px;color:#E7B0B2}
 </style>
@@ -197,12 +198,17 @@ function render(){
   const run = DATA.run, hp = $("health");
   if(run){
     const fails = run.failures || [];
+    const toCheck = (DATA.sets||[]).flatMap(s=>(s.to_check||[]).map(site=>s.number+" · "+site));
     let html = '<h2>Status laatste run</h2><div class="hrow">'+
       '<span class="pill ok">'+(run.offers_ok||0)+' aanbiedingen</span>'+
       '<span class="pill '+(fails.length?"bad":"ok")+'">'+fails.length+' leesfouten</span>'+
-      '<span class="pill mut">'+(run.missing||0)+'× niet in shop</span></div>';
+      '<span class="pill '+(toCheck.length?"warn":"ok")+'">'+toCheck.length+' te checken</span>'+
+      '<span class="pill mut">'+(run.niet_aanwezig||0)+' niet aanwezig</span></div>';
     if(fails.length){
       html += '<div class="faillist">'+fails.map(f=>'<div class="failitem">⚠ '+String(f).replace(/</g,"&lt;")+'</div>').join("")+'</div>';
+    }
+    if(toCheck.length){
+      html += '<div class="faillist">'+toCheck.map(f=>'<div class="failitem" style="color:#E7D08A">⚑ '+String(f).replace(/</g,"&lt;")+' — URL toevoegen of "niet aanwezig" markeren in beheer</div>').join("")+'</div>';
     }
     hp.innerHTML = html; hp.style.display="block";
   } else { hp.style.display="none"; }
