@@ -172,9 +172,23 @@
       ],
       "pieces": 3778,
       "rrp": null,
-      "urls": {},
-      "prices": {},
-      "absent": []
+      "urls": {
+        "Onsspeelgoed": "https://www.onsspeelgoed.nl/product/ferrari-daytona-sp3/",
+        "Blokkenhuren": "https://www.blokkenhuren.nl/product/lego-technic-ferrari-daytona-sp3-42143/",
+        "Blokjes Te Huur": "https://www.blokjestehuur.nl/?s=ferrari+daytona",
+        "Bricks Verhuur": "https://www.bricksverhuur.nl/lego-42143-ferrari-daytona-sp3-huren.html",
+        "Bouwsteenwinkel": "https://bouwsteenwinkel.nl/set/lego-technic-ferrari-daytona-sp3-42143-verhuur"
+      },
+      "prices": {
+        "Onsspeelgoed": 14.95,
+        "Blokkenhuren": 10.75,
+        "Blokjes Te Huur": 17.5,
+        "Bricks Verhuur": 15,
+        "Bouwsteenwinkel": 13.75
+      },
+      "absent": [
+        "HuurjeBricks"
+      ]
     },
     {
       "number": "10333",
@@ -184,8 +198,12 @@
       ],
       "pieces": 5478,
       "rrp": null,
-      "urls": {},
-      "prices": {},
+      "urls": {
+        "Bricks Verhuur": "https://www.bricksverhuur.nl/lego-10333-the-lord-of-the-rings-barad-dur-huren.html"
+      },
+      "prices": {
+        "Bricks Verhuur": 20
+      },
       "absent": []
     },
     {
