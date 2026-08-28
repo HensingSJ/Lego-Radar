@@ -80,11 +80,6 @@
           "note": "afhalen"
         },
         {
-          "site": "https://www.allemaalsteentjes.nl/",
-          "price": 12.75,
-          "note": "+ verzending (?)"
-        },
-        {
           "site": "Blokjes Te Huur",
           "price": 15.0,
           "note": "afhalen"
@@ -110,11 +105,6 @@
           "site": "Bouwsteenwinkel",
           "price": 11.75,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
-        },
-        {
-          "site": "https://www.allemaalsteentjes.nl/",
-          "price": 12.75,
-          "note": "+ verzending (?)"
         },
         {
           "site": "Blokjes Te Huur",
