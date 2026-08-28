@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27",
+  "generated": "2026-08-28",
   "beurten_per_jaar": 10,
   "sets": [
     {
@@ -472,6 +472,45 @@
         {
           "site": "Blokjes Te Huur",
           "price": 17.5,
+          "note": "afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 32.45,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ]
+    },
+    {
+      "number": "10333",
+      "name": "The Lord of the Rings: Barad-dûr",
+      "image": "https://cdn.rebrickable.com/media/sets/10333-1/140959.jpg",
+      "eenmalig": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 20.0,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 20.0,
+          "note": "afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 59.0,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ],
+      "regulier": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 11.0,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Blokjes Te Huur",
+          "price": 20.0,
           "note": "afhalen"
         },
         {
