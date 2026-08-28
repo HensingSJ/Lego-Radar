@@ -21,8 +21,7 @@
       "pieces": 1639,
       "rrp": 229.99,
       "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42206-1/148445.jpg"
+      "prices": {}
     },
     {
       "number": "42207",
@@ -34,8 +33,7 @@
       "pieces": 1361,
       "rrp": 229.99,
       "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42207-1/148295.jpg"
+      "prices": {}
     },
     {
       "number": "10316",
@@ -50,8 +48,7 @@
       },
       "prices": {
         "HuurjeBricks": 15
-      },
-      "image": "https://cdn.rebrickable.com/media/sets/10316-1/132394.jpg"
+      }
     },
     {
       "number": "42171",
@@ -69,8 +66,7 @@
         "Blokkenhuren": "https://www.blokkenhuren.nl/product/lego-technic-mercedes-amg-f1-w14-e-performance-42171/",
         "https://www.allemaalsteentjes.nl/": "https://www.allemaalsteentjes.nl/LEGO-42171-6x6-Mercedes-AMG-F1-W14-E-Performance-verhuur"
       },
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42171-1/137095.jpg"
+      "prices": {}
     },
     {
       "number": "75252",
@@ -81,8 +77,7 @@
       "pieces": 4784,
       "rrp": 700,
       "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/75252-1/22674.jpg"
+      "prices": {}
     },
     {
       "number": "42083",
@@ -97,8 +92,7 @@
       },
       "prices": {
         "HuurjeBricks": 15
-      },
-      "image": "https://cdn.rebrickable.com/media/sets/42083-1/8941.jpg"
+      }
     },
     {
       "number": "42228",
@@ -110,8 +104,7 @@
       "pieces": 1675,
       "rrp": 161,
       "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42228-1/168806.jpg"
+      "prices": {}
     },
     {
       "number": "72153",
@@ -126,8 +119,7 @@
       },
       "prices": {
         "HuurjeBricks": 20
-      },
-      "image": "https://cdn.rebrickable.com/media/sets/72153-1/168693.jpg"
+      }
     },
     {
       "number": "10303",
@@ -138,8 +130,7 @@
       "pieces": 3756,
       "rrp": null,
       "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/10303-1/141978.jpg"
+      "prices": {}
     },
     {
       "number": "75640",
@@ -150,8 +141,7 @@
       "pieces": 3398,
       "rrp": null,
       "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/75640-1/157571.jpg"
+      "prices": {}
     },
     {
       "number": "42143",
@@ -162,8 +152,7 @@
       "pieces": 3778,
       "rrp": null,
       "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42143-1/103001.jpg"
+      "prices": {}
     },
     {
       "number": "10333",
@@ -174,8 +163,16 @@
       "pieces": 5478,
       "rrp": null,
       "urls": {},
-      "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/10333-1/140959.jpg"
+      "prices": {}
+    },
+    {
+      "number": "42181",
+      "name": "",
+      "themes": [],
+      "pieces": null,
+      "rrp": null,
+      "urls": {},
+      "prices": {}
     }
   ]
 }
