@@ -164,12 +164,22 @@
       "image": "https://cdn.rebrickable.com/media/sets/75252-1/22674.jpg",
       "eenmalig": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 23.75,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Blokjes Te Huur",
           "price": 25.0,
           "note": "afhalen"
         }
       ],
       "regulier": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 14.75,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
         {
           "site": "Blokjes Te Huur",
           "price": 25.0,
