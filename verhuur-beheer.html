@@ -153,8 +153,6 @@ function setBadges(s, dup){
   if(Object.values(s.prices||{}).some(v=>v!=null&&v!=="")) b.push(["prijs handmatig","info"]);
   const urlc=Object.values(s.urls||{}).filter(Boolean).length;
   if(urlc) b.push([urlc+"× URL","info"]);
-  const absc=(s.absent||[]).length;
-  if(absc) b.push([absc+"× niet aanw.","info"]);
   return b;
 }
 function editorBody(s){
@@ -183,25 +181,18 @@ function editorBody(s){
   body.appendChild(quick);
   const det=document.createElement("details");
   const filled=Object.values(s.urls||{}).filter(Boolean).length;
-  const abs0=(s.absent||[]).length;
-  det.innerHTML="<summary>URL, prijs &amp; status per verhuurder ("+filled+" URL's · "+abs0+" niet aanwezig)</summary>";
+  det.innerHTML="<summary>URL &amp; prijs per verhuurder ("+filled+" URL's ingevuld · leeg = automatisch)</summary>";
   cfg.sites.forEach(site=>{
     const ur=document.createElement("div"); ur.className="urlrow";
     const urlv=((s.urls&&s.urls[site])||"").replace(/"/g,"&quot;");
     const prijsv=((s.prices&&s.prices[site])!=null?s.prices[site]:"");
-    const absent=(s.absent||[]).includes(site);
     ur.innerHTML='<span class="sname">'+site+'</span>'
-      +'<input class="in" placeholder="auto-zoeken (URL)" value="'+urlv+'" '+(absent?'disabled':'')+'>'
-      +'<input class="in" style="max-width:92px;flex:0 0 auto" placeholder="€/wk" value="'+prijsv+'" '+(absent?'disabled':'')+'>'
-      +'<label style="font-family:\'JetBrains Mono\',monospace;font-size:11px;color:'+(absent?'#FF5A5F':'var(--mute)')+';display:flex;gap:5px;align-items:center;flex:0 0 auto;white-space:nowrap"><input type="checkbox" '+(absent?'checked':'')+'> niet aanwezig</label>';
+      +'<input class="in" placeholder="auto-zoeken (URL)" value="'+urlv+'">'
+      +'<input class="in" style="max-width:118px;flex:0 0 auto" placeholder="prijs €/wk" value="'+prijsv+'">';
     const ins=ur.querySelectorAll("input");
     ins[0].oninput=e=>{ s.urls=s.urls||{}; s.urls[site]=e.target.value.trim(); };
     ins[1].oninput=e=>{ s.prices=s.prices||{}; const v=e.target.value.trim();
       if(v) s.prices[site]=parseFloat(v.replace(",",".")); else delete s.prices[site]; };
-    ins[2].onchange=e=>{ s.absent=s.absent||[];
-      if(e.target.checked){ if(!s.absent.includes(site)) s.absent.push(site); }
-      else { s.absent=s.absent.filter(x=>x!==site); }
-      render(); };
     det.appendChild(ur);
   });
   body.appendChild(det);
@@ -255,8 +246,7 @@ function buildClean(){
     number:String(s.number||"").trim(), name:s.name||"", themes:s.themes||[],
     pieces:s.pieces||null, rrp:s.rrp||null,
     urls:Object.fromEntries(Object.entries(s.urls||{}).filter(([k,v])=>v)),
-    prices:Object.fromEntries(Object.entries(s.prices||{}).filter(([k,v])=>v!=null&&v!=="")),
-    absent:(s.absent||[]).filter(x=>cfg.sites.includes(x))
+    prices:Object.fromEntries(Object.entries(s.prices||{}).filter(([k,v])=>v!=null&&v!==""))
   })).filter(s=>s.number)};
 }
 function download(){

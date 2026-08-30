@@ -165,7 +165,7 @@ function play(){
 }
 
 function fit(){ const pad=140; const s=Math.min((window.innerWidth-24)/1080,(window.innerHeight-pad)/1920); $("stage").style.transform="scale("+s+")"; }
-async function loadFromUrl(u){ try{ const r=await fetch(u,{cache:"no-store"}); if(!r.ok) throw 0; DATA=await r.json(); curSet=0; fillSets(); play(); return true; }catch(e){ return false; } }
+async function loadFromUrl(u){ try{ const b=u+(u.includes("?")?"&":"?")+"t="+Date.now(); const r=await fetch(b,{cache:"no-store"}); if(!r.ok) throw 0; DATA=await r.json(); curSet=0; fillSets(); play(); return true; }catch(e){ return false; } }
 function refresh(){ const u=($("dataurl").value||"shorts-data.json").trim(); loadFromUrl(u).then(ok=>{ if(!ok) alert("Kon data niet laden van: "+u); }); }
 
 window.addEventListener('resize', fit);

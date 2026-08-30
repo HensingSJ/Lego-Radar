@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEGO Verhuur — Catalogus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600;700;800&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg0:#0A1120;--bg1:#16223C;--panel:#101B30;--panel2:#0C1526;--ink:#F5F7FA;--mute:#93A0B6;
+    --line:#243450;--amber:#FFC72C;--green:#37E27A;--red:#FF5A5F;--steel:#6FA8FF;--grey:#6C7A93}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:linear-gradient(160deg,var(--bg0),var(--bg1));min-height:100vh;color:var(--ink);
+    font-family:"Archivo",system-ui,sans-serif;padding:24px 16px 70px;display:flex;justify-content:center}
+  .app{width:100%;max-width:860px}
+  .head{display:flex;align-items:center;gap:12px}
+  .rec{width:14px;height:14px;border-radius:50%;background:var(--red)}
+  .eyebrow{font-family:"JetBrains Mono",monospace;font-weight:800;letter-spacing:.24em;font-size:12px;color:var(--amber);text-transform:uppercase}
+  h1{font-family:"Archivo Black",sans-serif;font-size:clamp(24px,5vw,38px);letter-spacing:-.02em;margin:2px 0 4px}
+  .lede{color:var(--mute);font-size:14px;max-width:640px;margin-bottom:16px}
+  .bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+  .btn{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12.5px;color:var(--ink);background:rgba(255,255,255,.05);border:1px solid var(--line);padding:9px 12px;border-radius:9px;cursor:pointer}
+  .btn:hover{background:rgba(255,199,44,.12);border-color:var(--amber)}
+  .seg{display:flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+  .seg button{font-family:"JetBrains Mono",monospace;font-weight:800;font-size:12.5px;background:#101B30;color:var(--mute);border:none;padding:9px 13px;cursor:pointer}
+  .seg button.on{background:var(--amber);color:#0A1120}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+  .nm{font-weight:800;font-size:16px}
+  .nm .nr{color:var(--amber);font-family:"JetBrains Mono",monospace;font-size:13px;margin-right:8px}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  .chip{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12px;padding:5px 10px;border-radius:99px;border:1px solid var(--line)}
+  .chip.has{background:rgba(55,226,122,.15);color:var(--green);border-color:transparent}
+  .chip.no{color:var(--grey)}
+  .count{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mute);margin-top:4px}
+  .meta{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mute);margin-bottom:14px}
+  .note{font-size:12px;color:var(--grey);line-height:1.55;border-left:2px solid var(--line);padding-left:12px;margin-top:14px}
+  .empty{color:var(--mute);font-family:"JetBrains Mono",monospace;font-size:13px;padding:20px 0}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="head"><span class="rec"></span><span class="eyebrow">Catalogus</span></div>
+  <h1>Wie heeft welke set?</h1>
+  <div class="lede">Per verhuurder alle sets die de crawler kon vinden, gekruist met jouw gevolgde sets. Zo zie je in één blik waar je nog een URL kunt toevoegen.</div>
+  <div class="bar">
+    <div class="seg">
+      <button id="vMine" class="on" onclick="setView('mine')">Dekking van mijn sets</button>
+      <button id="vSite" onclick="setView('site')">Per verhuurder</button>
+    </div>
+    <button class="btn" onclick="reload()">🔄 Ververs</button>
+  </div>
+  <div class="meta" id="meta"></div>
+  <div id="list"><div class="empty">Catalogus laden…</div></div>
+  <div class="note" id="note"></div>
+</div>
+
+<script>
+let CAT=null, MINE=[], view="mine";
+const $ = id => document.getElementById(id);
+function setView(v){ view=v; $("vMine").classList.toggle("on",v==="mine"); $("vSite").classList.toggle("on",v==="site"); render(); }
+
+function has(site,nr){ return (CAT.sites[site]||[]).includes(String(nr)); }
+
+function render(){
+  const list=$("list");
+  if(!CAT || !CAT.sites || !Object.keys(CAT.sites).length){
+    list.innerHTML='<div class="empty">Nog geen catalog.json — draai eerst de catalogus-knop in Home Assistant.</div>';
+    $("meta").textContent=""; $("note").textContent=""; return;
+  }
+  const sites=Object.keys(CAT.sites);
+  $("meta").textContent = "Catalogus van "+(CAT.generated||"?")+" · "+sites.length+" verhuurders";
+
+  if(view==="mine"){
+    if(!MINE.length){ list.innerHTML='<div class="empty">Geen gevolgde sets gevonden (prijsrace-data.json ontbreekt).</div>'; return; }
+    list.innerHTML = MINE.map(s=>{
+      const hasS=sites.filter(si=>has(si,s.number));
+      const noS=sites.filter(si=>!has(si,s.number));
+      return '<div class="card"><div class="nm"><span class="nr">#'+s.number+'</span>'+(s.name||"")+'</div>'+
+        '<div class="count">bij '+hasS.length+' van '+sites.length+' verhuurders in de catalogus</div>'+
+        '<div class="chips">'+
+          hasS.map(si=>'<span class="chip has">✓ '+si+'</span>').join("")+
+          noS.map(si=>'<span class="chip no">'+si+'</span>').join("")+
+        '</div></div>';
+    }).join("");
+  } else {
+    list.innerHTML = sites.map(si=>{
+      const nums=CAT.sites[si]||[];
+      const mineHere=MINE.filter(s=>nums.includes(String(s.number)));
+      return '<div class="card"><div class="nm">'+si+'</div>'+
+        '<div class="count">'+nums.length+' sets in catalogus · '+mineHere.length+' van jouw '+MINE.length+' gevolgde sets</div>'+
+        (MINE.length? '<div class="chips">'+MINE.map(s=>'<span class="chip '+(nums.includes(String(s.number))?"has":"no")+'">'+(nums.includes(String(s.number))?"✓ ":"")+"#"+s.number+'</span>').join("")+'</div>':'')+
+        '</div>';
+    }).join("");
+  }
+  $("note").textContent = "De crawler is best-effort: catalogus-URL's per verhuurder worden nog verfijnd (nu vooral Bouwsteenwinkel). Ontbreekt een verhuurder of lijkt de lijst te kort? Geef me de 'alle sets'-pagina van die shop, dan zet ik 'm erbij. Een set die hier bij een verhuurder staat maar in de radar op 'te checken' — plak de productpagina in beheer.";
+}
+
+async function load(u){ try{ const b=u+(u.includes("?")?"&":"?")+"t="+Date.now(); const r=await fetch(b,{cache:"no-store"}); if(!r.ok) throw 0; return await r.json(); }catch(e){ return null; } }
+async function reload(){
+  CAT = await load("catalog.json");
+  const pr = await load("prijsrace-data.json");
+  MINE = pr && pr.sets ? pr.sets.map(s=>({number:String(s.number),name:s.name})) : [];
+  render();
+}
+reload();
+</script>
+</body>
+</html>
