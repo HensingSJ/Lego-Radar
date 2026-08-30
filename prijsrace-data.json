@@ -56,8 +56,12 @@
       },
       "found": 5,
       "issues": [],
-      "to_check": [],
-      "absent": 3,
+      "to_check": [
+        "HuurjeBricks",
+        "Bergh Bricks",
+        "Allemaalsteentjes"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/42206-1/148445.jpg"
     },
     {
@@ -423,9 +427,14 @@
       "found": 2,
       "issues": [],
       "to_check": [
+        "Bouwsteenwinkel",
+        "Blokjes Te Huur",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren",
         "Bergh Bricks"
       ],
-      "absent": 5,
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/75640-1/157571.jpg"
     },
     {
@@ -481,8 +490,10 @@
       },
       "found": 7,
       "issues": [],
-      "to_check": [],
-      "absent": 1,
+      "to_check": [
+        "HuurjeBricks"
+      ],
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/42143-1/103001.jpg"
     },
     {
@@ -539,9 +550,11 @@
       "found": 5,
       "issues": [],
       "to_check": [
+        "HuurjeBricks",
+        "Onsspeelgoed",
         "Allemaalsteentjes"
       ],
-      "absent": 2,
+      "absent": 0,
       "image": "https://cdn.rebrickable.com/media/sets/10333-1/140959.jpg"
     },
     {
@@ -582,7 +595,7 @@
     ],
     "sites": 8,
     "offers_ok": 32,
-    "te_checken": 59,
-    "niet_aanwezig": 11
+    "te_checken": 70,
+    "niet_aanwezig": 0
   }
 }
