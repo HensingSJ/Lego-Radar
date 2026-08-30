@@ -164,7 +164,7 @@ let DATA = {"generated":"2026-08-22","source":"mock","sets":[
 let current = 0;
 let curTheme = "Alle";
 const $ = id => document.getElementById(id);
-const eur = v => "€" + v.toFixed(2).replace(".", ",");
+const eur = v => (v==null || isNaN(v)) ? "—" : "€" + Number(v).toFixed(2).replace(".", ",");
 const tagsOf = s => s.themes || (s.theme ? [s.theme] : []);
 const STATUS = {
   beschikbaar:{c:"ok",t:"✓ beschikbaar"}, wachtrij:{c:"wait",t:"⏳ wachtrij"},
@@ -247,7 +247,7 @@ function render(){
   $("facts").innerHTML =
     '<span class="fact">#<b>'+s.number+'</b></span>'+
     '<span class="fact">tags <b>'+(tagsOf(s).join(" · ")||"—")+'</b></span>'+
-    '<span class="fact"><b>'+s.pieces+'</b> onderdelen</span>'+
+    '<span class="fact"><b>'+(s.pieces||"—")+'</b> onderdelen</span>'+
     '<span class="fact">adviesprijs <b>'+eur(s.rrp)+'</b></span>';
 
   const maxp = Math.max(...s.offers.map(o=>o.price),1);
