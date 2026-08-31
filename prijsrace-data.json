@@ -179,7 +179,7 @@
         {
           "site": "Bouwsteenwinkel",
           "price": 10.75,
-          "status": "uitverhuurd",
+          "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -193,8 +193,8 @@
       ],
       "demand": {
         "carrying": 4,
-        "unavailable": 1,
-        "score": 50,
+        "unavailable": 0,
+        "score": 36,
         "label": "Gemiddeld"
       },
       "found": 4,
@@ -220,7 +220,7 @@
         {
           "site": "Bouwsteenwinkel",
           "price": 13.75,
-          "status": "beschikbaar",
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -234,9 +234,9 @@
       ],
       "demand": {
         "carrying": 2,
-        "unavailable": 0,
-        "score": 18,
-        "label": "Laag"
+        "unavailable": 1,
+        "score": 46,
+        "label": "Gemiddeld"
       },
       "found": 2,
       "issues": [],
