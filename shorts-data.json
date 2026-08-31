@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30",
+  "generated": "2026-08-31",
   "beurten_per_jaar": 10,
   "sets": [
     {
@@ -70,9 +70,19 @@
           "site": "Blokjes Te Huur",
           "price": 15.0,
           "note": "afhalen"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 22.75,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "regulier": [
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 13.75,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
         {
           "site": "Blokjes Te Huur",
           "price": 15.0,
