@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30",
+  "generated": "2026-08-31",
   "source": "live",
   "sets": [
     {
@@ -75,6 +75,13 @@
       "rrp": 229.99,
       "offers": [
         {
+          "site": "Bouwsteenwinkel",
+          "price": 12.75,
+          "status": "uitverhuurd",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Blokjes Te Huur",
           "price": 15.0,
           "status": "onbekend",
@@ -83,17 +90,16 @@
         }
       ],
       "demand": {
-        "carrying": 1,
-        "unavailable": 0,
-        "score": 9,
-        "label": "Laag"
+        "carrying": 2,
+        "unavailable": 1,
+        "score": 46,
+        "label": "Gemiddeld"
       },
-      "found": 1,
+      "found": 2,
       "issues": [
         "Blokkenhuren: robots"
       ],
       "to_check": [
-        "Bouwsteenwinkel",
         "HuurjeBricks",
         "Bricks Verhuur",
         "Onsspeelgoed",
@@ -594,8 +600,8 @@
       "10303 Blokkenhuren: robots"
     ],
     "sites": 8,
-    "offers_ok": 32,
-    "te_checken": 70,
+    "offers_ok": 33,
+    "te_checken": 69,
     "niet_aanwezig": 0
   }
 }
