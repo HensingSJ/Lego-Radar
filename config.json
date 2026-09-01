@@ -50,13 +50,22 @@
       "rrp": 229.99,
       "urls": {
         "Bouwsteenwinkel": "https://bouwsteenwinkel.nl/set/lego-technic-ferrari-sf-24-f1-auto-42207-verhuur",
-        "Blokjes Te Huur": "https://www.blokjestehuur.nl/product/lego-technic-42207-ferrari-sf-24-f1/"
+        "Blokjes Te Huur": "https://www.blokjestehuur.nl/product/lego-technic-42207-ferrari-sf-24-f1/",
+        "Bricks Verhuur": "https://www.bricksverhuur.nl/lego-42207-ferrari-sf-24-f1-auto-huren.html",
+        "Blokkenhuren": "https://www.blokkenhuren.nl/product/lego-technic-ferrari-sf-24-f1-auto-42207/"
       },
       "prices": {
         "Bouwsteenwinkel": 12.75,
-        "Blokjes Te Huur": 15
+        "Blokjes Te Huur": 15,
+        "Bricks Verhuur": 10,
+        "Blokkenhuren": 9.75
       },
-      "absent": []
+      "absent": [
+        "HuurjeBricks",
+        "Onsspeelgoed",
+        "Bergh Bricks",
+        "Allemaalsteentjes"
+      ]
     },
     {
       "number": "10316",
