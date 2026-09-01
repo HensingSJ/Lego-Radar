@@ -76,12 +76,26 @@
       "pieces": 6167,
       "rrp": 414,
       "urls": {
-        "HuurjeBricks": "https://www.huurjebricks.nl/Sets/Product/lego-the-lord-of-the-rings-rivendell-10316/"
+        "HuurjeBricks": "https://www.huurjebricks.nl/Sets/Product/lego-the-lord-of-the-rings-rivendell-10316/",
+        "Bouwsteenwinkel": "https://bouwsteenwinkel.nl/set/icons-the-lord-of-the-rings-rivendell-10316",
+        "Blokjes Te Huur": "https://www.blokjestehuur.nl/?s=rivendel",
+        "Bricks Verhuur": "https://www.bricksverhuur.nl/lego-10316-the-lord-of-the-rings-rivendell-huren.html",
+        "Blokkenhuren": "https://www.blokkenhuren.nl/product/lego-the-lord-of-the-rings-rivendell-10316/",
+        "Bergh Bricks": "https://berghbricks.nl/product/rivendell/",
+        "Allemaalsteentjes": "https://www.allemaalsteentjes.nl/LEGO-THE-LORD-OF-THE-RINGS:-RIVENDELL%E2%84%A2-10316-verhuur"
       },
       "prices": {
-        "HuurjeBricks": 15
+        "HuurjeBricks": 15,
+        "Bouwsteenwinkel": 14.75,
+        "Blokjes Te Huur": 20,
+        "Bricks Verhuur": 25,
+        "Blokkenhuren": 11.75,
+        "Bergh Bricks": 15,
+        "Allemaalsteentjes": 25
       },
-      "absent": []
+      "absent": [
+        "Onsspeelgoed"
+      ]
     },
     {
       "number": "42171",
