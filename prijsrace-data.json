@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31",
+  "generated": "2026-09-01",
   "source": "live",
   "sets": [
     {
@@ -483,15 +483,15 @@
         {
           "site": "Bergh Bricks",
           "price": 15.0,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ verzending (?)"
         }
       ],
       "demand": {
         "carrying": 7,
-        "unavailable": 1,
-        "score": 71,
+        "unavailable": 0,
+        "score": 63,
         "label": "Hoog"
       },
       "found": 7,
