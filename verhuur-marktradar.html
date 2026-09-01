@@ -206,10 +206,10 @@ function render(){
       '<span class="pill '+(toCheck.length?"warn":"ok")+'">'+toCheck.length+' te checken</span>'+
       '<span class="pill mut">'+(run.niet_aanwezig||0)+' niet aanwezig</span></div>';
     if(fails.length){
-      html += '<div class="faillist">'+fails.map(f=>'<div class="failitem">⚠ '+String(f).replace(/</g,"&lt;")+'</div>').join("")+'</div>';
+      html += '<details style="margin-top:10px"><summary style="cursor:pointer;font-family:\'JetBrains Mono\',monospace;font-size:12px;font-weight:800;color:var(--red)">'+fails.length+' leesfouten tonen</summary><div class="faillist">'+fails.map(f=>'<div class="failitem">⚠ '+String(f).replace(/</g,"&lt;")+'</div>').join("")+'</div></details>';
     }
     if(toCheck.length){
-      html += '<div class="faillist">'+toCheck.map(f=>'<div class="failitem" style="color:#E7D08A">⚑ '+String(f).replace(/</g,"&lt;")+' — URL toevoegen of "niet aanwezig" markeren in beheer</div>').join("")+'</div>';
+      html += '<details style="margin-top:8px"><summary style="cursor:pointer;font-family:\'JetBrains Mono\',monospace;font-size:12px;font-weight:800;color:var(--amber)">'+toCheck.length+' te checken tonen</summary><div class="faillist">'+toCheck.map(f=>'<div class="failitem" style="color:#E7D08A">⚑ '+String(f).replace(/</g,"&lt;")+' — URL toevoegen of "niet aanwezig" markeren in beheer</div>').join("")+'</div></details>';
     }
     hp.innerHTML = html; hp.style.display="block";
   } else { hp.style.display="none"; }

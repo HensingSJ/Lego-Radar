@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEGO Verhuur-calculator — Icons &amp; Technic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700;800&family=JetBrains+Mono:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg0:#0A1120; --bg1:#16223C; --panel:#101B30; --panel2:#0C1526;
+    --ink:#F5F7FA; --mute:#93A0B6; --line:#243450;
+    --amber:#FFC72C; --green:#37E27A; --red:#FF5A5F; --steel:#6FA8FF; --orange:#FF9F43;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:linear-gradient(160deg,var(--bg0),var(--bg1));min-height:100vh;color:var(--ink);
+    font-family:"Archivo",system-ui,sans-serif;padding:26px 16px 70px;display:flex;justify-content:center}
+  .app{width:100%;max-width:940px}
+
+  .head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .rec{width:14px;height:14px;border-radius:50%;background:var(--red);flex:0 0 auto}
+  .eyebrow{font-family:"JetBrains Mono",monospace;font-weight:800;letter-spacing:.24em;font-size:12px;color:var(--amber);text-transform:uppercase}
+  h1{font-family:"Archivo Black",sans-serif;font-size:clamp(26px,5vw,40px);letter-spacing:-.02em;margin:2px 0 4px}
+  .lede{color:var(--mute);font-size:15px;max-width:640px;margin-bottom:22px}
+
+  .presets{display:flex;flex-direction:column;gap:8px;margin-bottom:22px}
+  .prow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .plabel{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--mute);width:64px;text-transform:uppercase}
+  .chip{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:12.5px;color:var(--ink);
+    background:rgba(255,255,255,.05);border:1px solid var(--line);padding:8px 12px;border-radius:9px;cursor:pointer;transition:.15s}
+  .chip:hover{background:rgba(255,199,44,.12);border-color:var(--amber)}
+  .chip b{color:var(--amber);font-weight:800}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 18px 20px}
+  .card h2{font-size:13px;font-family:"JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:14px;font-weight:800}
+
+  .field{margin-bottom:14px}
+  .field:last-child{margin-bottom:0}
+  .field label{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;font-weight:600;margin-bottom:6px}
+  .field label .v{font-family:"JetBrains Mono",monospace;font-weight:800;color:var(--amber);font-size:15px}
+  .in{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:9px;color:var(--ink);
+    font-family:"JetBrains Mono",monospace;font-weight:700;font-size:16px;padding:11px 12px;outline:none}
+  .in:focus{border-color:var(--amber)}
+  input[type=range]{width:100%;accent-color:var(--amber);height:26px}
+  .hint{font-size:11.5px;color:#6C7A93;margin-top:5px}
+
+  /* outputs */
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:2px}
+  .stat{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .stat .k{font-size:12px;color:var(--mute);font-weight:600;margin-bottom:6px}
+  .stat .n{font-family:"JetBrains Mono",monospace;font-weight:800;font-size:26px;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+  .stat .sub{font-size:11.5px;color:#6C7A93;margin-top:3px}
+  .n.g{color:var(--green)} .n.r{color:var(--red)} .n.a{color:var(--amber)} .n.s{color:var(--steel)}
+
+  .full{grid-column:1/-1}
+  .sens{margin-top:18px}
+  .sens h2{font-size:13px;font-family:"JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:6px;font-weight:800}
+  .sens p{font-size:12.5px;color:#6C7A93;margin-bottom:12px}
+  table{width:100%;border-collapse:collapse;font-family:"JetBrains Mono",monospace}
+  th,td{padding:10px 8px;text-align:center;font-size:13px;font-weight:700}
+  th{color:var(--mute);font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:800}
+  td.rowhead{color:var(--mute);text-align:left}
+  td.cell{border-radius:8px;color:#08210f}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:11.5px;color:var(--mute);font-family:"Archivo",sans-serif}
+  .dot{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+
+  .note{margin-top:20px;font-size:12.5px;color:#7A879E;line-height:1.5;border-left:2px solid var(--line);padding-left:14px}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="head"><span class="rec"></span><span class="eyebrow">Verhuur-calculator</span></div>
+  <h1>Terugverdientijd per set</h1>
+  <div class="lede">Reken elke Icons- of Technic-set door vóór je 'm koopt. De twee knoppen die alles bepalen: <b>bezetting</b> (hoeveel weken per jaar echt geboekt) en <b>verlies/schade</b> per verhuring.</div>
+
+  <div class="presets">
+    <div class="prow"><span class="plabel">Icons</span>
+      <span class="chip" data-p="230" data-l="2.5">10312 Jazz Club · <b>€230</b></span>
+      <span class="chip" data-p="230" data-l="2.5">10332 Medieval Town · <b>€230</b></span>
+      <span class="chip" data-p="165" data-l="2.5">10327 Ornithopter · <b>€165</b></span>
+      <span class="chip" data-p="200" data-l="2.5">10318 Concorde · <b>€200</b></span>
+      <span class="chip" data-p="500" data-l="3.5">10276 Colosseum · <b>€500</b></span>
+    </div>
+    <div class="prow"><span class="plabel">Technic</span>
+      <span class="chip" data-p="120" data-l="4">42154 Ford GT · <b>€120</b></span>
+      <span class="chip" data-p="230" data-l="5">42177 Merc-AMG F1 · <b>€230</b></span>
+      <span class="chip" data-p="400" data-l="6">42143 Ferrari SP3 · <b>€400</b></span>
+      <span class="chip" data-p="380" data-l="6">42115 Lamborghini Sián · <b>€380</b></span>
+      <span class="chip" data-p="100" data-l="4">42179 Earth &amp; Moon · <b>€100</b></span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Invoer</h2>
+      <div class="field">
+        <label>Setprijs (wat jíj betaalt) <span class="v" id="v_prijs">€230</span></label>
+        <input class="in" type="number" id="prijs" value="230" min="0" step="5">
+        <div class="hint">Koop met korting of compleet tweedehands → kortere terugverdientijd.</div>
+      </div>
+      <div class="field">
+        <label>Huurprijs per week <span class="v" id="v_huur">€18</span></label>
+        <input class="in" type="number" id="huur" value="18" min="0" step="0.5">
+        <div class="hint">Vuistregel ≈ 7–9% van de adviesprijs per week.</div>
+      </div>
+      <div class="field">
+        <label>Bezetting — geboekte weken/jaar <span class="v" id="v_weken">30</span></label>
+        <input type="range" id="weken" min="5" max="46" value="30" step="1">
+        <div class="hint">Reken op max ~40 bruikbare weken (schoonmaak + omsteltijd).</div>
+      </div>
+      <div class="field">
+        <label>Gem. huurduur (weken/verhuring) <span class="v" id="v_duur">2</span></label>
+        <input type="range" id="duur" min="1" max="6" value="2" step="1">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Kosten</h2>
+      <div class="field">
+        <label>Verlies/schade per verhuring <span class="v" id="v_verlies">€2,50</span></label>
+        <input class="in" type="number" id="verlies" value="2.5" min="0" step="0.5">
+        <div class="hint">Technic ligt hoger (meer kleine pinnen/assen). Dit is de winst-killer.</div>
+      </div>
+      <div class="field">
+        <label>Schoonmaak/verbruik per verhuring <span class="v" id="v_schoon">€1,00</span></label>
+        <input class="in" type="number" id="schoon" value="1" min="0" step="0.5">
+      </div>
+      <div class="field">
+        <label>Verzending per verhuring <span class="v" id="v_verzend">€0,00</span></label>
+        <input class="in" type="number" id="verzend" value="0" min="0" step="0.5">
+        <div class="hint">€0 = afhalen. Aanrader om klein te starten.</div>
+      </div>
+      <div class="field">
+        <label>Betaalkosten <span class="v" id="v_betaal">2,0%</span></label>
+        <input type="range" id="betaal" min="0" max="5" value="2" step="0.1">
+      </div>
+      <div class="field">
+        <label>Platform p/jaar (toegerekend) <span class="v" id="v_plat">€40</span></label>
+        <input class="in" type="number" id="plat" value="40" min="0" step="5">
+        <div class="hint">Bv. Booqable ~€400/jr ÷ 10 sets = €40 per set.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card full" style="margin-top:16px">
+    <h2>Uitkomst</h2>
+    <div class="stats">
+      <div class="stat"><div class="k">Netto per verhuring</div><div class="n a" id="o_netto">–</div><div class="sub" id="o_netto_sub"></div></div>
+      <div class="stat"><div class="k">Break-even (verhuringen)</div><div class="n s" id="o_be">–</div><div class="sub" id="o_be_sub"></div></div>
+      <div class="stat"><div class="k">Terugverdientijd</div><div class="n g" id="o_tvt">–</div><div class="sub">tot setprijs terug is</div></div>
+      <div class="stat"><div class="k">Jaarwinst (stabiel)</div><div class="n g" id="o_winst">–</div><div class="sub" id="o_winst_sub"></div></div>
+    </div>
+
+    <div class="sens">
+      <h2>Sensitiviteit — terugverdientijd in maanden</h2>
+      <p>Rijen = geboekte weken/jaar · Kolommen = verlies/schade per verhuring. Groen = snel terug, rood = twijfelachtig.</p>
+      <table id="sens">
+        <thead><tr><th>weken \ verlies</th><th>€1</th><th>€3</th><th>€5</th><th>€7</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--green)"></span>≤ 6 mnd</span>
+        <span><span class="dot" style="background:var(--amber)"></span>≤ 12 mnd</span>
+        <span><span class="dot" style="background:var(--orange)"></span>≤ 24 mnd</span>
+        <span><span class="dot" style="background:var(--red)"></span>&gt; 24 mnd / verlieslatend</span>
+      </div>
+    </div>
+
+    <div class="note" id="note"></div>
+  </div>
+</div>
+
+<script>
+  const $ = id => document.getElementById(id);
+  const ids = ["prijs","huur","weken","duur","verlies","schoon","verzend","betaal","plat"];
+  const eur = v => "€" + (Math.round(v*100)/100).toFixed(2).replace(".", ",");
+  const eur0 = v => "€" + Math.round(v).toLocaleString("nl-NL");
+
+  function lees(){
+    return {
+      prijs:+$("prijs").value, huur:+$("huur").value, weken:+$("weken").value,
+      duur:+$("duur").value, verlies:+$("verlies").value, schoon:+$("schoon").value,
+      verzend:+$("verzend").value, betaal:+$("betaal").value/100, plat:+$("plat").value
+    };
+  }
+
+  function bereken(x, wekenOverride, verliesOverride){
+    const weken = wekenOverride ?? x.weken;
+    const verlies = verliesOverride ?? x.verlies;
+    const verhuringen = weken / x.duur;
+    const omzet = x.huur * weken;
+    const varPer = verlies + x.schoon + x.verzend;
+    const varTot = verhuringen*varPer + x.betaal*omzet;
+    const bruto = omzet - varTot - x.plat;
+    const netto = verhuringen>0 ? bruto/verhuringen : 0;
+    const be = netto>0 ? x.prijs/netto : Infinity;
+    const tvt = (netto>0 && verhuringen>0) ? be/(verhuringen/12) : Infinity;
+    return {verhuringen, omzet, bruto, netto, be, tvt};
+  }
+
+  function kleur(mnd){
+    if(!isFinite(mnd)) return "var(--red)";
+    if(mnd<=6) return "var(--green)";
+    if(mnd<=12) return "var(--amber)";
+    if(mnd<=24) return "var(--orange)";
+    return "var(--red)";
+  }
+
+  function render(){
+    const x = lees();
+    // labels
+    $("v_prijs").textContent = eur0(x.prijs);
+    $("v_huur").textContent = eur0(x.huur);
+    $("v_weken").textContent = x.weken;
+    $("v_duur").textContent = x.duur;
+    $("v_verlies").textContent = eur(x.verlies);
+    $("v_schoon").textContent = eur(x.schoon);
+    $("v_verzend").textContent = eur(x.verzend);
+    $("v_betaal").textContent = (x.betaal*100).toFixed(1).replace(".",",") + "%";
+    $("v_plat").textContent = eur0(x.plat);
+
+    const r = bereken(x);
+    $("o_netto").textContent = eur(r.netto);
+    $("o_netto").className = "n " + (r.netto>0?"a":"r");
+    $("o_netto_sub").textContent = Math.round(r.verhuringen) + " verhuringen/jaar · omzet " + eur0(r.omzet);
+
+    $("o_be").textContent = isFinite(r.be) ? Math.ceil(r.be) : "∞";
+    $("o_be").className = "n " + (isFinite(r.be)?"s":"r");
+    $("o_be_sub").textContent = isFinite(r.be) ? "keer verhuren om setprijs terug te verdienen" : "verdient zichzelf niet terug";
+
+    if(isFinite(r.tvt)){
+      $("o_tvt").textContent = (r.tvt<12 ? r.tvt.toFixed(1).replace(".",",") + " mnd" : (r.tvt/12).toFixed(1).replace(".",",") + " jr");
+      $("o_tvt").style.color = kleur(r.tvt);
+    } else { $("o_tvt").textContent = "nooit"; $("o_tvt").style.color = "var(--red)"; }
+
+    const winst = r.bruto;
+    $("o_winst").textContent = eur0(winst);
+    $("o_winst").className = "n " + (winst>0?"g":"r");
+    const rend = x.prijs>0 ? (winst/x.prijs*100) : 0;
+    $("o_winst_sub").textContent = "rendement ≈ " + Math.round(rend) + "%/jaar op setprijs";
+
+    // sensitivity
+    const wekenRijen = [20,30,40];
+    const verliesKol = [1,3,5,7];
+    const tb = $("sens").querySelector("tbody");
+    tb.innerHTML = "";
+    wekenRijen.forEach(w=>{
+      const tr = document.createElement("tr");
+      tr.innerHTML = `<td class="rowhead">${w} weken</td>`;
+      verliesKol.forEach(l=>{
+        const rr = bereken(x, w, l);
+        const txt = isFinite(rr.tvt) ? (rr.tvt<24 ? rr.tvt.toFixed(0) : Math.ceil(rr.tvt)) : "∞";
+        const td = document.createElement("td");
+        td.className = "cell";
+        td.style.background = kleur(rr.tvt);
+        td.textContent = txt;
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+
+    // note
+    let n = "";
+    if(r.netto<=0){
+      n = "Bij deze instellingen verdient de set zichzelf niet terug — verhuurprijs omhoog, verlies omlaag, of bezetting omhoog.";
+    } else if(r.tvt>18){
+      n = "Lange terugverdientijd: deze set is gevoelig. Check of de bezetting realistisch is en of het verlies bij Technic niet hoger uitvalt.";
+    } else {
+      n = "Gezonde case — mits de bezetting klopt. Onthoud: één set die met missende stukken terugkomt wordt onverhuurbaar, dus je verliespost is geen gemiddelde maar een staart-risico. Reken conservatief.";
+    }
+    $("note").textContent = n;
+  }
+
+  ids.forEach(id => { $(id).addEventListener("input", render); });
+  document.querySelectorAll(".chip").forEach(c=>{
+    c.addEventListener("click", ()=>{
+      const p = +c.dataset.p, l = +c.dataset.l;
+      $("prijs").value = p;
+      $("huur").value = Math.round(p*0.08*2)/2;   // ~8% van adviesprijs, afgerond op €0,50
+      $("verlies").value = l;
+      render();
+    });
+  });
+  render();
+</script>
+</body>
+</html>
