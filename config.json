@@ -33,7 +33,11 @@
         "Onsspeelgoed": 10.95,
         "Blokkenhuren": 10.25
       },
-      "image": "https://cdn.rebrickable.com/media/sets/42206-1/148445.jpg"
+      "absent": [
+        "HuurjeBricks",
+        "Bergh Bricks",
+        "Allemaalsteentjes"
+      ]
     },
     {
       "number": "42207",
@@ -52,7 +56,7 @@
         "Bouwsteenwinkel": 12.75,
         "Blokjes Te Huur": 15
       },
-      "image": "https://cdn.rebrickable.com/media/sets/42207-1/148295.jpg"
+      "absent": []
     },
     {
       "number": "10316",
@@ -68,7 +72,7 @@
       "prices": {
         "HuurjeBricks": 15
       },
-      "image": "https://cdn.rebrickable.com/media/sets/10316-1/132394.jpg"
+      "absent": []
     },
     {
       "number": "42171",
@@ -87,7 +91,7 @@
         "https://www.allemaalsteentjes.nl/": "https://www.allemaalsteentjes.nl/LEGO-42171-6x6-Mercedes-AMG-F1-W14-E-Performance-verhuur"
       },
       "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42171-1/137095.jpg"
+      "absent": []
     },
     {
       "number": "75252",
@@ -99,7 +103,7 @@
       "rrp": 700,
       "urls": {},
       "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/75252-1/22674.jpg"
+      "absent": []
     },
     {
       "number": "42083",
@@ -115,7 +119,7 @@
       "prices": {
         "HuurjeBricks": 15
       },
-      "image": "https://cdn.rebrickable.com/media/sets/42083-1/8941.jpg"
+      "absent": []
     },
     {
       "number": "42228",
@@ -128,7 +132,7 @@
       "rrp": 161,
       "urls": {},
       "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42228-1/168806.jpg"
+      "absent": []
     },
     {
       "number": "72153",
@@ -144,7 +148,7 @@
       "prices": {
         "HuurjeBricks": 20
       },
-      "image": "https://cdn.rebrickable.com/media/sets/72153-1/168693.jpg"
+      "absent": []
     },
     {
       "number": "10303",
@@ -156,7 +160,7 @@
       "rrp": null,
       "urls": {},
       "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/10303-1/141978.jpg"
+      "absent": []
     },
     {
       "number": "75640",
@@ -174,7 +178,7 @@
         "HuurjeBricks": 15,
         "Allemaalsteentjes": 17.5
       },
-      "image": "https://cdn.rebrickable.com/media/sets/75640-1/157571.jpg"
+      "absent": []
     },
     {
       "number": "42143",
@@ -202,7 +206,7 @@
         "Bergh Bricks": 15,
         "Allemaalsteentjes": 22.5
       },
-      "image": "https://cdn.rebrickable.com/media/sets/42143-1/103001.jpg"
+      "absent": []
     },
     {
       "number": "10333",
@@ -226,7 +230,7 @@
         "Blokkenhuren": 11.75,
         "Bergh Bricks": 15
       },
-      "image": "https://cdn.rebrickable.com/media/sets/10333-1/140959.jpg"
+      "absent": []
     },
     {
       "number": "42181",
@@ -238,7 +242,7 @@
       "rrp": null,
       "urls": {},
       "prices": {},
-      "image": "https://cdn.rebrickable.com/media/sets/42181-1/134833.jpg"
+      "absent": []
     }
   ]
 }
