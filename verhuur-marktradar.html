@@ -118,6 +118,7 @@
       <div class="demandbig" id="demand"></div>
       <div class="score" id="scoreline"></div>
       <div class="score" id="availline" style="color:#B9C4D6"></div>
+      <div class="score" id="flagline"></div>
       <div class="hint" id="hint"></div>
       <h2 style="margin-top:22px">Investeren?</h2>
       <div class="hint" id="invest" style="border:none;padding:0"></div>
@@ -276,6 +277,11 @@ function render(){
   if(st.kalender) ap.push(st.kalender+" via kalender");
   if(st.onbekend) ap.push(st.onbekend+" onbekend");
   $("availline").textContent = "Beschikbaarheid: " + (ap.join(" · ") || "—");
+  const tc = s.to_check||[], ab = s.absent||[];
+  let fl = "";
+  if(tc.length) fl += '<span style="color:var(--amber)">⚑ te checken: '+tc.join(", ")+'</span>';
+  if(ab.length) fl += (fl?' &nbsp; ':'')+'<span style="color:var(--grey)">🚫 niet aanwezig: '+ab.join(", ")+'</span>';
+  $("flagline").innerHTML = fl;
   $("hint").textContent = "Hoe meer verhuurders de set voeren én hoe meer daarvan is uitverhuurd of op wachtrij staat, hoe hoger de vraag.";
   $("invest").textContent = investText(d.label);
 }
