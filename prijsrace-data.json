@@ -306,6 +306,27 @@
       "rrp": 499,
       "offers": [
         {
+          "site": "Bricks Verhuur",
+          "price": 10.0,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        },
+        {
+          "site": "Blokkenhuren",
+          "price": 10.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "afhalen"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 12.75,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "HuurjeBricks",
           "price": 15.0,
           "status": "onbekend",
@@ -321,22 +342,18 @@
         }
       ],
       "demand": {
-        "carrying": 2,
+        "carrying": 6,
         "unavailable": 0,
-        "score": 18,
-        "label": "Laag"
+        "score": 54,
+        "label": "Gemiddeld"
       },
-      "found": 2,
+      "found": 6,
       "issues": [],
-      "to_check": [
-        "Bouwsteenwinkel",
-        "Bricks Verhuur",
+      "to_check": [],
+      "absent": [
         "Onsspeelgoed",
-        "Blokkenhuren",
-        "Bergh Bricks",
-        "Allemaalsteentjes"
+        "Bergh Bricks"
       ],
-      "absent": [],
       "image": "https://cdn.rebrickable.com/media/sets/42083-1/8941.jpg"
     },
     {
@@ -357,7 +374,8 @@
       },
       "found": 0,
       "issues": [],
-      "to_check": [
+      "to_check": [],
+      "absent": [
         "Bouwsteenwinkel",
         "Blokjes Te Huur",
         "HuurjeBricks",
@@ -367,7 +385,6 @@
         "Bergh Bricks",
         "Allemaalsteentjes"
       ],
-      "absent": [],
       "image": "https://cdn.rebrickable.com/media/sets/42228-1/168806.jpg"
     },
     {
@@ -380,31 +397,43 @@
       "rrp": null,
       "offers": [
         {
+          "site": "Blokkenhuren",
+          "price": 15.0,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "afhalen"
+        },
+        {
           "site": "HuurjeBricks",
           "price": 20.0,
           "status": "onbekend",
           "availableFrom": null,
           "note": "afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 25.0,
+          "status": "beschikbaar",
+          "availableFrom": null,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
-        "carrying": 1,
+        "carrying": 3,
         "unavailable": 0,
-        "score": 9,
+        "score": 27,
         "label": "Laag"
       },
-      "found": 1,
+      "found": 3,
       "issues": [],
-      "to_check": [
+      "to_check": [],
+      "absent": [
         "Bouwsteenwinkel",
         "Blokjes Te Huur",
-        "Bricks Verhuur",
         "Onsspeelgoed",
-        "Blokkenhuren",
         "Bergh Bricks",
         "Allemaalsteentjes"
       ],
-      "absent": [],
       "image": "https://cdn.rebrickable.com/media/sets/72153-1/168693.jpg"
     },
     {
@@ -417,32 +446,31 @@
       "rrp": null,
       "offers": [
         {
-          "site": "Blokjes Te Huur",
-          "price": 20.0,
-          "status": "onbekend",
+          "site": "Bouwsteenwinkel",
+          "price": 13.75,
+          "status": "uitverhuurd",
           "availableFrom": null,
-          "note": "afhalen"
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "demand": {
         "carrying": 1,
-        "unavailable": 0,
-        "score": 9,
-        "label": "Laag"
+        "unavailable": 1,
+        "score": 64,
+        "label": "Hoog"
       },
       "found": 1,
-      "issues": [
-        "Blokkenhuren: robots"
-      ],
-      "to_check": [
-        "Bouwsteenwinkel",
+      "issues": [],
+      "to_check": [],
+      "absent": [
+        "Blokjes Te Huur",
         "HuurjeBricks",
         "Bricks Verhuur",
         "Onsspeelgoed",
+        "Blokkenhuren",
         "Bergh Bricks",
         "Allemaalsteentjes"
       ],
-      "absent": [],
       "image": "https://cdn.rebrickable.com/media/sets/10303-1/141978.jpg"
     },
     {
@@ -477,7 +505,8 @@
       },
       "found": 2,
       "issues": [],
-      "to_check": [
+      "to_check": [],
+      "absent": [
         "Bouwsteenwinkel",
         "Blokjes Te Huur",
         "Bricks Verhuur",
@@ -485,7 +514,6 @@
         "Blokkenhuren",
         "Bergh Bricks"
       ],
-      "absent": [],
       "image": "https://cdn.rebrickable.com/media/sets/75640-1/157571.jpg"
     },
     {
@@ -541,10 +569,10 @@
       },
       "found": 7,
       "issues": [],
-      "to_check": [
+      "to_check": [],
+      "absent": [
         "HuurjeBricks"
       ],
-      "absent": [],
       "image": "https://cdn.rebrickable.com/media/sets/42143-1/103001.jpg"
     },
     {
@@ -595,12 +623,12 @@
       "issues": [
         "Bouwsteenwinkel: robots"
       ],
-      "to_check": [
+      "to_check": [],
+      "absent": [
         "HuurjeBricks",
         "Onsspeelgoed",
         "Allemaalsteentjes"
       ],
-      "absent": [],
       "image": "https://cdn.rebrickable.com/media/sets/10333-1/140959.jpg"
     },
     {
@@ -610,7 +638,7 @@
         "Technic"
       ],
       "pieces": 1365,
-      "rrp": null,
+      "rrp": 140,
       "offers": [],
       "demand": {
         "carrying": 0,
@@ -620,7 +648,8 @@
       },
       "found": 0,
       "issues": [],
-      "to_check": [
+      "to_check": [],
+      "absent": [
         "Bouwsteenwinkel",
         "Blokjes Te Huur",
         "HuurjeBricks",
@@ -630,18 +659,16 @@
         "Bergh Bricks",
         "Allemaalsteentjes"
       ],
-      "absent": [],
       "image": "https://cdn.rebrickable.com/media/sets/42181-1/134833.jpg"
     }
   ],
   "run": {
     "failures": [
-      "10303 Blokkenhuren: robots",
       "10333 Bouwsteenwinkel: robots"
     ],
     "sites": 8,
-    "offers_ok": 42,
-    "te_checken": 45,
-    "niet_aanwezig": 15
+    "offers_ok": 48,
+    "te_checken": 0,
+    "niet_aanwezig": 55
   }
 }
