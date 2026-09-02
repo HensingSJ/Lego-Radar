@@ -77,20 +77,13 @@
   <div class="lede">Reken elke Icons- of Technic-set door vóór je 'm koopt. De twee knoppen die alles bepalen: <b>bezetting</b> (hoeveel weken per jaar echt geboekt) en <b>verlies/schade</b> per verhuring.</div>
 
   <div class="presets">
-    <div class="prow"><span class="plabel">Icons</span>
-      <span class="chip" data-p="230" data-l="2.5">10312 Jazz Club · <b>€230</b></span>
-      <span class="chip" data-p="230" data-l="2.5">10332 Medieval Town · <b>€230</b></span>
-      <span class="chip" data-p="165" data-l="2.5">10327 Ornithopter · <b>€165</b></span>
-      <span class="chip" data-p="200" data-l="2.5">10318 Concorde · <b>€200</b></span>
-      <span class="chip" data-p="500" data-l="3.5">10276 Colosseum · <b>€500</b></span>
+    <div class="prow" style="align-items:center;gap:8px">
+      <span class="plabel">Mijn set</span>
+      <select id="setSel" class="in" style="flex:1;min-width:200px"><option value="">— kies een set uit je radar —</option></select>
+      <input id="dataurl" class="in" style="max-width:160px;font-size:12px" placeholder="prijsrace-data.json" value="prijsrace-data.json">
+      <span id="reload" title="opnieuw laden" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:13px;color:var(--ink);background:rgba(255,255,255,.05);border:1px solid var(--line);padding:9px 12px;border-radius:9px">🔄</span>
     </div>
-    <div class="prow"><span class="plabel">Technic</span>
-      <span class="chip" data-p="120" data-l="4">42154 Ford GT · <b>€120</b></span>
-      <span class="chip" data-p="230" data-l="5">42177 Merc-AMG F1 · <b>€230</b></span>
-      <span class="chip" data-p="400" data-l="6">42143 Ferrari SP3 · <b>€400</b></span>
-      <span class="chip" data-p="380" data-l="6">42115 Lamborghini Sián · <b>€380</b></span>
-      <span class="chip" data-p="100" data-l="4">42179 Earth &amp; Moon · <b>€100</b></span>
-    </div>
+    <div id="setinfo" style="font-size:12px;color:var(--mute)">Kies een set uit je radar; setprijs (adviesprijs) en de laagste huurprijs uit de markt worden ingevuld.</div>
   </div>
 
   <div class="grid">
@@ -275,16 +268,36 @@
   }
 
   ids.forEach(id => { $(id).addEventListener("input", render); });
-  document.querySelectorAll(".chip").forEach(c=>{
-    c.addEventListener("click", ()=>{
-      const p = +c.dataset.p, l = +c.dataset.l;
-      $("prijs").value = p;
-      $("huur").value = Math.round(p*0.08*2)/2;   // ~8% van adviesprijs, afgerond op €0,50
-      $("verlies").value = l;
-      render();
-    });
-  });
+
+  // --- koppeling aan je radar-data (prijsrace-data.json) ---
+  let CALC_DATA=null;
+  async function loadSets(u){
+    try{
+      const b=u+(u.includes("?")?"&":"?")+"t="+Date.now();
+      const r=await fetch(b,{cache:"no-store"}); if(!r.ok) throw 0;
+      CALC_DATA=await r.json();
+      const sel=$("setSel"); sel.innerHTML='<option value="">— kies een set uit je radar —</option>';
+      (CALC_DATA.sets||[]).forEach((s,i)=>{ const o=document.createElement("option"); o.value=i; o.textContent=s.number+" · "+s.name; sel.appendChild(o); });
+      $("setinfo").textContent=(CALC_DATA.sets||[]).length+" sets uit je radar geladen — kies er één.";
+      return true;
+    }catch(e){ $("setinfo").textContent="Kon je radar-data niet laden. Open deze pagina via je GitHub Pages-URL (naast prijsrace-data.json), of vul hieronder handmatig in."; return false; }
+  }
+  function pickSet(){
+    const i=$("setSel").value; if(i==="") return;
+    const s=(CALC_DATA&&CALC_DATA.sets)?CALC_DATA.sets[+i]:null; if(!s) return;
+    const minHuur=(s.offers&&s.offers.length)?Math.min(...s.offers.map(o=>o.price)):null;
+    if(s.rrp) $("prijs").value=Math.round(s.rrp);
+    if(minHuur!=null) $("huur").value=minHuur;
+    $("verlies").value=(s.themes||[]).some(t=>/technic/i.test(t))?5:2.5;
+    const hs=(minHuur!=null)?("€"+minHuur.toFixed(2).replace(".",",")):"—";
+    $("setinfo").innerHTML='<b>'+(s.name||s.number)+'</b> — adviesprijs '+(s.rrp?("€"+Math.round(s.rrp)):"—")+' · laagste huur '+hs+' (marktreferentie). Pas de setprijs aan naar wat jíj betaalde.';
+    render();
+  }
+  $("setSel").addEventListener("change", pickSet);
+  $("reload").addEventListener("click", ()=>loadSets(($("dataurl").value||"prijsrace-data.json").trim()));
+
   render();
+  loadSets(($("dataurl").value||"prijsrace-data.json").trim());
 </script>
 </body>
 </html>
