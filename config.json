@@ -181,7 +181,16 @@
       "rrp": 161,
       "urls": {},
       "prices": {},
-      "absent": []
+      "absent": [
+        "Bouwsteenwinkel",
+        "Blokjes Te Huur",
+        "HuurjeBricks",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren",
+        "Bergh Bricks",
+        "Allemaalsteentjes"
+      ]
     },
     {
       "number": "72153",
@@ -192,12 +201,22 @@
       "pieces": 6838,
       "rrp": null,
       "urls": {
-        "HuurjeBricks": "https://www.huurjebricks.nl/Sets/Product/lego-pokemon-venusaur-charizard-en-blastoise-72153/"
+        "HuurjeBricks": "https://www.huurjebricks.nl/Sets/Product/lego-pokemon-venusaur-charizard-en-blastoise-72153/",
+        "Bricks Verhuur": "https://www.bricksverhuur.nl/lego-72153-venusaur-charizard-en-blastoise-huren.html",
+        "Blokkenhuren": "https://www.blokkenhuren.nl/product/lego-pokemon-venusaur-charizard-en-blastoise-75153/"
       },
       "prices": {
-        "HuurjeBricks": 20
+        "HuurjeBricks": 20,
+        "Bricks Verhuur": 25,
+        "Blokkenhuren": 15
       },
-      "absent": []
+      "absent": [
+        "Bouwsteenwinkel",
+        "Blokjes Te Huur",
+        "Onsspeelgoed",
+        "Bergh Bricks",
+        "Allemaalsteentjes"
+      ]
     },
     {
       "number": "10303",
