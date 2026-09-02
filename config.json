@@ -239,9 +239,21 @@
       ],
       "pieces": 3756,
       "rrp": null,
-      "urls": {},
-      "prices": {},
-      "absent": []
+      "urls": {
+        "Bouwsteenwinkel": "https://bouwsteenwinkel.nl/set/lego-icons-loop-coaster-10303-verhuur"
+      },
+      "prices": {
+        "Bouwsteenwinkel": 13.75
+      },
+      "absent": [
+        "Blokjes Te Huur",
+        "HuurjeBricks",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren",
+        "Bergh Bricks",
+        "Allemaalsteentjes"
+      ]
     },
     {
       "number": "75640",
