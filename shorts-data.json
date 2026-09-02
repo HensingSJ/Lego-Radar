@@ -283,6 +283,11 @@
       "image": "https://cdn.rebrickable.com/media/sets/42083-1/8941.jpg",
       "eenmalig": [
         {
+          "site": "Blokkenhuren",
+          "price": 10.75,
+          "note": "afhalen"
+        },
+        {
           "site": "HuurjeBricks",
           "price": 15.0,
           "note": "afhalen"
@@ -291,10 +296,30 @@
           "site": "Blokjes Te Huur",
           "price": 17.5,
           "note": "afhalen"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 22.75,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 54.0,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "regulier": [
         {
+          "site": "Blokkenhuren",
+          "price": 10.75,
+          "note": "afhalen"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 13.75,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "HuurjeBricks",
           "price": 15.0,
           "note": "afhalen"
@@ -303,6 +328,11 @@
           "site": "Blokjes Te Huur",
           "price": 17.5,
           "note": "afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 27.45,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ]
     },
@@ -312,16 +342,36 @@
       "image": "https://cdn.rebrickable.com/media/sets/72153-1/168693.jpg",
       "eenmalig": [
         {
-          "site": "HuurjeBricks",
-          "price": 20.0,
+          "site": "Blokkenhuren",
+          "price": 15.0,
           "note": "afhalen"
-        }
-      ],
-      "regulier": [
+        },
         {
           "site": "HuurjeBricks",
           "price": 20.0,
           "note": "afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 69.0,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
+        }
+      ],
+      "regulier": [
+        {
+          "site": "Blokkenhuren",
+          "price": 15.0,
+          "note": "afhalen"
+        },
+        {
+          "site": "HuurjeBricks",
+          "price": 20.0,
+          "note": "afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 42.45,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ]
     },
@@ -331,16 +381,16 @@
       "image": "https://cdn.rebrickable.com/media/sets/10303-1/141978.jpg",
       "eenmalig": [
         {
-          "site": "Blokjes Te Huur",
-          "price": 20.0,
-          "note": "afhalen"
+          "site": "Bouwsteenwinkel",
+          "price": 23.75,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "regulier": [
         {
-          "site": "Blokjes Te Huur",
-          "price": 20.0,
-          "note": "afhalen"
+          "site": "Bouwsteenwinkel",
+          "price": 14.75,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ]
     },
