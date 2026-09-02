@@ -135,9 +135,24 @@
       ],
       "pieces": 4784,
       "rrp": 700,
-      "urls": {},
-      "prices": {},
-      "absent": []
+      "urls": {
+        "Bouwsteenwinkel": "https://bouwsteenwinkel.nl/set/lego-star-wars-ucs-imperial-star-destroyer-75252a-verhuur",
+        "Blokjes Te Huur": "https://www.blokjestehuur.nl/?s=imperial+star",
+        "Blokkenhuren": "https://www.blokkenhuren.nl/product/lego-star-wars-imperial-star-destroyer-75252/",
+        "Allemaalsteentjes": "https://www.allemaalsteentjes.nl/LEGO-Star-Wars-UCS-Imperial-Star-Destroyer-75252-verhuur"
+      },
+      "prices": {
+        "Bouwsteenwinkel": 13.75,
+        "Blokjes Te Huur": 25,
+        "Blokkenhuren": 12.25,
+        "Allemaalsteentjes": 25
+      },
+      "absent": [
+        "HuurjeBricks",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Bergh Bricks"
+      ]
     },
     {
       "number": "42083",
