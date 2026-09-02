@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01",
+  "generated": "2026-09-02",
   "beurten_per_jaar": 10,
   "sets": [
     {
@@ -67,6 +67,11 @@
       "image": "https://cdn.rebrickable.com/media/sets/42207-1/148295.jpg",
       "eenmalig": [
         {
+          "site": "Blokkenhuren",
+          "price": 9.75,
+          "note": "afhalen"
+        },
+        {
           "site": "Blokjes Te Huur",
           "price": 15.0,
           "note": "afhalen"
@@ -75,9 +80,19 @@
           "site": "Bouwsteenwinkel",
           "price": 22.75,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 54.0,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "regulier": [
+        {
+          "site": "Blokkenhuren",
+          "price": 9.75,
+          "note": "afhalen"
+        },
         {
           "site": "Bouwsteenwinkel",
           "price": 13.75,
@@ -87,6 +102,11 @@
           "site": "Blokjes Te Huur",
           "price": 15.0,
           "note": "afhalen"
+        },
+        {
+          "site": "Bricks Verhuur",
+          "price": 27.45,
+          "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ]
     },
@@ -96,21 +116,51 @@
       "image": "https://cdn.rebrickable.com/media/sets/10316-1/132394.jpg",
       "eenmalig": [
         {
+          "site": "Blokkenhuren",
+          "price": 11.75,
+          "note": "afhalen"
+        },
+        {
           "site": "HuurjeBricks",
           "price": 15.0,
           "note": "afhalen"
         },
         {
+          "site": "Bergh Bricks",
+          "price": 15.0,
+          "note": "+ verzending (?)"
+        },
+        {
           "site": "Blokjes Te Huur",
           "price": 20.0,
           "note": "afhalen"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 24.75,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         }
       ],
       "regulier": [
         {
+          "site": "Blokkenhuren",
+          "price": 11.75,
+          "note": "afhalen"
+        },
+        {
           "site": "HuurjeBricks",
           "price": 15.0,
           "note": "afhalen"
+        },
+        {
+          "site": "Bergh Bricks",
+          "price": 15.0,
+          "note": "+ verzending (?)"
+        },
+        {
+          "site": "Bouwsteenwinkel",
+          "price": 15.75,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
         {
           "site": "Blokjes Te Huur",
