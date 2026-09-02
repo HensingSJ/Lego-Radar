@@ -227,7 +227,14 @@
         "HuurjeBricks": 15,
         "Allemaalsteentjes": 17.5
       },
-      "absent": []
+      "absent": [
+        "Bouwsteenwinkel",
+        "Blokjes Te Huur",
+        "Bricks Verhuur",
+        "Onsspeelgoed",
+        "Blokkenhuren",
+        "Bergh Bricks"
+      ]
     },
     {
       "number": "42143",
