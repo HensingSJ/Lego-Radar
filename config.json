@@ -163,12 +163,25 @@
       "pieces": 3599,
       "rrp": 499,
       "urls": {
-        "HuurjeBricks": "https://www.huurjebricks.nl/Sets/Product/bugatti-chiron-42083/"
+        "HuurjeBricks": "https://www.huurjebricks.nl/Sets/Product/bugatti-chiron-42083/",
+        "Bouwsteenwinkel": "https://bouwsteenwinkel.nl/set/lego-technic-bugatti-chiron-42083-verhuur",
+        "Blokjes Te Huur": "https://www.blokjestehuur.nl/product/lego-42083-huren/",
+        "Bricks Verhuur": "https://www.bricksverhuur.nl/lego-42083-bugatti-chiron-huren.html",
+        "Blokkenhuren": "https://www.blokkenhuren.nl/product/lego-technic-bugatti-chiron-42083/",
+        "Allemaalsteentjes": "https://www.allemaalsteentjes.nl/LEGO-Technic-Bugatti-Chiron-42083-verhuur"
       },
       "prices": {
-        "HuurjeBricks": 15
+        "HuurjeBricks": 15,
+        "Bouwsteenwinkel": 12.75,
+        "Blokjes Te Huur": 17.5,
+        "Bricks Verhuur": 10,
+        "Blokkenhuren": 10.75,
+        "Allemaalsteentjes": 20
       },
-      "absent": []
+      "absent": [
+        "Onsspeelgoed",
+        "Bergh Bricks"
+      ]
     },
     {
       "number": "42228",
