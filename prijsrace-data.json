@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02",
+  "generated": "2026-09-03",
   "source": "live",
   "sets": [
     {
@@ -153,7 +153,7 @@
         {
           "site": "Bergh Bricks",
           "price": 15.0,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ verzending (?)"
         },
@@ -167,8 +167,8 @@
       ],
       "demand": {
         "carrying": 7,
-        "unavailable": 2,
-        "score": 79,
+        "unavailable": 1,
+        "score": 71,
         "label": "Hoog"
       },
       "found": 7,
@@ -592,6 +592,13 @@
           "note": "afhalen"
         },
         {
+          "site": "Bouwsteenwinkel",
+          "price": 13.75,
+          "status": "uitverhuurd",
+          "availableFrom": null,
+          "note": "+ €10,00/jr lidmaatschap · afhalen"
+        },
+        {
           "site": "Bergh Bricks",
           "price": 15.0,
           "status": "uitverhuurd",
@@ -614,15 +621,13 @@
         }
       ],
       "demand": {
-        "carrying": 4,
-        "unavailable": 1,
-        "score": 50,
-        "label": "Gemiddeld"
+        "carrying": 5,
+        "unavailable": 2,
+        "score": 67,
+        "label": "Hoog"
       },
-      "found": 4,
-      "issues": [
-        "Bouwsteenwinkel: robots"
-      ],
+      "found": 5,
+      "issues": [],
       "to_check": [],
       "absent": [
         "HuurjeBricks",
@@ -663,11 +668,9 @@
     }
   ],
   "run": {
-    "failures": [
-      "10333 Bouwsteenwinkel: robots"
-    ],
+    "failures": [],
     "sites": 8,
-    "offers_ok": 48,
+    "offers_ok": 49,
     "te_checken": 0,
     "niet_aanwezig": 55
   }
