@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05",
+  "generated": "2026-09-06",
   "source": "live",
   "sets": [
     {
@@ -594,7 +594,7 @@
         {
           "site": "Bouwsteenwinkel",
           "price": 13.75,
-          "status": "uitverhuurd",
+          "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -622,9 +622,9 @@
       ],
       "demand": {
         "carrying": 5,
-        "unavailable": 2,
-        "score": 67,
-        "label": "Hoog"
+        "unavailable": 1,
+        "score": 56,
+        "label": "Gemiddeld"
       },
       "found": 5,
       "issues": [],
