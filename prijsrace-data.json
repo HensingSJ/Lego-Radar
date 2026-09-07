@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06",
+  "generated": "2026-09-07",
   "source": "live",
   "sets": [
     {
@@ -153,7 +153,7 @@
         {
           "site": "Bergh Bricks",
           "price": 15.0,
-          "status": "onbekend",
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ verzending (?)"
         },
@@ -167,8 +167,8 @@
       ],
       "demand": {
         "carrying": 7,
-        "unavailable": 1,
-        "score": 71,
+        "unavailable": 2,
+        "score": 79,
         "label": "Hoog"
       },
       "found": 7,
@@ -594,7 +594,7 @@
         {
           "site": "Bouwsteenwinkel",
           "price": 13.75,
-          "status": "beschikbaar",
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -622,9 +622,9 @@
       ],
       "demand": {
         "carrying": 5,
-        "unavailable": 1,
-        "score": 56,
-        "label": "Gemiddeld"
+        "unavailable": 2,
+        "score": 67,
+        "label": "Hoog"
       },
       "found": 5,
       "issues": [],
