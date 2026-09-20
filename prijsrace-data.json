@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19",
+  "generated": "2026-09-20",
   "source": "live",
   "sets": [
     {
@@ -535,7 +535,7 @@
         {
           "site": "Bouwsteenwinkel",
           "price": 13.75,
-          "status": "uitverhuurd",
+          "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -556,7 +556,7 @@
         {
           "site": "Bergh Bricks",
           "price": 15.0,
-          "status": "onbekend",
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ verzending (?)"
         }
