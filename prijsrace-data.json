@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26",
+  "generated": "2026-09-27",
   "source": "live",
   "sets": [
     {
@@ -36,7 +36,7 @@
         {
           "site": "Onsspeelgoed",
           "price": 10.95,
-          "status": "beschikbaar",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ verzending (?)"
         },
@@ -535,7 +535,7 @@
         {
           "site": "Bouwsteenwinkel",
           "price": 13.75,
-          "status": "uitverhuurd",
+          "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -563,8 +563,8 @@
       ],
       "demand": {
         "carrying": 7,
-        "unavailable": 2,
-        "score": 79,
+        "unavailable": 1,
+        "score": 71,
         "label": "Hoog"
       },
       "found": 7,
