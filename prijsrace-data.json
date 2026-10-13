@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12",
+  "generated": "2026-10-13",
   "source": "live",
   "sets": [
     {
@@ -84,7 +84,7 @@
         {
           "site": "Bricks Verhuur",
           "price": 10.0,
-          "status": "beschikbaar",
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
@@ -105,9 +105,9 @@
       ],
       "demand": {
         "carrying": 4,
-        "unavailable": 1,
-        "score": 50,
-        "label": "Gemiddeld"
+        "unavailable": 2,
+        "score": 64,
+        "label": "Hoog"
       },
       "found": 4,
       "issues": [],
