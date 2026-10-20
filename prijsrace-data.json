@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19",
+  "generated": "2026-10-20",
   "source": "live",
   "sets": [
     {
@@ -153,7 +153,7 @@
         {
           "site": "Bergh Bricks",
           "price": 15.0,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ verzending (?)"
         },
@@ -167,8 +167,8 @@
       ],
       "demand": {
         "carrying": 7,
-        "unavailable": 3,
-        "score": 87,
+        "unavailable": 2,
+        "score": 79,
         "label": "Hoog"
       },
       "found": 7,
@@ -308,7 +308,7 @@
         {
           "site": "Bricks Verhuur",
           "price": 10.0,
-          "status": "uitverhuurd",
+          "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         },
@@ -343,8 +343,8 @@
       ],
       "demand": {
         "carrying": 6,
-        "unavailable": 2,
-        "score": 72,
+        "unavailable": 1,
+        "score": 63,
         "label": "Hoog"
       },
       "found": 6,
