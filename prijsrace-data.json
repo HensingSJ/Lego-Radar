@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22",
+  "generated": "2026-10-23",
   "source": "live",
   "sets": [
     {
@@ -413,16 +413,16 @@
         {
           "site": "Bricks Verhuur",
           "price": 25.0,
-          "status": "uitverhuurd",
+          "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €29,50/jr lidmaatschap · + €14,50 verzending"
         }
       ],
       "demand": {
         "carrying": 3,
-        "unavailable": 1,
-        "score": 45,
-        "label": "Gemiddeld"
+        "unavailable": 0,
+        "score": 27,
+        "label": "Laag"
       },
       "found": 3,
       "issues": [],
@@ -535,7 +535,7 @@
         {
           "site": "Bouwsteenwinkel",
           "price": 13.75,
-          "status": "beschikbaar",
+          "status": "uitverhuurd",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -563,8 +563,8 @@
       ],
       "demand": {
         "carrying": 7,
-        "unavailable": 0,
-        "score": 63,
+        "unavailable": 1,
+        "score": 71,
         "label": "Hoog"
       },
       "found": 7,
