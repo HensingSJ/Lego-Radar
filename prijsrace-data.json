@@ -167,8 +167,8 @@
       ],
       "demand": {
         "carrying": 7,
-        "unavailable": 2,
-        "score": 79,
+        "unavailable": 3,
+        "score": 87,
         "label": "Hoog"
       },
       "found": 7,
