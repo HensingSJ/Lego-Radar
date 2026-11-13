@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12",
+  "generated": "2026-11-13",
   "source": "live",
   "sets": [
     {
@@ -29,7 +29,7 @@
         {
           "site": "Blokkenhuren",
           "price": 10.25,
-          "status": "beschikbaar",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "afhalen"
         },
@@ -167,8 +167,8 @@
       ],
       "demand": {
         "carrying": 7,
-        "unavailable": 2,
-        "score": 79,
+        "unavailable": 3,
+        "score": 87,
         "label": "Hoog"
       },
       "found": 7,
