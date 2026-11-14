@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13",
+  "generated": "2026-11-14",
   "source": "live",
   "sets": [
     {
@@ -29,7 +29,7 @@
         {
           "site": "Blokkenhuren",
           "price": 10.25,
-          "status": "onbekend",
+          "status": "beschikbaar",
           "availableFrom": null,
           "note": "afhalen"
         },
@@ -556,15 +556,15 @@
         {
           "site": "Bergh Bricks",
           "price": 15.0,
-          "status": "uitverhuurd",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "+ verzending (?)"
         }
       ],
       "demand": {
         "carrying": 7,
-        "unavailable": 2,
-        "score": 79,
+        "unavailable": 1,
+        "score": 71,
         "label": "Hoog"
       },
       "found": 7,
