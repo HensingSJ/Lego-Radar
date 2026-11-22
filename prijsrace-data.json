@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21",
+  "generated": "2026-11-22",
   "source": "live",
   "sets": [
     {
@@ -206,7 +206,7 @@
         {
           "site": "Bouwsteenwinkel",
           "price": 10.75,
-          "status": "uitverhuurd",
+          "status": "beschikbaar",
           "availableFrom": null,
           "note": "+ €10,00/jr lidmaatschap · afhalen"
         },
@@ -227,8 +227,8 @@
       ],
       "demand": {
         "carrying": 5,
-        "unavailable": 1,
-        "score": 56,
+        "unavailable": 0,
+        "score": 45,
         "label": "Gemiddeld"
       },
       "found": 5,
@@ -587,7 +587,7 @@
         {
           "site": "Blokkenhuren",
           "price": 11.75,
-          "status": "beschikbaar",
+          "status": "onbekend",
           "availableFrom": null,
           "note": "afhalen"
         },
