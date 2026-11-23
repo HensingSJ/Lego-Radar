@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22",
+  "generated": "2026-11-23",
   "source": "live",
   "sets": [
     {
@@ -587,7 +587,7 @@
         {
           "site": "Blokkenhuren",
           "price": 11.75,
-          "status": "onbekend",
+          "status": "beschikbaar",
           "availableFrom": null,
           "note": "afhalen"
         },
